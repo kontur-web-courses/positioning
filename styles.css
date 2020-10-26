@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+}
+
+#logo1 {
+    height:100px;
+    width:100px;
+    background-image: url("designs/logo1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: skew(-0.06turn, 18deg);
+}
+
+#logo2 {
+    width: 100px;
+    height: 100px;
+    background-image: url("designs/logo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#modal {
+    position: fixed;
+    width: 580px;
+    left: 50%;
+    margin-left: -290px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 30px;
+    background-color:white;
+    border-radius: 20px;
+}
+
+#content {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#close {
+    width: 50px;
+    height: 50px;
+    margin-left: 550px;
+}
+
+#progress {
+    position: relative;
+    display: flex;
+    width: 580px;
+    height: 50px;
+    border: 1px solid lightgray;
+    background-color: darkgray;
+    overflow: hidden;
+}
+
+
+@keyframes prog {   
+    0% {
+        clip-path: inset(0 0 0 0%);        
+    }
+    100% {
+        clip-path: inset(0 0 0 100%);
+        
+    }
+}
+
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .front {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color:lightgray;
+    color: black;
+    clip-path: inset(0 0 0 100%);
+    font-size: 25px;
+    animation: prog linear 3s;
+  }
