@@ -1,0 +1,76 @@
+.block1 {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.block2 {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.modal {
+    width: 640px;
+    height: auto;
+    border-style: solid;
+    position: relative;
+}
+
+.cross {
+    background-color: rgba(255, 0, 0, 0.603);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.prog {
+    font-size: 0;
+}
+
+.modal p {
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress1 {
+    width: 150px;
+    height: 30px;
+    background-color: rgba(204, 0, 255, 0.308);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress2 {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 30px;
+    background-color: rgba(208, 255, 0, 0.815);
+    z-index: 1;
+}
+
+.text1 {
+    color: white;
+}
+
+.text2 {
+    position: relative;
+    bottom: 10px;
+    left: 41.5px;
+    color: black;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(38, 0, 255, 0.301);
+}

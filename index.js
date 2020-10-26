@@ -1,7 +1,8 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+const element = document.querySelector('.progress2');
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+function tic() {
+    const newWidth = parseInt(element.clientWidth) + 5;
+    element.style.width = newWidth + 'px';
+}
+let timerId = setInterval(tic, 100);
+setTimeout(() => clearInterval(timerId), 3000);
