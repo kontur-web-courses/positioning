@@ -1,0 +1,139 @@
+body{
+    margin: 0px;
+}
+
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    
+}
+
+.lightbox {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(128, 128, 128, 0.5);
+}
+
+.lightbox-content {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 320px;
+    padding: 20px;
+    background-color: #fefefe;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+.btn-close-modal {
+    color: white;
+    background-color: rgb(103, 172, 0);
+    bottom: 10px;
+    left: 25px;
+    width: 80px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+}
+
+.btn-close-modal:hover,
+.btn-close-modal:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-close-modal-x {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    width: 20 px;
+    height: 20px;
+    opacity: 0.3;
+}
+
+.btn-close-modal-x:hover {
+    opacity: 1;
+}
+.btn-close-modal-x:before, .btn-close-modal-x:after {
+    position: absolute;
+    content: ' ';
+    right: 10px;
+    height: 25px;
+    width: 2px;
+    background-color: #333;
+}
+.btn-close-modal-x:before {
+    transform: rotate(45deg);
+}
+.btn-close-modal-x:after {
+    transform: rotate(-45deg);
+}
+
+.progress-bar{
+    position:relative;
+    border:#ccc solid 1px;
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    overflow:hidden;
+    margin:100px auto 50px;
+    font-family:arial, sans-serif;
+    font-weight:bold;
+    font-size:30px;
+    box-shadow:0 4px 10px -5px rgba(0, 0, 0, 0.25);
+}
+
+.progress-bar > .bar{      
+    position:absolute;
+    top:0;
+    height:100%;
+    overflow:hidden;
+}
+
+.progress-bar > .bar > span{
+    position:absolute;      
+    display:block;
+    width: 400px;
+    height:100%;
+    text-align:center;
+}
+
+.bar.positive{
+    background: red;
+    left:0;
+    width: 0%;
+} 
+
+.bar.positive > span {    
+    left:0;
+    color:#333;
+}
+     
+.bar.negative{
+    background: grey;
+    right:0;
+    width: 100%;
+}
+
+.bar.negative > span{
+    right:0;
+    color:#fff;
+}
