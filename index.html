@@ -6,7 +6,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
+    <div class="overlay" id="overlay" hidden></div>
+    <div class="lightbox" id="lightbox" hidden>
+        <h1>That's all, folks!</h1>
+        <p>Пример модального окна находится в директории designs в файле lightbox.jpg. Модальное окно должно быть таким</p>
+        <a href="#" onclick="closeModal()" class="close"></a>
+        <div class="progress">
+            <div class="red"><p>Loading...</p></div>
+            <div class="gray"><p>Loading...</p></div> 
+        </div>
+    </div>
+    <section>
+        <div class="block">
+            <img src="designs\logo2.png" alt="logo2">
+        </div>
+        <div class="block">
+            <img src="designs\logo6.png" alt="logo6">
+        </div>
+    </section>
+    <button id="overlayButton" onclick="openModal()">Модальное окно</button>
+    
     <script src="index.js"></script>
 </body>
 </html>
