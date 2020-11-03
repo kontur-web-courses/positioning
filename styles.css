@@ -96,16 +96,6 @@
     display: none;
 }
 
-
-@keyframes turnRight {
-    0% {
-        transform: rotate(90deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
 .dropBox > input[type="checkbox"] + .title:before {
     display: inline-block;
     font-family: "FontAwesome";
@@ -113,48 +103,33 @@
     content: "\f105";
     margin-right: 5px;
     text-align: center;
-    animation: turnRight 0.5s ease-in-out;
-}
-
-@keyframes turnDown {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(90deg);
-    }
+    transition: transform 0.7s ease-in-out;
 }
 
 .dropBox > input[type="checkbox"]:checked + .title:before {
     content: "\f105";
-    transform: rotate(90deg);
-    animation: turnDown .5s ease-in-out; 
+    transform: rotate(90deg); 
 }
 
 .dropBox > input[type="checkbox"] ~ .content {
-    display: none;
-}
-
-@keyframes expandDropBox {
-    0% {
-        transform: scaleY(0);
-    }
-    100% {
-        transform: scaleY(1);
-    }
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.7s ease-in-out;
 }
 
 .dropBox > input[type="checkbox"]:checked ~ .content {
-    margin: 10px 0;
-    padding-top: 10px;
     display: block;
-    border-top: 1px solid black;
-    animation: expandDropBox 0.7s ease-in-out;
-    transform-origin: top;
+    max-height: 1000px;
+    transition: max-height 0.7s ease-in-out;
+}
+
+.dropBox >  .content > p {
+    margin-top: 0;
+    text-align: justify;
 }
 
   .progress {
-      margin: 20px;
+    margin: 20px;
     position: relative;
     display: flex;
     height: 30px;
