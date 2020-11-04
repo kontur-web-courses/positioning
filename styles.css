@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button {
+    font-size: 20px;
+}
+
+.logos {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.logo > .logo__icon {
+    width: 100%;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.54);
+    backdrop-filter: blur(6px);
+}
+
+.lightbox {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 1000px;
+    min-height: 50px;
+    max-height: 90%;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    border: solid 3px #000;
+    background-color: #fff;
+}
+
+.lightbox__content {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid;
+    overflow: auto;
+}
+
+.lightbox__close {
+    float: right;
+}
+
+.d-none {
+    display: none;
+}
+
+.progressbar {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 30px;
+}
+
+.progressbar__bg {
+    display: block;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: lightgrey;
+    color: black;
+}
+
+.progressbar__bg::after {
+    content: 'Загрузка...';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(300px / 2);
+    transform: translateX(-50%);
+}
+
+.progressbar__progress {
+    position: relative;
+    top: -100%;
+    left: 0;
+    display: block;
+    height: 50px;
+    background-color: red;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progressbar__progress::after {
+    content: 'Загрузка...';
+    display: block;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: calc(300px / 2);
+    transform: translateX(-50%);
+    color: white;
+}
+
+
+.progressbar-2 {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 30px;
+}
+
+.progressbar-2__bg {
+    display: block;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    background-color: lightgrey;
+    color: black;
+}
+
+.progressbar-2__progress {
+    position: relative;
+    top: -100%;
+    left: 0;
+    display: block;
+    height: 50px;
+    background-color: red;
+    width: 50%;
+    overflow: hidden;
+    color: white;
+}
+
+.progressbar-2__text {
+    display: block;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    left: calc(300px / 2);
+    transform: translateX(-50%);
+}
+
+
+.restart {
+    width: 300px;
+}
+
+.accordeon {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accordeon__section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: solid 2px grey;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.accordeon__section:last-of-type {
+    margin-bottom: 0;
+}
+
+.accordeon__toggle {
+    display: none;
+}
+
+.section__title {
+    transition: background-color .2s;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: #ffe9e9;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.section__content {
+    display: block;
+    width: 100%;
+    height: 0;
+    padding: 0 20px;
+    border-top: none;
+}
+
+.accordeon__toggle:checked ~ .section__title {
+    background-color: #ecffe9;
+}
+
+.accordeon__toggle:checked ~ .section__content {
+    height: 100%;
+    padding: 20px;
+    border-top: solid 2px grey;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: dotted 3px black;
+}
+
+.block:last-of-type {
+    margin-bottom: 0;
+}
