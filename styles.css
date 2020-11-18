@@ -1,0 +1,133 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #E1E1E1;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo1 img {
+  width: 100px;
+}
+
+.logo2 img {
+  width: 100px;
+}
+
+.modal__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+  background: rgba(0,0,0,.3);
+}
+
+.modal__frame {
+  width: 640px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.button {
+  background: seagreen;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.modal__button {
+  margin-top: 10px;
+}
+
+.open_modal__button {
+  margin: 50px;
+}
+
+.modal__close {
+  position: absolute;
+  background: none;
+  border: none;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: #686868;
+  cursor: pointer;  
+}
+
+.progressbar {
+  background: rgb(202, 202, 202); 
+  margin-top: 20px;
+  position: relative;
+  width: 640px;
+  height: 30px;
+}
+
+.progressbar::before, .progressbar__progress::before {
+  content: 'Loading...';
+  position: absolute;
+  left: 320px;
+  top: 15px;
+  transform: translate(-50%, -50%);
+}
+
+.progressbar__progress {
+  position: absolute;
+  background: red;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.progressbar__progress::before {
+  color: white;
+}
+
+.accordeon {
+  margin: 60px 0;
+}
+
+.accordeon__item {
+  cursor: pointer;
+}
+
+.accordeon__item h3 {
+  border: 1px solid #686868;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.accordeon__item:hover h3 {
+  background: rgb(228, 228, 228);
+  
+}
+
+.accordeon__text {
+  display: none;
+}
+
+.accordeon__toggle:checked + .accordeon__text {
+  display: block;
+}
+
+.accordeon__toggle {
+  display: none;
+}
