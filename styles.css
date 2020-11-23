@@ -39,22 +39,63 @@ body{
     color: white;
     font-size: 24px;
 }
-.progress-bar-grey{
-    width: 300px;
+.bars{
+    position: relative;
+    margin-bottom: 50px;
+}
+.progress-bar-grey1{
+    width: 100px;
+    height: 25px;
+    float: left;
+    left: 0px;
+    position: absolute;
+    background: grey;
+    margin-right: 10px;
+}
+.progress-bar-grey2{
+    left: 100px;
+    width: 200px;
     height: 25px;
     background: grey;
     font-size: 20px;
-    position: relative;
+    position: absolute;
+    z-index: 1;
 }
-.progress-bar-red{
+.progress-bar-grey2 p{
+    color: black;
+    z-index: 2;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+}
+.progress-bar-red1{
     background: red;
     width: 0px;
-    height:100%;
-    font-size: 20px;
-    position: absolute;
+    height: 25px;
     top: 0px;
-    text-align: center;
+    position: absolute;
+    z-index: 3; 
 }
+.progress-bar-red2{
+    background: red;
+    width: 0px;
+    height: 25px;
+    font-size: 20px;
+    top: 0px;
+    left: 100px;
+    position: absolute;
+    z-index: 3; 
+}
+.progress-bar-red2 p{
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    color: white;
+    overflow: hidden;
+}
+
+
 input{
     display: none;
 }

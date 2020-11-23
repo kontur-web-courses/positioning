@@ -29,10 +29,16 @@ openWindowBtn.addEventListener('click', openWindow)
 
 
 function setProgress(){
-    const redLine = document.querySelector(".progress-bar-red");
-    for (let i = 0; i<=3000; i=i+50){
-        setTimeout(()=>redLine.style.width=i/10+'px', i);
-    }
+    const redLine1 = document.querySelector(".progress-bar-red1");
+    const redLine2 = document.querySelector(".progress-bar-red2");
+
+    timeOut(redLine1, 1000);
+    setTimeout(()=>timeOut(redLine2, 2000), 1000);
 };
+function timeOut(line, duration){
+    for (let i = 0; i<=duration; i=i+50){
+        setTimeout(()=>line.style.width=i/10+'px', i);
+    }
+}
 setProgress();
 
