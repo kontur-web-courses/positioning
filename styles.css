@@ -1,0 +1,185 @@
+body {
+    font-family: Arial;
+    background-color: white;
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.box img {
+    width: 100%;
+}
+
+.box img.bbc {
+    transform: scale(1.19);
+}
+
+#overlay {
+    background-color: rgba(0,0,0,0.5);
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#overlay .lightboxLayout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.lightbox {
+    width: 350px;
+    padding: 20px 30px 40px;
+    border-radius: 20px;
+    background-color: white;
+    position: relative;
+    box-shadow: -1px 2px 69px 11px rgba(0, 0, 0, 0.15);
+}
+.lightbox h2,
+.lightbox p {
+    margin: 15px 0;
+}
+#closeButton {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    z-index: 1;
+    margin: 20px auto;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: 15px;
+}
+#closeButton:before {
+    content: '+';
+    color: #337AB7;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -4px;
+    left: 5px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+#closeButton:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #337AB7;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+#closeButton:hover:after {
+    transform: scale(1);
+}
+#closeButton:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: #fff;
+}
+
+.progressBar {
+    background-color: #dedede;
+    margin: 20px 0;
+    padding: 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.progressBar .value {
+    position: absolute;
+    border-radius: 40px;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 30px;
+    background-color: rgb(205, 67, 60);
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    overflow: hidden;
+}
+
+.progressBar .value:after {
+    content: "Loading...";
+    position: absolute;
+    left:140px;
+    top: 6px;
+    color: white;
+}
+
+.progressBar:hover .value {
+    width: 100%;
+}
+
+.progressBar p {
+    position: absolute;
+}
+
+.tab input,
+.tab-content {
+    display: none;
+}
+
+.tab {
+    border-top: 1px solid #e9eaec;
+    border-left: 1px solid #e9eaec;
+    border-right: 1px solid #e9eaec;
+    color: #3b3b3b;
+    overflow: hidden;
+}
+
+.tab:first-child {
+    border-radius: 10px 10px 0 0;
+}
+
+.tab:last-child {
+    border-bottom: 1px solid #e9eaec;
+    border-radius: 0 0 10px 10px;
+}
+
+.tab-title:hover {
+    background: #def0ff;
+    padding-left: 20px;
+}
+
+.tab-title {
+    padding: 15px;
+    display: block;
+    cursor: pointer;
+    color: #50a2de;
+    font-size: 16px;
+}
+.tab-content {
+    padding: 15px 20px;
+    font-size: 14px;
+}
+.tab :checked + .tab-title {
+    background: #50a2de;
+    padding-left: 15px;
+    color: #fff;
+}
+
+.tab :checked ~ .tab-content {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
