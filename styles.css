@@ -12,7 +12,6 @@ body{
     position: absolute;
     box-sizing: content-box;
     background-color: rgba(59, 67, 76, 0.9);
-
     padding: inherit;
     left: 0;
     right: 0;
@@ -38,4 +37,20 @@ body{
     background: lightgreen;
     color: white;
     font-size: 24px;
+}
+
+.progress-bar {
+    height: 1.5em;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    position: relative;
+}
+
+.loading {
+    width: 40%;
+    background-color: red;
+    display: inline-block;
+    height: 100%;
+    align-content: center;
 }
