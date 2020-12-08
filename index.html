@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <title>Практика позиционирования</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <!--Верстать тут-->
-    <script src="index.js"></script>
+<header>
+    <div class="logo">
+        <img class="icon" src="designs/logo5.png" alt="japan logo">
+    </div>
+    <div class="logo">
+        <img class="icon" src="designs/logo7.png" alt="redux logo">
+    </div>
+</header>
+    <div class="overlay" id="overlay" hidden></div>
+    <div class="lightbox" id="lightbox" hidden>
+        <h2>Внимание, внимание! Говорит Москва!</h2>
+        <p>В ближайшие дни по территории РФ пройдёт новая волна коронавирусной инфекции.
+            Всем сидеть дома и не праздновать Новый год.</p>
+        <a href="#" onclick="closeModal()" class="close"></a>
+        <div class="progress">
+            <div class="red"><p>Loading...</p></div>
+            <div class="gray"><p>Loading...</p></div>
+        </div>
+    </div>
+    <button id="overlayButton" onclick="openModal()">Модальное окно</button>
 </body>
 </html>
