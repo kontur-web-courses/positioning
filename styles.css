@@ -1,0 +1,73 @@
+body{
+
+}
+.modalWindow{
+    position:fixed;
+    left:0;
+    bottom: 0;
+    right: 0;
+    top:0;
+    background: rgba(0,0,0,0.7);
+    z-index:1;
+    /*visibility: hidden;*/
+}
+
+.modalBody{
+    width: 640px;
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index:2;
+    background:#FFF;
+    margin:10px;
+}
+.closeModal{
+    position: absolute;
+    top:10px;
+    right: 10px;
+
+}
+.progressBar{
+
+    width: 100px;
+    text-align: center;
+    border:1px solid #111111;
+    margin:10px;
+
+
+}
+
+.grayColorProgressBar{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    background-color:gray;
+}
+.redColorProgressBar{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    background: red;
+    z-index:3;
+    color: white;
+    clip:rect(0 0px 0px 0);
+}
+.section{
+    width:500px;
+    background: #3c71a8;
+    border: 1px solid #111111;
+}
+.sectionText{
+    background: white;
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
