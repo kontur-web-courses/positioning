@@ -1,0 +1,91 @@
+body {
+    background-color: whitesmoke;
+}
+
+.logo {
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;  /* Centering y-axis */
+    align-items :center; 
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+
+}
+
+.logo img{
+    transform: scale(0.5);
+}
+
+.lightbox-container{
+    width: 100%;
+    height: 100%;
+    background-color: #363636d2;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-modal {
+    position: relative;
+    padding: 30px;
+    border: 2px solid;
+    background-color: whitesmoke;
+    width: 600px;
+}
+
+.lightbox-modal .lightbox-close {
+    position: absolute;
+    background-color: lightyellow;
+    border: 2px solid;
+
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.progress-bar {
+    position: relative;
+    background-color: lightgray;
+    text-align: center;
+    border: 2px solid;
+    height: 30px;
+    margin-top: 20px;
+
+}
+
+
+.progress-bar .current-progress{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgb(255,0,0);
+    overflow: hidden;
+    animation: loading 3s linear;
+    animation-fill-mode: forwards;
+}
+
+.progress-bar .current-progress:after{
+    content: "Loading...";
+    display: block;
+    position: absolute;
+    left: 300px;
+    top: 0;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+  @keyframes loading {
+    0% {
+      width: 0;
+    } 100% {
+      width: 100%;
+    }
+  }
