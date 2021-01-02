@@ -6,7 +6,33 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="borders">
+        <div class="circle"></div>
+    </div>
+    <div class="borders">
+        <div class="windows">
+            <div class="red"></div>
+            <div class="green"></div>
+            <div class="blue"></div>
+            <div class="orange"></div>
+        </div>
+    </div>
     <!--Верстать тут-->
+    <div class="lightbox-container">
+        <div class="lightbox-content">
+            <h2>That`s all, folks</h2>
+            <p>You can hit ESC or click outside to close the<br> model. Give it a go to see the reverse transition.</p>
+            <p>If you like this would probably enjoy Meny,<br> revels.js an stroll.js.</p>
+            <button class="lightbox-close">X</button>
+        </div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="loading-text">Loading...</div>
+        <div class="current-progress"></div>
+    </div>
+    <div id="progress-bar" data-content="Loading..."></div>
+
     <script src="index.js"></script>
 </body>
 </html>
