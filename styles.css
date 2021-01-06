@@ -1,0 +1,129 @@
+body {
+    padding: 0;
+  }
+  
+  .main {
+    width: 100%;
+    height: 100vh;
+    padding-top: 150px;
+  }
+  
+  .overlay {
+    position: absolute;
+    box-sizing: content-box;
+    background-color: rgba(59, 67, 76, 0.9);
+  
+    padding: inherit;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .modal {
+    position: fixed;
+    width: 480px;
+    left: 400px;
+    top: 100px;
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 25px;
+    background: white;
+    z-index: 1;
+    display: inline-block;
+  }
+  
+  .modal > button {
+    background: lightgreen;
+    color: white;
+    font-size: 24px;
+  }
+  .bars {
+    position: relative;
+    margin-bottom: 50px;
+  }
+  .progress-bar-grey1 {
+    width: 100px;
+    height: 25px;
+    float: left;
+    left: 0px;
+    position: absolute;
+    background: grey;
+    margin-right: 10px;
+  }
+  .progress-bar-grey2 {
+    left: 100px;
+    width: 200px;
+    height: 25px;
+    background: grey;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+  }
+  .progress-bar-grey2 p {
+    color: black;
+    z-index: 2;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+  }
+  .progress-bar-red1 {
+    background: red;
+    width: 0px;
+    height: 25px;
+    top: 0px;
+    position: absolute;
+    z-index: 3;
+  }
+  .progress-bar-red2 {
+    background: red;
+    width: 0px;
+    height: 25px;
+    font-size: 20px;
+    top: 0px;
+    left: 100px;
+    position: absolute;
+    z-index: 3;
+  }
+  .progress-bar-red2 p {
+    top: -20px;
+    left: 0px;
+    width: 100%;
+    position: absolute;
+    color: white;
+    overflow: hidden;
+  }
+  
+  input {
+    display: none;
+  }
+  .texts {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    width: 70%;
+    background: #009b95;
+    padding: 15px 10px;
+    margin: 10px 10px;
+    box-sizing: border-box;
+    border: 2px solid #006561;
+    border-radius: 15px;
+  }
+  .text1,
+  .text2,
+  .text3 {
+    display: none;
+    margin: 10px auto;
+    border-top: 2px solid #006561;
+  }
+  .check1:checked + .text1 {
+    display: block;
+  }
+  .check2:checked + .text2 {
+    display: block;
+  }
+  .check3:checked + .text3 {
+    display: block;
+  }
