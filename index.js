@@ -1,7 +1,10 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+function animateProgressBar () {
+    const uploaded = document.querySelector('.uploaded');
+    let progress = 0; 
+    
+    setInterval(() => {
+        uploaded.style.clip = `rect(0 ${progress += 10}px 20px 0)`;
+    }, 30);
+}
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+animateProgressBar();
