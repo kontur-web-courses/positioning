@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="51c2803e-65c5-4390-93ca-6d24492c9b42" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/positioning.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jmhBaDY0VvbyOCxOTEL97Gcg7n" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="51c2803e-65c5-4390-93ca-6d24492c9b42" name="Default Changelist" comment="" />
+      <created>1604415039299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604415039299</updated>
+      <workItem from="1604415040597" duration="807000" />
+      <workItem from="1604487136797" duration="17000" />
+      <workItem from="1604511026090" duration="632000" />
+      <workItem from="1604564873626" duration="3000" />
+      <workItem from="1604817016616" duration="186000" />
+      <workItem from="1604817471915" duration="18000" />
+      <workItem from="1604819562228" duration="599000" />
+      <workItem from="1604934651429" duration="34000" />
+      <workItem from="1605092017077" duration="59000" />
+      <workItem from="1605127330785" duration="104000" />
+      <workItem from="1605170578400" duration="10000" />
+      <workItem from="1605434886573" duration="16000" />
+      <workItem from="1605443974264" duration="2000" />
+      <workItem from="1605462014511" duration="1000" />
+      <workItem from="1605529304497" duration="442000" />
+      <workItem from="1606040851062" duration="1305000" />
+      <workItem from="1606043030010" duration="1194000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
