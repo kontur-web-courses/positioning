@@ -1,0 +1,61 @@
+.logo{
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+}
+.lightbox{
+    background-color: #FFF;
+    width: 640px;
+    z-index: 3;
+    position: relative;
+}
+.close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.shadow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    height:100%;
+    width: 100%;
+    z-index: 2;
+}
+.progress-bar{
+    text-align: center;
+    width: 600px;
+    margin: 20px auto;
+    position: relative;
+    height: 20px;
+}
+.hack{
+    text-align: center;
+}
+.progress-white-text{
+    width: 600px;
+    color: #FFF;
+    position: absolute;
+}
+.progress-text{
+    background-color: #ddd;
+    height: 20px;
+    position: absolute;
+    width: 600px;
+}
+.progress{
+    position: absolute;
+    overflow: hidden;
+    background-color: #F00;
+    height: 20px;
+}
+
+.text{
+    display: none;
+    text-align: center;
+    font-size: 50px;
+}
