@@ -1,0 +1,162 @@
+.logo {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+
+}
+
+.logo img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Arial Black', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    padding: 0;
+    margin: auto;
+    width: 700px;
+}
+
+.button-close {
+    content: '✖';
+    background: #43A047;
+    color: white;
+    font-size: 26px;
+    border-radius: 50%;
+    border: none;
+}
+
+.button-large {
+    background: #43A047;
+    color: white;
+    font-size: 26px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+}
+
+.modal-wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.modal {
+    max-height: 100vh;
+    width: 640px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 5px black;
+    border-radius: 5px;
+    padding: 20px;
+    background: white;
+    z-index: 1;
+}
+
+.modal .button-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.accordion {
+    font-family: 'Arial Black', serif;
+    color: white;
+    background-color: #BDBDBD;
+    cursor: pointer;
+    padding: 24px;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    transition: 0.4s;
+}
+
+.accordion:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.accordion:nth-last-child(2) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.accordion:hover {
+    background-color: #66BB6A;
+}
+
+.accordion.active {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: #4CAF50;
+    color: #1B5E20;
+}
+
+.accordion-item {
+    padding: 0 20px;
+    background-color: #EEEEEE;
+    display: none;
+    overflow: hidden;
+}
+
+.bar {
+    background: #eeeeee;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.bar::before, .progress::before {
+    content: 'Loading';
+    color: white;
+    position: absolute;
+    left: 320px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bar::before {
+    color: black;
+}
+
+.bar .progress {
+    border-radius: 10px;
+    position: absolute;
+    background: #E53935;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 4;
+}
