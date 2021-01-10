@@ -1,0 +1,101 @@
+ .logo{
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+}
+.lightbox{
+    background-color: rgb(220, 221, 212);
+    width: 640px;
+    position: relative;
+    z-index: 5;
+}
+.lightbox h1,p{
+    margin-left: 20px;
+}
+.lightbox #close{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.darkening{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    height:100%;
+    width: 100%;
+    z-index: 3;
+}
+.white-text{
+    width: 600px;
+    color: white;
+    position: absolute;
+}
+.progress-bar{
+    text-align: center;
+    width: 600px;
+    margin: 25px auto;
+    position: relative;
+    height: 25px;
+}
+.progress-text{
+    background-color: grey;
+    height: 20px;
+    position: absolute;
+    width: 600px;
+}
+.progress{
+    position: absolute;
+    overflow: hidden;
+    background-color: red;
+    height: 20px;
+}
+p, .accordion, span{
+    display: none;
+}
+
+
+.info_headline {
+    display: none;
+}
+
+input:checked + span{
+    display: block;
+    border: black 1px solid;
+}  
+
+
+
+/* Безуспешная попытка заменить чекбоксы*/
+
+.info_switch {
+    display: none;
+} 
+
+/*.info_switch::before {
+    content: "";
+    position: absolute;
+    left: -18px;
+    top: 4px;
+    border: 6px solid #39739d;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+
+  }
+  
+  .info_switch {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    user-select: none;
+    color: #39739d;
+    font-weight: normal;
+    cursor: pointer;
+  }
+  }*/
+  
