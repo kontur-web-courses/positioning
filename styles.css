@@ -1,4 +1,7 @@
 .logovibes {
+    position: absolute;
+    top: 100px;
+    left: 100px;
     display: inline-block;
 }
 
@@ -25,6 +28,10 @@
     position: relative;
     background: #BC002D;
     border-radius: 50%;
+}
 
+.lightbox {
+    width: 640px;
+    height: fit-content;
 }
 
