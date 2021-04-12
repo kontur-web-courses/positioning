@@ -64,12 +64,13 @@ img {
 .lightbox {
     width: 640px;
     display: flex;
+    flex-flow: column;
     align-content: center;
     justify-content: center;
     background: white;
 }
 
 .lightbox-exit-button {
-    align-self: flex-start;
+    align-self: flex-end;
     justify-self: flex-end;
 }
