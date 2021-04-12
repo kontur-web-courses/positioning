@@ -26,9 +26,8 @@
     max-width: 640px;
     background-color: white;
     z-index: 3;
-    padding: 20px;
+    padding: 20px 5px 5px;
     text-align: left;
-
 }
 
 .overlay {
@@ -52,16 +51,36 @@
     text-decoration: none;
 }
 
-.progressbar {
-    border: 1px solid black;
-    text-align: center;
+.progress {
+    position: relative;
+    display: flex;
     width: 95%;
     margin: auto;
-    background-color: lightgrey;
-    color: black;
+    border: 2px solid black;
+    overflow: hidden;
 }
 
-.progress {
-    background-color: red;
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    background: red;
     color: white;
+}
+
+.front {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: lightgrey;
+    color: black;
+    clip-path: inset(0 0 0 1%);
+    transition: clip-path 1s linear;
 }
