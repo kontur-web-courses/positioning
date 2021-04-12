@@ -23,3 +23,11 @@ img {
     background: #BC002D;
     border-radius: 50%;
 }
+
+.bbc-logo {
+    display: flex;
+}
+
+.bbc-fragment{
+    background: black;
+}
