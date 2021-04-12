@@ -1,0 +1,30 @@
+.logovibes {
+    display: inline-block;
+}
+
+.logo1 {
+    display: inline-block;
+    background: black;
+    width: 100px;
+    height: 100px;
+}
+
+.logo2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    width: 100px;
+    height: 60px;
+}
+
+.red_round {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    background: #BC002D;
+    border-radius: 50%;
+
+}
+
