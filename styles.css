@@ -42,3 +42,18 @@ img {
     color: white;
     border: white solid calc(100% - 5px);
 }
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background: rgba(136, 136, 136, 136);
+}
+
+.lightbox {
+    align-content: center;
+    justify-content: center;
+    background: white;
+}
