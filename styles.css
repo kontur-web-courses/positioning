@@ -16,7 +16,7 @@
     transform: scale(0.375) translate(-84%, -65%);
 }
 
-.Lightbox {
+.lightbox {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -46,4 +46,18 @@
     font-size: 24px;
     color: #555;
     text-decoration: none;
+}
+
+.progressbar {
+    border: 1px solid black;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+    background-color: lightgrey;
+    color: black;
+}
+
+.progress {
+    background-color: red;
+    color: white;
 }
