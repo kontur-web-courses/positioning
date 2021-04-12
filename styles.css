@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    display: flex;
+}
+
+.block1 {
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.block1 .logoPart {
+    width: 50%;
+    height: 50%;
+    box-sizing: border-box;
+    border: 3px solid white;
+}
+
+.block1 .logoPart1 {
+    background-color: #F1511B;
+}
+
+.block1 .logoPart2 {
+    background-color: #80CC28;
+}
+
+.block1 .logoPart3 {
+    background-color: #00ADEF;
+}
+
+.block1 .logoPart4 {
+    background-color: #FBBC09;
+}
+
+.block2 .logoPart1 {
+    width: 100%;
+    height: 100%;
+    background-color: #BC002D;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border: 3px solid white;
+}
+
+.bluredbg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal {
+    width: 650px;
+    max-height: 300px;
+    background-color: whitesmoke;
+    overflow-y: auto;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal button{
+    width: 30px;
+    align-self: flex-end;
+    border-radius: 16px;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.modal p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    margin: 100px 0;
+    background-color: #EEEEEE;
+}
+
+.background {
+    height: 100px;
+    width: 100vw;
+    background-color: #BBBBBB;
+}
+
+.value{
+    position: absolute;
+    left: 0;
+    background-color: #FE0002;
+    height: 100px;
+    width: 600px;
+    overflow: hidden;
+}
+
+.text{
+    position: absolute;
+    text-align: center;
+}
+
+.black{
+    font: bold 2em "Fira Sans", serif;
+    left: 50vw;
+    z-index: 2;
+}
+
+.white{
+    font: bold 2em "Fira Sans", serif;
+    color: white;
+    left: 50vw;
+    z-index: 3;
+}
