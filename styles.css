@@ -127,3 +127,34 @@ body {
     padding: 15px;
     overflow: auto;
 }
+
+.lightbox .progress_bar {
+    position: relative;
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    background-color: lightgrey;
+}
+
+.lightbox .progress_bar_line{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    background-color: red;
+    color: white;
+    overflow: hidden;
+}
+
+.lightbox .progress_bar_text {
+    z-index: 3;
+    height: 100%;
+    font-size: 2em;
+}
+
+.lightbox .progress_bar_text_white {
+    position: absolute;
+    height: 100%;
+    font-size: 2em;
+    left: 130px;
+
+}
