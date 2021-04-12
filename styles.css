@@ -35,3 +35,31 @@
     height: fit-content;
 }
 
+.logo1 {
+    position: absolute;
+    top: 22px;
+    left: 3px;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+}
+.logo1_small_1 {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.logo1_small_2 {
+    position: absolute;
+    left: 35px;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+}
