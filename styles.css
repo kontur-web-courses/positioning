@@ -33,7 +33,7 @@ img {
     font-size: 1.5em;
 }
 
-.bbc-fragment{
+.bbc-fragment {
     width: 30%;
     height: 100%;
     display: flex;
@@ -43,6 +43,7 @@ img {
     color: white;
     border: white solid 2px;
 }
+
 .overlay {
     width: 100vw;
     height: 100vh;
@@ -58,4 +59,9 @@ img {
     align-content: center;
     justify-content: center;
     background: white;
+}
+
+.lightbox-exit-button {
+    align-content: flex-end;
+    justify-items: flex-end;
 }
