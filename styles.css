@@ -46,10 +46,10 @@ img {
     width: 100vw;
     height: 100vh;
     position: absolute;
+    z-index: 2;
     display: flex;
-    align-content: center;
     justify-content: center;
-    background: rgba(136, 136, 136, 136);
+    background: rgba(136, 136, 136, 0.5);
 }
 
 .lightbox {
