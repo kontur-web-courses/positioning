@@ -6,36 +6,6 @@
 }
 
 .logo1 {
-    display: inline-block;
-    background: black;
-    width: 100px;
-    height: 100px;
-}
-
-.logo2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: whitesmoke;
-    width: 100px;
-    height: 60px;
-}
-
-.red_round {
-    display: flex;
-    width: 35px;
-    height: 35px;
-    position: relative;
-    background: #BC002D;
-    border-radius: 50%;
-}
-
-.lightbox {
-    width: 640px;
-    height: fit-content;
-}
-
-.logo1 {
     position: absolute;
     top: 22px;
     left: 3px;
@@ -62,4 +32,34 @@
     height: 30px;
     background-color: black;
     border-radius: 50%;
+}
+
+.logo2 {
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    width: 100px;
+    height: 60px;
+}
+
+.red_round {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    background: #BC002D;
+    border-radius: 50%;
+}
+
+.lightbox {
+    width: 50vm;
+    height: 50vm;
+}
+
+.lightbox .content {
+    width: 640px;
+    height: fit-content;
 }
