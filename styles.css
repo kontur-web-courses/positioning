@@ -15,6 +15,6 @@ img {
 .circle {
     width: 100px;
     height: 100px;
-    background: red;
+    background: #BC002D;
     border-radius: 50%;
 }
