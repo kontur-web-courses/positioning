@@ -72,3 +72,29 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.progress {
+    display: inline-block;
+    width: 80%;
+    height: 60px;
+    background-color: gray;
+    font-size: xxx-large;
+    text-align: center;
+    position: relative;
+}
+
+.progress .left{
+    width: 50%;
+    height: 60px;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    overflow: hidden;
+}
+.progress .left .span{
+    position: absolute;
+    width: 100px;
+    left: 460px;
+}
