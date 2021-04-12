@@ -71,6 +71,8 @@ img {
 }
 
 .lightbox-exit-button {
+    background: red;
+    border: 0;
     align-self: flex-end;
     justify-self: flex-end;
 }
