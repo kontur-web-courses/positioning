@@ -47,6 +47,7 @@ img {
     background: black;
     color: white;
     border: white solid 2px;
+    font-family: Arial, serif;
 }
 
 .overlay {
@@ -62,6 +63,7 @@ img {
 
 .lightbox {
     width: 640px;
+    display: flex;
     align-content: center;
     justify-content: center;
     background: white;
