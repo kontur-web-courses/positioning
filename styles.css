@@ -1,11 +1,28 @@
-.block1 {
+.block {
     border: 2px solid black;
     width: 100px;
     height: 100px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
 }
 
-.block2 {
+.logo1 {
+    position: absolute;
+    transform: scale(0.05) translate(-950.5%, -940%);
+}
+
+.logo7 {
+    position: absolute;
+    transform: scale(0.375) translate(-84%, -65%);
+}
+
+.Lightbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: 2px solid black;
-    width: 100px;
-    height: 100px;
+    width: 640px;
+    max-width: 640px;
 }
