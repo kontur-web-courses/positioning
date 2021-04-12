@@ -1,4 +1,33 @@
 .block1 {
+    vertical-align: top;
+    display: inline-block;
     width: 100px;
     height: 100px;
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+    font-size: 90px;
+    margin-right: 10px;
+}
+
+.block2 {
+    vertical-align: top;
+    display: inline-block;
+    width: 160px;
+    height: 100px;
+    background-color: white;
+    border: solid black 1px;
+    font-size: 0px;
+}
+
+.circle{
+    width: 70px;
+    height: 70px;
+    alignment: center;
+    border-radius: 100%;
+    background-color: red;
+    position: relative;
+    top: 15px;
+    left: 45px;
 }
