@@ -6,7 +6,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
-    <script src="index.js"></script>
+
+<section class="wrapper wrapper1">
+    <img class="logo" src="designs/logo6.png" onclick="openModal();" alt="Windows">
+    <img class="logo" src="designs/logo1.png" onclick="openModal();" alt="Mickey Mouse">
+</section>
+
+<div id="overlay_window" class="overlay"></div>
+<div id="modal_window" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal_content">
+        <p>Hello</p>
+        <div class="progress_bar" onclick="move();">
+            <div id="bar" class="bar"></div>
+<!--            <p class="bar_text">LOADING</p>-->
+        </div>
+        <p>._.</p>
+    </div>
+</div>
+
+
+<!--<div class="progress_bar" onclick="move();">-->
+<!--    <p class="bar_text">LOADING</p>-->
+<!--    <div id="bar" class="bar"></div>-->
+<!--</div>-->
+
+
+
+<script src="index.js"></script>
+
 </body>
 </html>
