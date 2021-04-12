@@ -1,0 +1,68 @@
+.lightbox .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .6);
+    z-index: 0;
+}
+
+.lightbox .window {
+    border: 2px solid black;
+    width: 640px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 320px);
+}
+
+/*
+.lightbox .window .cross {
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+*/
+
+.lightbox .window .cross:before, .lightbox .window .cross:after {
+    position: absolute;
+    width: 2px;
+    height: 17px;
+    right: 8px;
+    top: 0;
+    content: ' ';
+    background-color: black;
+}
+
+.lightbox .window .cross:before {
+    transform: rotate(45deg);
+}
+
+.lightbox .window .cross:after {
+    transform: rotate(-45deg);
+}
+
+.lightbox .window .pbar {
+    position: absolute;
+    top: 150px;
+    left: -80px;
+    width: 800px;
+    height: 25px;
+    background-color: lightgray;
+    z-index: 2;
+}
+
+.lightbox .window .pbar .pline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 25px;
+    background-color: red;
+}
