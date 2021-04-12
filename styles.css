@@ -1,0 +1,63 @@
+.logo {
+    margin: 10px;
+}
+
+#Japan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    width: 100px;
+    height: 66px;
+
+    border: 1px solid black;
+}
+
+#JapanSun {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #BC002D;
+}
+
+#Mitsubishi {
+    box-sizing: border-box;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-left-width: 50px;
+    border-right-width: 50px;
+    border-top: 0 solid transparent;
+    border-bottom: 87px solid black;
+    /*color: transparent;*/
+}
+
+.mitsuCut {
+    position: relative;
+    width: 0;
+    height: 0;
+
+
+    border: 0 solid transparent;
+    border-left-width: 17px;
+    border-right-width: 17px;
+    border-top: 0 solid transparent;
+    border-bottom: 29px solid white;
+    /*color: transparent;*/
+
+}
+
+#leftCut {
+    top: 29px;
+    left: -34px;
+}
+
+#rightCut {
+}
+
+#bottomCut {
+    left: -17px;
+}
+
