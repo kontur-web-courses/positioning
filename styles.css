@@ -1,0 +1,18 @@
+.progress {
+    width: 200px;
+    height: 20px;
+    position: relative;
+    background-color: gray;
+}
+
+.progress .fill {
+    position: absolute;
+    background-color: red;
+    width: 0;
+    height: 20px;
+}
+
+.progress .text {
+    position: relative;
+    text-align: center;
+}
