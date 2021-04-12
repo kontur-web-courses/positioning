@@ -67,6 +67,6 @@ img {
 }
 
 .lightbox-exit-button {
-    align-content: flex-end;
-    justify-items: flex-end;
+    align-self: flex-end;
+    justify-self: flex-end;
 }
