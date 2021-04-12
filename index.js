@@ -6,9 +6,9 @@
     element.style.width = '300px';
 */
 function onLoad() {
-    let modal = document.getElementById("myModal");
-    let btn = document.getElementById("myBtn");
-    let span = document.getElementsByClassName("close")[0];
+    const modal = document.getElementById("myModal");
+    const btn = document.getElementById("myBtn");
+    const span = document.getElementsByClassName("close")[0];
     btn.onclick = function () {
 
         modal.style.display = "block";
