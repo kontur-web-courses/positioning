@@ -1,0 +1,146 @@
+html {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.logo-wrap {
+	display: flex;
+}
+
+.mikki,
+.flag {
+	display: flex;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	align-items: center;
+	padding: 5px;
+}
+
+.mikki {
+	flex-direction: column;
+}
+
+.ears {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 35%;
+	justify-content: space-between;
+	top: 15px;
+}
+
+.left-ear,
+.right-ear,
+.face {
+	position: relative;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.left-ear,
+.right-ear {
+	height: 100%;
+	width: 35%;
+}
+
+.face {
+	position: relative;
+	width: 65%;
+	height: 65%;
+}
+
+.rectangle {
+	display: flex;
+	width: 100%;
+	height: 50%;
+	border: 1px solid black;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle {
+	height: 80%;
+	width: 40%;
+	background-color: red;
+	border-radius: 50%;
+}
+
+.modal-open {
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 7px;
+	border: 1px solid black;
+	color: black;
+	font-size: 24px;
+}
+
+.modal-container {
+	display: none;
+	position: fixed;
+	overflow: auto;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	flex-direction: column;
+	width: 640px;
+	border: 2px solid black;
+	-webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+	background-color: white;
+}
+
+.modal h1 {
+	margin: 0;
+	padding: 0;
+}
+
+.modal-close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+.modal-close img {
+	width: 20px;
+}
+
+.progress-bar {
+	margin-top: 15px;
+}
+
+.progress {
+	height: 40px;
+	line-height: 40px;
+	width: 200px;
+	position: relative;
+	text-align: center;
+	color: black;
+}
+.progress span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: gray;
+}
+
+.progress span:last-child {
+	background-color: red;
+	color: white;
+	clip: rect(0 0px 40px 0);
+}
