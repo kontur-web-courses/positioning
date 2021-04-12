@@ -35,6 +35,10 @@ img {
 .bbc-fragment{
     width: 30%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: black;
-    color: 
+    color: white;
+    border: white solid calc(100% - 5px);
 }
