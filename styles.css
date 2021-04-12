@@ -31,14 +31,39 @@ img.logo5 {
     left: 25%;
 }
 
-.close {
-    background-color: red;
-    color: white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 50;
+.progressbar {
+    width: 639px;
+    height: 100px;
+    padding: 0;
+    background-color: lightgray;
+    font-size: 0;
+    position: relative;
+    /*top: 10px;*/
+    /*left: 25%;*/
+    /*top: 50%;*/
+    /*z-index: 1000000000000000000000000;*/
 }
+
+.loading {
+    position: relative;
+    height: 50%;
+    top: 25%;
+    display: inline-block;
+    z-index: 10000000;
+    font-size: 5px;
+}
+
+#loaded {
+    width: 25%;
+    background-color: red;
+}
+
+#unloaded {
+    width: 75%;
+    background-color: darkgrey;
+}
+
+
 
 #overlay {
     position: fixed;
@@ -52,4 +77,13 @@ img.logo5 {
     background-color: rgba(0, 0, 0, .5);
     z-index: 5;
     cursor: pointer;
+}
+
+.close {
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 50;
 }
