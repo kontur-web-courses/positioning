@@ -1,7 +1,5 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
-
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+const modalCloseBtn = document.getElementById('closeButton');
+const modalWindow = document.getElementById('modalWindow');
+modalCloseBtn.addEventListener('click', function () {
+    modalWindow.hidden = true;
+})
