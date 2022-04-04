@@ -1,0 +1,28 @@
+div.progress {
+    display: grid;
+    height: 50px;
+    width: 500px;
+    background-color: grey;
+    text-align: center;
+    font-size: 50px;
+    place-items: unset;
+}
+
+div.load {
+    position: relative;
+    background-color: red;
+    width: 50%;
+    height: 50px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+p {
+    grid-row: 1;
+    grid-column: 1;
+    position: relative;
+    height: 50px;
+    margin: 0;
+    font-family: BigNoodleTitling, Arial, serif;
+}
+
