@@ -1,0 +1,39 @@
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    position: absolute;
+    width: 640px;
+}
+
+.close {
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
