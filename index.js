@@ -20,3 +20,10 @@ function frame() {
         elem.style.width = width + "%";
     }
 }
+const lightbox = document.getElementById('lightbox');
+const overlay = document.getElementById('overlay');
+
+function closeLightbox() {
+    lightbox.style.display = 'none';
+    overlay.style.display = 'none';
+}
