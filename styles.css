@@ -62,7 +62,6 @@ img.logo {
 
 .progress_finished {
     position: absolute;
-    color: white;
     overflow: clip;
     width: 110px;
     z-index: 2;
@@ -73,6 +72,7 @@ img.logo {
     width: 200px;
     text-align: center;
 }
+
 .accordeon {
     position: relative;
 }
@@ -97,4 +97,14 @@ img.logo {
     height: 50px;
     visibility: visible;
     background-color: white;
+}
+
+.accordeon input {
+    visibility:hidden;
+    pointer-events: none;
+
+}
+
+.accordeon label:before {
+    content: "* ";
 }
