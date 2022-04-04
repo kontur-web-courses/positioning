@@ -1,7 +1,6 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
-
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+var width = 0;
+window.onload = function(e){
+    setInterval(function () {
+        width = width >= 100 ? 0 : width + 10;
+        document.getElementById('progress-bar').style.width = width + '%'; }, 300);
+}
