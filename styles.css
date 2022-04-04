@@ -1,0 +1,104 @@
+.block100px0{
+    height: 100px;
+    width: 100px;
+}
+
+.parent0{
+    position: relative;
+    border: 2px solid black;
+    width: 100px;
+    height: calc(167px*100/250);
+    top: 15px;
+}
+
+.circle0{
+    position:relative;
+    width: 35px;
+    height: 35px;
+    margin-right: auto;
+    margin-left: auto;
+    top: 17px;
+    border-radius: 50%;
+    background: red;
+}
+
+.block100px1{
+    height: 100px;
+    width: 100px;
+    left: 200;
+}
+
+.parent1{
+    position: relative;
+    border: 2px solid black;
+    width: 100px;
+    height: calc(167px*100/250);
+    top: 15px;
+}
+
+.circle1{
+    position:relative;
+    width: 55px;
+    height: 55px;
+    margin-right: auto;
+    margin-left: auto;
+    top: 7px;
+    border-radius: 50%;
+    background: red;
+}
+
+.circle2{
+    position:absolute;
+    width: 35px;
+    height: 35px;
+    left: 33px;
+    top: 17px;
+    border-radius: 50%;
+    background: white;
+}
+
+.circle3{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 43px;
+    top: 27px;
+    border-radius: 50%;
+    background: red;
+}
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	display: none;
+
+}
+
+.modalDialog:target {
+	display: block;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 640px;
+	position: relative;
+	margin: 20% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: white;
+}
+
+.close {
+	background: red;
+	color: white;
+	position: absolute;
+	text-align: center;
+    right: -12px;
+	top: -10px;
+	width: 24px;
+}
