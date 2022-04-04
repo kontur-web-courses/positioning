@@ -1,3 +1,21 @@
+.loading{
+    background-color: gray;
+    color: black;
+    width: 200px;
+}
+
+.bar{
+    overflow: hidden;
+    background-color: red;
+    color: white;
+    z-index: 2;
+    position: relative;
+    top: -18px;
+}
+
+.loading p {
+    text-align: center;
+}
 .modal {
     display: flex;
     justify-content: center;
