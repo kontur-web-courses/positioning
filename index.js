@@ -17,4 +17,4 @@ let progress = setInterval(() => {
     if (progressCount > 100) {
         clearInterval(progress);
     }
-}, 100);
+}, 3000 / 100);
