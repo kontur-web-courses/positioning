@@ -1,0 +1,61 @@
+.logo {
+    background: white;
+    width: 100px;
+    height: 100px;
+}
+
+.logo1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1 .circle {
+    background: black;
+    border-radius: 100%;
+    width: 50%;
+    height: 50%;
+    
+}
+
+.logo2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+.logo2 .inner {
+    margin: 0 auto;
+    z-index: 3;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 20%;
+    height: 20%;
+    background: black;
+    border-radius: 100%;
+    place-self: center;
+}
+
+.logo2 .center {
+    margin: 0 auto;
+    z-index: 2;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 40%;
+    height: 40%;
+    background: white;
+    border-radius: 100%;
+    place-self: center;
+}
+
+.logo2 .outer {
+    margin: 0 auto;
+    z-index: 1;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    width: 60%;
+    height: 60%;
+    background: black;
+    border-radius: 100%;
+    place-self: center;
+}
