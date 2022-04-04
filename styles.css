@@ -1,0 +1,105 @@
+.logo{
+    max-width: 100px;
+    max-height: 100px;
+    overflow: hidden;
+}
+.lightbox{
+    position: relative;
+    background-color: skyblue;
+    width: 640px;
+}
+.lightbox h1,p{
+    margin-left: 30px;
+}
+.lightbox #close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.dark_background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    left:0;
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    height:100%;
+    width: 100%;
+}
+.progress-bar-window{
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    position: relative;
+    height: 100px;
+}
+.progress-bar{
+    background-color: grey;
+    height: 50px;
+    position: absolute;
+    width: 600px;
+}
+.progression{
+    position: absolute;
+    overflow: hidden;
+    background-color: red;
+    height: 50px;
+}
+.gray-text{
+    color: gray;
+    width: 600px;
+    position: absolute;
+}
+
+h1 {
+    text-align: center;
+}
+/* Acordeon styles */
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: black;
+    overflow: hidden;
+}
+.tab input {
+    position: absolute;
+}
+.tab label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: mediumseagreen;
+    line-height: 3;
+    cursor: pointer;
+}
+.tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: mediumspringgreen;
+    transition: max-height .35s;
+}
+.tab-content p {
+    margin: 1em;
+}
+.tab input:checked ~ .tab-content {
+    max-height: 100vh;
+}
+.tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+}
+.tab input[type=checkbox] + label::after {
+    content: "\25BC";
+}
+.tab input[type=checkbox]:checked + label::after {
+    transform: rotate(90deg);
+}
+

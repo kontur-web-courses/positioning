@@ -5,3 +5,26 @@
     element.style.color = 'red';
     element.style.width = '300px';
 */
+
+
+
+let i = 0;
+function move() {
+    if (i === 0) {
+        i = 1;
+        const elem = document.querySelector(".progression");
+        let width = 0;
+        let id = setInterval(frame, 60);
+        function frame() {
+            if (width >= 600) {
+                clearInterval(id);
+                i = 0;
+            } else {
+                width+=12;
+                elem.style.width = width + "px";
+            }
+        }
+    }
+}
+
+move()
