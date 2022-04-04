@@ -8,21 +8,12 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
+    background-color: rgba(0,0,0,0.4);
 }
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 640px;
-}
-
 .close {
-    color: #aaa;
+    color: rgba(0,0,0,0.4);
     float: right;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -33,39 +24,73 @@
     cursor: pointer;
 }
 
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    border-radius: 10px;
-}
-
-.active, .accordion:hover {
-    background-color: #ccc;
-}
-
-.panel {
-    padding: 0 18px;
+.kontainer {
+    margin: 15% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 640px;
     background-color: white;
+}
+.kontainer .acc-body {
+    width: 100%;
+    margin: 0 auto;
+    height: 0;
+    color: rgba(1, 0, 0, 0);;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 28px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.kontainer label {
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: lightgrey;
+    display: block;
+    padding: 15px;
+    width: 100%;
+    color: black;
+    font-weight: 400;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+.kontainer input{
     display: none;
-    overflow: hidden;
 }
 
-
-.accordion:after {
+.kontainer label:before {
+    font-family: 'FontAwesome';
     content: '\2BC8';
-    font-size: 13px;
-    color: #777;
+    font-weight: bolder;
     float: right;
-    margin-left: 5px;
 }
 
-.active:after {
+.kontainer input:checked+label {
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid black;
+    border-width: 1px 1px 0px 1px;
+    border-top-right-radius: 10px 10px;
+    border-top-left-radius: 10px 10px;
+    border-bottom-right-radius: 0px 0px;
+    border-bottom-left-radius: 0px 0px;
+}
+
+.kontainer input:checked+label:before {
+    font-family: 'FontAwesome';
     content: "\2BC6";
+    transition: 0.5s;
+}
+
+.kontainer input:checked~.acc-body {
+    height: auto;
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 20px;
+    transition: 0.5s;
+    border-bottom-right-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
 }
