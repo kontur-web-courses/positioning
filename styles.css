@@ -46,25 +46,25 @@
 }
 
 .progress-bar {
-	position: relative;
-	display: block;
-	width: 100%;
-	border: 2px solid black;
-	height: 30px;
+    position: relative;
+    display: block;
+    width: 100%;
+    border: 2px solid black;
+    height: 30px;
 }
 
 .bar {
-	width: 0%;
-	background-color: red;
-	height: 100%;
+    width: 0;
+    background-color: red;
+    height: 100%;
 }
 
 .load-title {
-	position: absolute;
-	z-index: 2;
-	text-align: center;
-	top: 0;
-	width: 100%;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    top: 0;
+    width: 100%;
 }
 
 .overlay {
