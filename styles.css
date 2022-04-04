@@ -18,10 +18,10 @@
     background-color: red;
 }
 
-/* .lightbox button {
-    position: relative;
-    left: 0px;
-} */
+.lightbox button {
+    float: right;
+}
+
 .logo {
     background: white;
     width: 100px;
