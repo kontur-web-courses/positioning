@@ -44,3 +44,70 @@
 .green {
     background-color: #80CC28;
 }
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background-color: white;
+    width: 640px;
+    overflow: hidden;
+    padding: 25px;
+}
+
+.modal-title {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.modal-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.model-footer {
+    display: flex;
+}
+
+.btn {
+    background-color: #71A662;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+.model .a {
+    color: #71A662;
+}
+
+.btn:hover {
+    padding: 10px;
+    background-color: #3d752f;
+}
+
+.close-x {
+    background: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.upper {
+    text-align: right;
+}
+
+.close-x:hover {
+    background-color: #989898;
+}
+
+.hidden {
+    display: none;
+}
