@@ -5,8 +5,13 @@
     element.style.color = 'red';
     element.style.width = '300px';
 */
+var lightbox = document.querySelector(".dark_background");
+var span = document.querySelector("#close");
 
+span.onclick = function() {
+    lightbox.style.display = "none";
 
+  }
 
 let i = 0;
 function move() {
