@@ -1,0 +1,34 @@
+img.logo {
+    width: 100px;
+    height: 100px;
+    overflow: auto;
+    object-fit: scale-down;
+}
+
+.progress_bar {
+    width: 200px;
+    background-color: gray;
+    color: black;
+    text-align: center;
+}
+
+.progress_finished {
+    position: absolute;
+    color: white;
+    overflow: clip;
+    width: 110px;
+    z-index: 2;
+    background-color: red;
+}
+
+.progress_text {
+    width: 200px;
+    text-align: center;
+}
+
+.accordeon p {
+    height: 0;
+}
+.accordeon input:checked + p {
+    height: 200px;
+}
