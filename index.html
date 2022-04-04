@@ -8,19 +8,16 @@
 <body>
     <img class='img' src="designs/logo2.png" alt="Какой-то логотип номер 2">
     <img class='img' src="designs/logo1.png" alt="Какой-то логотип номер 1">
-    <p>Основной контент. Чтобы отобразить лайтбокс нажмите <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">здесь</a></p>
-    <div id="light" class="white_content">
-        Это содержимое лайтбокса.
-
-        <div id="container">
-            <div id="number" style="width: 100%; height: 100%; position: absolute; text-align: center; ">Loading...</div>
-            <div id="progress-bar"></div>
+    <a href="#openModal">Открыть модальное окно</a>
+    <div id="openModal" class="modalDialog">
+        <div>
+            <a href="#close" title="Закрыть" class="close">X</a>
+            <div id="container">
+                <div id="number" style="width: 100%; height: 100%; position: absolute; text-align: center; ">Loading...</div>
+                <div id="progress-bar"></div>
+            </div>
+            <script src="index.js"></script>
         </div>
-        <script src="index.js"></script>
-
-        <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">Закрыть</a></div>
-    <div id="fade" class="black_overlay"></div>
-
-
+    </div>
 </body>
 </html>
