@@ -21,11 +21,31 @@
     
 </div>
 
-<div class="progress-bar">
-	<div class="bar"></div> 
-	<div class="load-title">Loading...</div>
+<div class="overlay hidden">
+    <div class="modal">
+        <div class="upper">
+            <button class="close-x" onclick="closeModal()">X</button>
+        </div>
+        <div class="modal-title">
+            МЕГАТРОН
+        </div>
+        <div class="modal-text">
+            Это варнинг, уходи!
+            Это варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг,
+            уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!Это
+            варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг,
+            уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!Это варнинг, уходи!
+            <div class="progress-bar">
+				<div class="bar"></div> 
+				<div class="load-title">Loading...</div>
+			</div>
+        </div>
+        <div class="model-footer">
+            <button class="btn" onclick="closeModal()">ЗАКРЫТЬ</button>
+        </div>
+    </div>
 </div>
-
+<button class="btn" onclick="openModal()">Открыть</button>
 <script src="index.js"></script>
 </body>
 </html>
