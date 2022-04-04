@@ -1,0 +1,150 @@
+body {
+    font-family: sans-serif;
+}
+
+.logo1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.logo4
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: white;
+}
+
+.ears{
+    width: 36px;
+    height: 36px;
+}
+
+.ears.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.head{
+    width: 62px;
+    height: 62px;
+    position: absolute;
+    bottom: 14px;
+    left: 18px;
+}
+
+.logo1 div{
+    border: 1px solid;
+    border-radius: 50px;
+    color: black;
+    background-color: black;
+}
+
+.logo4 {
+    position: relative;
+}
+
+.circle {
+    border-radius: 50px;
+}
+
+.red {
+    background-color: red;
+    position: absolute;
+}
+
+.red.outer {
+    width: 90px;
+    height: 90px;
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    z-index: 1;
+}
+
+.white {
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+
+.red.inner {
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    top: 35px;
+    left: 35px;
+}
+
+
+.modal {
+    width: 640px;
+    position: absolute;
+    background-color: #e9f6fd;
+    /*padding: 10px;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 20;
+}
+
+.menu {
+    background-color: #9fb4bb;
+    height: 20px;
+}
+
+.overlay {
+    background: rgba(102, 102, 102, 0.68);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+}
+
+button.close_window {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0;
+    top: 0;
+    border: none;
+    color: #4f4b4b;
+    text-align: center;
+    text-decoration: none;
+}
+
+.modal .content {
+    padding: 10px;
+}
+
+.progress-bar {
+    height: 140px;
+    background-color: #dadcdc;
+    position: relative;
+}
+
+.progress-bar .progress-bar-wrapper p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.progress-bar .progress-bar-wrapper {
+    height: 40px;
+    width: 100%;
+    background-color: #5e5e5e;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
