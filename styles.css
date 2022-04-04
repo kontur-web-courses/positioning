@@ -53,6 +53,7 @@
 .progress__text {
     position: relative;
     left: 250px;
+    top: 5px;
     color: white;
 }
 
