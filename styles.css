@@ -108,9 +108,7 @@
     transform: translateX(320px);
     background: transparent;
     color: red;
-    isolation: isolate;
     mix-blend-mode:exclusion;
-
 }
 
 
@@ -123,6 +121,5 @@
     content: "";
     color: gray;
     background: red;
-    mix-blend-mode:normal;
 }
 
