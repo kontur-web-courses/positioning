@@ -1,0 +1,50 @@
+.lb-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(100, 100, 100, 0.5);
+}
+
+.lightbox {
+    position: relative;
+    background-color: red;
+    padding: 1.5%;
+    width: 640px;
+}
+
+.btn {
+    bottom: 10px;
+    left: 10px;
+    background-color: cornflowerblue;
+    padding: 10px 10px;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.btn-title-wrapper {
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn-title {
+    width: inherit;
+}
+
+
