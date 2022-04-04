@@ -1,0 +1,46 @@
+.logo1 {
+    width: 100px;
+    height: 100px;
+    border: 2px black solid;
+}
+
+.circle {
+    background-color: #BC002D;
+    position: relative;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.logo2 {
+    width: 100px;
+    height: 100px;
+    border: 2px black solid;
+    display: grid;
+}
+
+.wrapper {
+    display: grid;
+    margin: 20%;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4px;
+    grid-row-gap: 4px;
+}
+
+.blue {
+    background-color: #00ADEF;
+}
+
+.red {
+    background-color: #F1511B;
+}
+
+.yellow {
+    background-color: #FBBC09;
+}
+
+.green {
+    background-color: #80CC28;
+}
