@@ -18,3 +18,5 @@ intervalId = setInterval(() => {
     }, 25
 );
 
+document.querySelector("div.btn").onclick=() => document.querySelector("div.lightbox").style.display="none";
+

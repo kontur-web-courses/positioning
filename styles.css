@@ -11,6 +11,7 @@ img.logo {
     color: black;
     text-align: center;
 }
+
 .lb-container {
     position: fixed;
     top: 0;
@@ -55,12 +56,9 @@ img.logo {
     align-items: center;
 }
 
-
 .btn-title {
     width: inherit;
 }
-
-
 
 .progress_finished {
     position: absolute;
@@ -75,10 +73,28 @@ img.logo {
     width: 200px;
     text-align: center;
 }
-
-.accordeon p {
-    height: 0;
+.accordeon {
+    position: relative;
 }
-.accordeon input:checked + p {
-    height: 200px;
+.accordeon div.accordeon_body {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 10px;
+    visibility: hidden;
+}
+
+.accordeon div.accordeon_header {
+    width: 100px;
+    display: inline-block;
+    background-color: gray;
+}
+
+.accordeon input:checked ~ div.accordeon_header {
+    background-color: white;
+}
+
+.accordeon input:checked ~ div.accordeon_body {
+    height: 50px;
+    visibility: visible;
+    background-color: white;
 }
