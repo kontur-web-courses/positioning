@@ -1,4 +1,43 @@
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-content {
+    background-color: white;
+    color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 600px;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: fixed;
+    top: 28px;
+    right: 28px;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    cursor: pointer;
+}
+
 /*html {*/
 /*    background: black;*/
 /*}*/
@@ -31,10 +70,9 @@
 .wrapper2 .microsoft {
     position: relative;
     background-color: #f25022;
-    box-shadow:
-            0.7em 0 0 0 #7fba00,
-            0 0.7em 0 0 #00a4ef,
-            0.7em 0.7em 0 0 #ffb900;
+    box-shadow: 0.7em 0 0 0 #7fba00,
+    0 0.7em 0 0 #00a4ef,
+    0.7em 0.7em 0 0 #ffb900;
     height: 9%;
     width: 9%;
     top: -5%;
