@@ -1,0 +1,42 @@
+
+/*html {*/
+/*    background: black;*/
+/*}*/
+.wrapper {
+    height: 100px;
+    width: 100px;
+    background: white;
+    margin: 5px;
+}
+.wrapper1 {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper1 .block2 {
+    position: relative;
+    background: red;
+    align-self: center;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.wrapper2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper2 .microsoft {
+    position: relative;
+    background-color: #f25022;
+    box-shadow:
+            0.7em 0 0 0 #7fba00,
+            0 0.7em 0 0 #00a4ef,
+            0.7em 0.7em 0 0 #ffb900;
+    height: 9%;
+    width: 9%;
+    top: -5%;
+    left: -5%;
+}
