@@ -22,7 +22,7 @@
     width: 600px;
 }
 
-.close {
+.modal-close {
     color: black;
     float: right;
     font-size: 28px;
@@ -32,8 +32,8 @@
     right: 28px;
 }
 
-.close:hover,
-.close:focus {
+.modal-close:hover,
+.modal-close:focus {
     color: white;
     cursor: pointer;
 }
