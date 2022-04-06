@@ -3,3 +3,33 @@ img {
     width: 100px;
     height: 100px;
 }
+
+.progressBar {
+    width: 600px;
+    height: 30px;
+    background-color: grey;
+    position: relative;
+    text-align: center;
+}
+
+.progress {
+    max-width: 600px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    overflow: hidden;
+}
+
+.loadingWhite {
+    color: white;
+    position: absolute;
+    width: 600px;
+    top: 20%;
+}
+
+.loadingBlack {
+    position: absolute;
+    color: black;
+    width: 600px;
+    top: 20%;
+}
