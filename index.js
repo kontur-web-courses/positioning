@@ -1,26 +1,33 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+const progressButton = document.getElementById("progressButton");
+const progressBar = document.getElementById("progressBar");
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("myBtn");
+const span = document.getElementsByClassName("close")[0];
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
 
-var modal = document.getElementById("myModal");
+progressButton.onclick = function () {
+    function increaseProgressValue() {
+        progressBar.style.width = counter + '%';
+        if (counter === 100) {
+            clearInterval(intervalId);
+        }
+        counter++;
+    }
 
-var btn = document.getElementById("myBtn");
+    let counter = 0;
+    let intervalId = setInterval(increaseProgressValue, 50);
 
-var span = document.getElementsByClassName("close")[0];
+}
 
-btn.onclick = function() {
+btn.onclick = function () {
     modal.style.display = "block";
 }
 
-span.onclick = function() {
+span.onclick = function () {
     modal.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
