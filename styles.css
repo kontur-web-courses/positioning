@@ -81,7 +81,51 @@
     text-decoration: none;
     cursor: pointer;
 }
-progress {
-    border-radius: 0;
-    height: 18px;
+
+.progress {
+    margin: 50px auto;
+    max-width: 680px;
+    height: 40px;
+    align-items: center;
+    background-color: #A29F9F;
+    position: relative;
+    display: flex;
+}
+
+.progress .progressBar {
+    height: 100%;
+    background-color: red;
+    animation: fill-bar 5s infinite;
+    position: absolute;
+}
+.progress .progressText {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+
+    background: transparent;
+    color: aqua;
+    mix-blend-mode: exclusion;
+}
+
+@keyframes fill-bar {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+details {
+    background-color: #bbbbbb;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+details[open] {
+    background-color: white;
+    border: #bbbbbb solid 6px;
 }
