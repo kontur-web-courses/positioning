@@ -12,9 +12,45 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <p>Здесь может быть ваше содержимое модального окна.</p>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <label class="accordion-header" for="toggle1">
+                        География
+                    </label>
+                    <input class="accordion-toggle" type="checkbox" id="toggle1">
+                    <div class="accordion-content">
+                        <iframe class="iframe" src="texts/geography.txt"></iframe>
+
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <label class="accordion-header" for="toggle2">
+                        Физика
+                    </label>
+                    <input class="accordion-toggle" type="checkbox" id="toggle2">
+                    <div class="accordion-content">
+                        <iframe class="iframe" src="texts/physics.txt"></iframe>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <label class="accordion-header" for="toggle3">
+                        Математика
+                    </label>
+                    <input class="accordion-toggle" type="checkbox" id="toggle3">
+                    <div class="accordion-content">
+                        <iframe class="iframe" src="texts/math.txt"></iframe>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </div>
+
+
+    
     
     <script src="index.js"></script>
 
@@ -25,8 +61,10 @@
     <div class="logo-block">
         <img src="designs/logo1.png">
     </div>
+    
 
 
 
 </body>
 </html>
+

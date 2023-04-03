@@ -20,9 +20,11 @@ closeModalBtn.onclick = function() {
   overlay.style.display = "none";
 }
 
-window.onclick = function(event) {
-  if (event.target == overlay) {
-    modal.style.display = "none";
-    overlay.style.display = "none";
-  }
-}
+// window.onclick = function(event) {
+//   if (event.target == overlay) {
+//     modal.style.display = "none";
+//     overlay.style.display = "none";
+//   }
+// }
+
+
