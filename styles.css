@@ -1,0 +1,70 @@
+.mikki{
+    position:relative;
+    width:100px;
+    height:100px;
+}
+
+
+.mikki > .nFace {
+    left:2.5%;
+    top:25%;
+    position: absolute;
+    width:50%;
+    height:50%;
+    background-color:#000;
+
+    border-radius: 50%;
+
+}
+
+.mikki > .leftEar {
+    left:37.5%;
+    top:10%;
+    position: absolute;
+    width:25%;
+    height:25%;
+    background-color:#000;
+    border-radius: 90%;
+    z-index:1;
+}
+
+.mikki > .rightEar {
+    left:-7%;
+    top:10%;
+    position: absolute;
+    width:25%;
+    height:25%;
+    background-color:#000;
+    border-radius: 50%;
+    z-index:1;
+}
+
+.logo_windows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100px;
+    height: 100px;
+    place-content: space-around;
+}
+
+.logo_windows .square {
+    width: 45%;
+    height: 45%;
+}
+
+.square_blue {
+    background-color: #05C7F2;
+}
+
+.square_red {
+    background-color: #F2441D;
+}
+
+.square_yellow {
+    background-color: #F2A20C;
+}
+
+.square_green {
+    background-color: #82BF26;
+}
