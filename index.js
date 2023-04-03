@@ -19,10 +19,11 @@ for (let i = 0; i < acc.length; i++) {
     });
 }
 move();
+
 function move() {
-    var elem = document.getElementById("myBar");
-    var width = 1;
-    var id = setInterval(frame, 10);
+    let elem = document.getElementById("myBar");
+    let width = 1;
+    let id = setInterval(frame, 10);
 
     function frame() {
         if (width >= 100) {
