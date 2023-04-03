@@ -1,0 +1,59 @@
+.block {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.Micky {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Micky .circle {
+    border-radius: 50px;
+    background-color: black;
+}
+
+.Micky .head {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    bottom: 10px;
+}
+
+.Micky .ear {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 3px
+}
+
+.Micky .right {
+    margin-left: 10px;
+}
+
+.Micky .left {
+    margin-right: 10px;
+}
+
+.BBC {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.BBC .symbol {
+    width: 30%;
+    height: 30%;
+    background: #000;
+    color: #fff;
+    mix-blend-mode: multiply;
+    font-weight: bold;
+    font-family: Arial, serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
