@@ -56,32 +56,19 @@
     position: absolute;
 }
 
-.progress-bar-text {
-    background-color: grey;
-    height: 20px;
-    position: absolute;
-    width: 600px;
-    text-align: center;
-}
-
 .progress-bar-background-text {
-    height: 20px;
-    position: absolute;
-    width: 600px;
     text-align: center;
-    z-index: -1;
+    width: 600px;
     color: black;
-    margin-left: 332px;
+    position: absolute;
 }
 
 .progress-bar-background {
+    position: absolute;
     background-color: grey;
     height: 20px;
-    position: absolute;
-    width: 600px;
-    text-align: center;
+    max-width: 600px;
     z-index: -1;
-    margin-left: 332px;
 }
 
 .logo5 {
