@@ -40,3 +40,38 @@ img {
     border: none;
     cursor: pointer;
 }
+
+/* Стили для модального окна и оверлея */
+/* ... */
+
+/* Стили для прогресс-бара */
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #ccc; /* серый цвет */
+    position: relative;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: red; /* красный цвет */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    transition: width 1s ease-in-out; /* анимация заполнения прогресс-бара */
+}
+
+.progress-bar-text {
+    color: #000; /* черный цвет для букв, находящихся на сером фоне */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.progress-bar-fill .progress-bar-text {
+    color: #fff; /* белый цвет для букв, находящихся на красном фоне */
+}

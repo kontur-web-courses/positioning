@@ -23,3 +23,14 @@ closeBtn.addEventListener('click', closeModal);
 modal.addEventListener('click', function(event) {
     event.stopPropagation(); // предотвращаем закрытие окна при клике внутри него
 });
+
+const progressBarFill = document.querySelector('.progress-bar-fill');
+const progressBarText = document.querySelector('.progress-bar-text');
+
+function updateProgressBar(percent) {
+    progressBarFill.style.width = percent + '%';
+    progressBarText.innerText = percent + '%';
+}
+
+// Пример использования:
+updateProgressBar(50); // заполнить прогресс-бар на 50%
