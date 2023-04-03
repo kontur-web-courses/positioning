@@ -6,7 +6,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
-    <script src="index.js"></script>
+<div class="content">
+    <div>
+        <img class="logo" src="designs/logo2.png" alt="logo2">
+        <img class="logo" src="designs/logo7.png" alt="logo7">
+    </div>
+    <button class="openLightbox" onclick="animateProgressBar()"></button>
+    <div class="main overlay" style="display: none">
+        <div class="lightbox">
+            <div class="song">
+                <input type="radio" name="acor" id="acor1"/>
+                <label for="acor1">Показать</label>
+                <div class="acor-body">
+                    <p>
+                        Я Богданчик. Я богом данный. Самое лучшее имя – Богдан.<br>
+                        Богдан – это значит, я богом дан. Богдан, Богдан, я богом дан. Эй, Богдан, да, я Богданчик, я красавчик.<br>
+                        Эй, Богдан, я здесь. Эх, Богдан, Богдан, богом дан. Богдан, богом дан. Еее. Я Богдан, я богом дан. Мне бог дал. Я Богдан, я богом дан.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
 </body>
 </html>
