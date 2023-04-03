@@ -62,12 +62,14 @@ body {
     margin-top: 20px;
     text-align: center;
 }
+
 .progress-bar {
     position: relative;
     width: 100%;
     height: 30px;
     background-color: #ccc;
     border-radius: 5px;
+    overflow: hidden;
 }
 
 .progress-bar-inner {
@@ -78,7 +80,7 @@ body {
 }
 
 .progress-text {
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
