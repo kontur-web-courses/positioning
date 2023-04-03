@@ -49,3 +49,14 @@
     top: 0;
     border-radius: 10px;
 }
+
+.logos img {
+    width: 100px;
+    height: 100px;
+}
+
+.bar {
+    width: 0;
+    height: 20px;
+    background-color: red;
+}
