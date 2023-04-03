@@ -5,22 +5,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
     width: 100%;
 }
 
 .modal-content {
     position: relative;
+    background-color: white;
     width: 640px;
     z-index: 99;
-    padding: 10px;
-    box-shadow: 2px 2px 2px 2px;
+    padding: 20px;
+    box-shadow: 1px 1px 15px 1px black;
 }
 
 .modal-content .close {
     background-color: #7FA46B;
     color: white;
+    height: 30px;
+    border-color: white;
+}
+
+.modal-content .x{
+    position: absolute;
+    top: -20px;
+    right: -20px;
 }
 
 .block {
