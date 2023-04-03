@@ -1,0 +1,107 @@
+img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* Скрыть модальное окно и оверлей по умолчанию */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* полупрозрачный цвет фона */
+    z-index: 9999; /* показывать окно поверх всего остального на странице */
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* тень вокруг окна */
+}
+
+.modal-content {
+    /* стили для контента модального окна */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Стили для модального окна и оверлея */
+/* ... */
+
+/* Стили для прогресс-бара */
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #ccc; /* серый цвет */
+    position: relative;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: red; /* красный цвет */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    transition: width 1s ease-in-out; /* анимация заполнения прогресс-бара */
+}
+
+.progress-bar-text {
+    color: #000; /* черный цвет для букв, находящихся на сером фоне */
+    position: relative;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    align-self: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.progress-bar-fill .progress-bar-text {
+    color: #fff; /* белый цвет для букв, находящихся на красном фоне */
+}
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion input[type="checkbox"] {
+    display: none;
+}
+
+.accordion label {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.accordion label:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-content {
+    padding: 10px;
+    background-color: #fff;
+    display: none;
+}
+
+.accordion input[type="checkbox"]:checked + label + .accordion-content {
+    display: block;
+}
