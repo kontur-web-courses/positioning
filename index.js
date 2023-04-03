@@ -27,4 +27,14 @@ function fillProgressBar() {
     increaseProgress();
 }
 
+function closeModal() {
+    const overlay = document.querySelector('.overlay');
+    const modal = document.querySelector('.modal');
+    overlay.style.display = 'none';
+    modal.style.display = 'none';
+}
+
+const closeButton = document.querySelector('.close-button');
+closeButton.addEventListener('click', closeModal);
+
 fillProgressBar();

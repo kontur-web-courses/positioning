@@ -93,3 +93,38 @@ body {
     color: #fff;
     mix-blend-mode: difference;
 }
+
+.accordion {
+    margin-top: 20px;
+}
+
+.accordion input {
+    position: absolute;
+    opacity: 0;
+}
+
+.accordion label {
+    display: block;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-content {
+    display: none;
+    overflow: hidden;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+input:checked + label + .accordion-content {
+    display: block;
+}
+
+.inline-block{
+    display: inline-block;
+
+}
