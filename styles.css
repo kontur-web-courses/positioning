@@ -1,3 +1,28 @@
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;
+}
+
+.modal-content {
+    position: relative;
+    width: 640px;
+    z-index: 99;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px;
+}
+
+.modal-content .close {
+    background-color: #7FA46B;
+    color: white;
+}
+
 .block {
     width: 100px;
     height: 100px;
