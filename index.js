@@ -15,4 +15,9 @@ $(document).ready(function(){
 		$('.modal_overlay').css({'visibility': 'hidden'});
 		$('.modal').css({'visibility': 'hidden'});
 	});
+	$('.progress').animate({'width': '100%'}, 3000, function(){
+		$(this).animate({'width': '0%'}, 3000)
+	});
+	
+
 });

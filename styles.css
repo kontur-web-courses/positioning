@@ -23,6 +23,7 @@
 }
 
 .modal{
+    z-index: 2;
     padding: 20px;
     width: 400px;
     height:auto;
@@ -112,28 +113,40 @@
 }
 
 .box-1{
-    width: 100px;
+    width: 75px;
     height: 100px;
     margin: 20px;
 }
 
 .wrpapper-loader{
-    margin: 20px;
+    margin: 20px 0px;
+    width: 300px;
     background-color: #ececee;
     border-radius: 10px;
     padding: 12px;
 }
 
 .loader{
-    padding: 6px;
+    line-height: 32px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    height: 34px;
     background-color: grey;
     border-radius: 10px;
 }
 
+.container{
+    z-index: 1;
+    position: relative;
+}
+
 .progress{
-    padding: 4px;
-    width: 20px;
-    background-color: #DD1D36;
-    color: white;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 34px;
+    width: 0px;
+    background-color: red;
     border-radius: 10px;
 }
