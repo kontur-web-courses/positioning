@@ -1,7 +1,7 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+const bar = document.querySelector('.progress-bar-current')
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+const startProgress = () => {
+    bar.style.width = "100%";
+}
+
+startProgress();
