@@ -1,7 +1,13 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+let progressBar = document.querySelector('.progress');
+let progressValue = 0;
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+let progressInterval = setInterval(updateProgressBar, 500);
+
+function updateProgressBar() {
+    progressValue += 20;
+    progressBar.style.width = progressValue + '%';
+
+    if (progressValue >= 100) {
+        clearInterval(progressInterval);
+    }
+}

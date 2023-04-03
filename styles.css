@@ -78,6 +78,31 @@
     align-items: center;
 }
 
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: red;
+    border-radius: 5px;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.progress-bar p {
+    font-family: Arial, serif;
+    text-align: center;
+    color: #000;
+    right: 50%;
+    bottom: -10px;
+    position: absolute;
+}
+
 .BBC .symbol {
     width: 30%;
     height: 30%;
