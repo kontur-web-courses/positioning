@@ -20,11 +20,19 @@ closeModalBtn.onclick = function() {
   overlay.style.display = "none";
 }
 
-// window.onclick = function(event) {
-//   if (event.target == overlay) {
-//     modal.style.display = "none";
-//     overlay.style.display = "none";
-//   }
-// }
+window.onclick = function(event) {
+  if (event.target == overlay) {
+    modal.style.display = "none";
+    overlay.style.display = "none";
+  }
+}
+const progressBar = document.querySelector('.progress');
+let progress = 0;
 
-
+const interval = setInterval(() => {
+  progress += 100/6;
+  progressBar.style.width = `${progress}%`;
+  if (progress >= 100) {
+    clearInterval(interval);
+  }
+}, 500);
