@@ -2,6 +2,60 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.circle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.c-2 {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+}
+
+.c-3 {
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+.s {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.s-s {
+    width: 45px;
+    height: 45px;
+}
+
+.s-1 {
+    background-color: #f45219;
+}
+
+.s-2 {
+    background-color: #84cc2c;
+}
+
+.s-3 {
+    background-color: #04acec;
+}
+
+.s-4 {
+    background-color: #fbbc09;
+}
+
 .container {
     width: 100px;
     height: 100px;
@@ -40,7 +94,7 @@ body {
     padding: 30px 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
     overflow-y: auto;
-    max-height: 100vh;
+    max-height: 90vh;
 }
 
 .button {
