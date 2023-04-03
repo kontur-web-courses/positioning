@@ -68,7 +68,6 @@ img {
     /*top: 50%;*/
     /*left: 50%;*/
     align-self: center;
-    transform: translate(-50%, -50%);
     font-size: 16px;
     font-weight: bold;
 }
@@ -77,10 +76,6 @@ img {
     color: #fff; /* белый цвет для букв, находящихся на красном фоне */
 }
 
-/* Стили для модального окна и оверлея */
-/* ... */
-
-/* Стили для блоков "аккордеон" */
 .accordion {
     margin-top: 20px;
 }
