@@ -139,20 +139,25 @@
 }
 
 
-.w3-green {
-    height: 24px;
-    width: 1%;
+.pb-top {
+    height: 50px;
+    width: 100%;
+    clip-path: polygon(0 0, 1% 0, 1% 100%, 0% 100%);
     background-color: red;
     color: white;
-    margin-top: -19px;
+    margin-top: -48px;
     overflow: hidden;
     place-content: center;
+    font-size: 40px;
+    font-family: Cantarell, system-ui;
 }
 
 
-.w3-light-grey {
+.pb-background {
     background-color: darkgray;
     text-align: center;
+    font-size: 40px;
+    font-family: Cantarell, system-ui;
 }
 
 .microsoft {

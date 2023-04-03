@@ -21,7 +21,7 @@ for (let i = 0; i < acc.length; i++) {
 move();
 
 function move() {
-    let elem = document.getElementById("myBar");
+    let elem = document.getElementById("progress");
     let width = 1;
     let id = setInterval(frame, 10);
 
@@ -29,8 +29,8 @@ function move() {
         if (width >= 100) {
             clearInterval(id);
         } else {
-            width++;
-            elem.style.width = width + '%';
+            width+=0.3;
+            elem.style.clipPath = `polygon(0 0, ${width}% 0, ${width}% 100%, 0% 100%)`;
         }
     }
 }
