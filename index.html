@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="block">
+        <img class="logo" src=".\designs\logo1.png">
+    </div>
+    <div class="block">
+        <img class="logo" src=".\designs\logo2.png">
+    </div>
     <div id="openModal" class="modal">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -14,7 +20,14 @@
             <a href="#close" title="Close" class="close">×</a>
           </div>
           <div class="modal-body">
-            <p>Содержимое модального окна...</p>
+            <div class="progress_bar">
+                <div class="progress_field">
+                    <div class="redBar"></div>
+                    <p class="loading">Loading...</p>
+                </div>
+                <button onclick="move()">Пуск</button>
+            </div>
+            
               <div class="tabs">
                   <div class="tab">
                     <input type="checkbox" id="chck1">

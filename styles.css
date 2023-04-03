@@ -8,6 +8,42 @@ body {
     background-color: #fff;
 }
 
+.block{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: auto;
+    width: 100%;
+}
+
+.progress_bar{
+    background-color: rgb(223, 220, 220);
+    width: 450px;
+    display: inline-block;
+}
+
+.progress_field{
+    width: 100%;
+    background-color: gray;
+}
+
+.redBar{
+    width: 10%;
+    height: 30px;
+
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: red;
+ 
+}
+
 /* свойства модального окна по умолчанию */
 .modal {
     position: fixed; /* фиксированное положение */
