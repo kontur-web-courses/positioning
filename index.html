@@ -8,26 +8,78 @@
 <body>
 <div class="content">
     <div>
-        <img class="logo" src="designs/logo2.png" alt="logo2">
-        <img class="logo" src="designs/logo7.png" alt="logo7">
+        <img class="kartinki" src="designs/logo2.png" alt="logo2">
+        <img class="kartinki" src="designs/logo7.png" alt="logo7">
     </div>
-    <button class="openLightbox" onclick="animateProgressBar()"></button>
+    <button class="openLightbox" onclick="progressBar()">Почитать песенки</button>
     <div class="main overlay" style="display: none">
         <div class="lightbox">
-            <div class="song">
-                <input type="radio" name="acor" id="acor1"/>
-                <label for="acor1">Показать</label>
-                <div class="acor-body">
+            <div class="mem">
+
+                <input type="radio" name="mems" id="mem1"/>
+                <label for="mem1">посмеяться</label>
+                <div class="mem-body">
                     <p>
+                        <a href="https://yandex.ru/video/preview/3714158091010383686">Песня Богдана</a><br>
                         Я Богданчик. Я богом данный. Самое лучшее имя – Богдан.<br>
                         Богдан – это значит, я богом дан. Богдан, Богдан, я богом дан. Эй, Богдан, да, я Богданчик, я красавчик.<br>
                         Эй, Богдан, я здесь. Эх, Богдан, Богдан, богом дан. Богдан, богом дан. Еее. Я Богдан, я богом дан. Мне бог дал. Я Богдан, я богом дан.<br>
                     </p>
                 </div>
+
+                <input type="radio" name="mems" id="mem2"/>
+                <label for="mem2">посмеяться</label>
+                <div class="mem-body">
+                    <p>
+                        <a href="https://youtu.be/M5f9LrzBc5U">Песня еды</a><br>
+                        Бутылка кефира, пол батона.<br>
+                        А я сегодня дома,<br>
+                        А я сегодня дома один о-хо-хо-хо-хо.<br>
+                        <br>
+                        С утра я почитаю газету.<br>
+                        И может быть сгоняю в кино.<br>
+                        И в прочем всё равно,<br>
+                        И в прочем всё равно какое о-хо-хо-хо-хо.<br>
+                        <br>
+                        А потом стоя на балконе,<br>
+                        Я буду смотреть на прохожих,<br>
+                        На девчёнок,<br>
+                        На московских девчёнок<br>
+                        и не много на парне-е-ей<br>
+                    </p>
+                </div>
+
+                <input type="radio" name="mems" id="mem3"/>
+                <label for="mem3">посмеяться</label>
+                <div class="mem-body">
+                    <p>
+                        <a href="https://youtu.be/UzcP8y9ZqRQ">Песня инстасамки</a><br>
+                        Не завожу подруг, но за деньги – да <br>
+                        Я не делаю фиты даже за деньги, да<br>
+                        Я подумаю потом, но скажу сразу "Да"<br>
+                        За деньги – да, за деньги – да<br>
+                        <br>
+                        За деньги – да<br>
+                        За деньги – да<br>
+                        За деньги – да<br>
+                        За деньги – да<br>
+                    </p>
+                </div>
+
+                <input type="radio" name="mems" id="mem4"/>
+                <label for="mem4">обязательно к просмотру</label>
+                <div class="mem-body">
+                    <p>
+                        <a href="https://youtu.be/D-UmfqFjpl0">Собака мудрости</a>
+                    </p>
+                </div>
             </div>
+
             <div class="bar">
                 <div class="progress"></div>
             </div>
+
+            <button class="closeLightbox">X</button>
         </div>
     </div>
 </div>
