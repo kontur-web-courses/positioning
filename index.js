@@ -22,10 +22,6 @@ const animateProgressBar = () => {
     progress += 100 / totalFrames;
     progressBar.style.width = `${progress}%`;
 
-    if (progress >= 50) {
-        progressText.style.color = 'white';
-    }
-
     if (progress < 100) {
         setTimeout(animateProgressBar, intervalTime);
     }
