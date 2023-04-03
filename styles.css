@@ -1,0 +1,77 @@
+.logos {
+    position: absolute;
+    display: flex;
+    width: 100%;
+}
+
+.logo1 {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.logo2 {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.lightboxWrapper {
+    display: flex;
+}
+
+.lightboxWrapper .back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.lightboxWrapper .lightbox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 2;
+}
+
+.lightboxWrapper .close {
+    position: fixed;
+    border: 1px black;
+    z-index: 3;
+    right: 0;
+    top: 0;
+}
+
+.lightboxWrapper .close .cross {
+    height: 15px;
+    width: 15px;
+}
+
+
+.border-bar{
+    margin-top: 20px;
+    width: 100%;
+    height: 20px;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+.red-bar{
+    height: 20px;
+    background-color: red;
+    width: 0;
+    position: absolute;
+}
+.text-bar{
+    position: absolute;
+    z-index: 125125;
+    left: 45%;
+}
