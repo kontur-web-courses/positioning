@@ -1,0 +1,38 @@
+.squares {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+}
+
+.japan-flag {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ccc;
+    background: radial-gradient(circle, #bc002d 30px, #fff 32px);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.outer-progress {
+    width: 500px;
+    margin: 0 0 10px;
+    background-color: #e8e8e8;
+}
+
+.inner-progress {
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #4470c4;
+    margin: 0 0 10px;
+    width: 60%;
+}
