@@ -1,0 +1,91 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+    pointer-events: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modal:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+    font-family: Cantarell, system-ui;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #eceeef;
+    background-color: #ebebeb;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* свойства для кнопки "Закрыть" */
+.modalCloseButton {
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    background-color: #ebebeb;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: "Cantarell";
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+}
+
+.modalCloseButton:focus, .modalCloseButton:hover {
+    text-decoration: none;
+    cursor: pointer;
+    background-color: #d8d8d8;
+}
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}

@@ -6,7 +6,23 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
-    <script src="index.js"></script>
+<div id="openModal" class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Название</h3>
+                <a class="modalCloseButton" id="mcb1" href="#close">x</a>
+            </div>
+            <div class="modal-body">
+                <p>Содержимое модального окна...</p>
+                <p>Ещё содержимое</p>
+                <button class="modalCloseButton">knopka blin</button>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#openModal">Открыть модальное окно</a>
+<!--Верстать тут-->
+<script src="index.js"></script>
 </body>
 </html>
