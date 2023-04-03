@@ -3,6 +3,7 @@
     width: 100px;
     display: block;
     position: relative;
+    overflow: hidden;
 }
 
 img{
