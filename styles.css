@@ -76,7 +76,7 @@ body {
     left: -18px;
     top: 4px;
     border: 6px solid transparent;
-    border-top-color: #39739d;
+    border-top-color: cornflowerblue;
 }
 
 .info__switch:checked~.info__headline::before {
@@ -88,33 +88,30 @@ body {
     position: relative;
     margin-bottom: 15px;
     user-select: none;
-    color: #39739d;
+    color: cornflowerblue;
     font-weight: normal;
     cursor: pointer;
 }
-.Loading{
-    height: 15px;
 
-}
 .progressbar {
-    background: rgb(202, 202, 202);
+    background: gray;
     margin-top: 20px;
     position: relative;
-    width: 640px;
+    width: auto;
     height: 30px;
 }
 
-.progressbar::before, .progressbar__progress::before {
+.progressbar::before, .progressbar_progress::before {
     content: 'Loading...';
     position: absolute;
-    left: 320px;
+    left: 270px;
     top: 15px;
     transform: translate(-50%, -50%);
 }
 
-.progressbar__progress {
+.progressbar_progress {
     position: absolute;
-    background: red;
+    background: rgba(255, 65, 118, 0.85);
     left: 0;
     width: 0;
     height: 100%;
@@ -122,6 +119,6 @@ body {
     z-index: 4;
 }
 
-.progressbar__progress::before {
+.progressbar_progress::before {
     color: white;
 }
