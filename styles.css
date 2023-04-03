@@ -47,6 +47,16 @@ border: 2px solid #888;
 width: 640px;
 }
 
+.progress-bar {
+    margin: 15% auto;
+    padding: 10px;
+    border: 2px solid #888;
+}
+
+.progress-bar p {
+    margin-left: 45%;
+}
+
 .close {
 color: #aaa;
 float: right;
