@@ -19,7 +19,8 @@ function move() {
         } else {
             width += 0.5;
             elem.style.width = Math.round(width) + '%';
-            elem.innerHTML = '12314'
+            elem.innerHTML = ' ';
+
         }
     }
 }
