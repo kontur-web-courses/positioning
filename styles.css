@@ -35,6 +35,11 @@ img{
     background-color: white;
     padding: 10px;
 }
+.loaning{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 body {
     font-family: roboto, sans-serif;
     font-size: 15px;
@@ -84,4 +89,37 @@ body {
     color: #39739d;
     font-weight: normal;
     cursor: pointer;
+}
+.Loading{
+    height: 15px;
+
+}
+.progressbar {
+    background: rgb(202, 202, 202);
+    margin-top: 20px;
+    position: relative;
+    width: 640px;
+    height: 30px;
+}
+
+.progressbar::before, .progressbar__progress::before {
+    content: 'Loading...';
+    position: absolute;
+    left: 320px;
+    top: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.progressbar__progress {
+    position: absolute;
+    background: red;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.progressbar__progress::before {
+    color: white;
 }
