@@ -13,9 +13,37 @@
 
 .lightbox{
     position: fixed;
-    width: 64px;
+    width: 160px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: royalblue;
+}
+
+.closebutton {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 26px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebutton:hover {
+    color: black;
+}
+
+.darkrectangle {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(-8px, -8px);
+}
+
+.alert {
+    position: fixed;
 }
