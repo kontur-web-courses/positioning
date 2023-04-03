@@ -89,3 +89,32 @@
     border-radius: 50%;
     border-color: #bc002d;
 }
+
+.logo1.first {
+    margin-top: 40px;
+    height: 40px;
+    width: 40px;
+    background: black;
+    border-radius: 50%;
+    border-color: black;
+}
+
+.logo1.second {
+    height: 40px;
+    width: 40px;
+    margin-top: -40px;
+    margin-left: 60px;
+    background: black;
+    border-radius: 50%;
+    border-color: black;
+}
+
+.logo1.third {
+    height: 70px;
+    width: 70px;
+    margin-top: -15px;
+    margin-left: 15px;
+    background: black;
+    border-radius: 50%;
+    border-color: black;
+}
