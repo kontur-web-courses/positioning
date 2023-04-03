@@ -54,9 +54,21 @@
     height: 100px;
 }
 
+.progressBar {
+    position: relative;
+    background-color: gray;
+    border-radius: 10px;
+}
+
 .bar {
     width: 0;
     height: 20px;
     background-color: red;
     border-radius: 10px;
+}
+
+.loading {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -100%);
 }

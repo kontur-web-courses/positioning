@@ -19,17 +19,17 @@ function closeLightbox() {
 function startProgress () {
     let bar = document.querySelector(".bar");
 
-    const increaseBy = 10;
+    const increaseBy = 0.33;
     let counter = 1;
 
     function increase() {
         bar.style.width = increaseBy * counter + '%';
         counter++;
 
-        if (counter === 11) {
+        if (counter === 304) {
             clearInterval(intervalId);
         }
     }
 
-    let intervalId = setInterval(increase, 500);
+    let intervalId = setInterval(increase, 10);
 }
