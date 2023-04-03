@@ -3,12 +3,12 @@
 }
 
 .logo_div{
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: center;
     width: 100px;
     height: 100px;
-    overflow: hidden;
+    margin: 1px 1px;
 }
 
 .lightbox{
@@ -46,4 +46,32 @@
 
 .alert {
     position: fixed;
+}
+
+.block{
+    display: flex;
+    padding: 0 5px;
+    margin: 1px 1px;
+    background: #000;
+    color: #FFF;
+    mix-blend-mode: multiply;
+    width: 30%;
+    height: 30%;
+    align-items: center;
+    justify-content: start;
+}
+
+.mini_block{
+    width: 42%;
+    height: 42%;
+    margin: auto;
+}
+
+.center{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
