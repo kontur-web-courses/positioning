@@ -37,3 +37,14 @@ img {
     top: 10px;
     right: 10px;
 }
+#progress {
+    display: block;
+    margin: 10px auto;
+}
+
+
+#progress::-webkit-progress-value,
+#progress::-moz-progress-bar
+{
+    background-color: red;
+}
