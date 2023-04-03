@@ -148,20 +148,7 @@ body {
     margin-bottom: 20px;
 }
 
-.outer-progress {
-    width: 500px;
-    margin: 0 0 10px;
-    background-color: #e8e8e8;
-}
 
-.inner-progress {
-    font-size: 12px;
-    text-align: center;
-    color: #ffffff;
-    background-color: #4470c4;
-    margin: 0 0 10px;
-    width: 60%;
-}
 
 .accordion__item {
     margin-bottom: 0.5rem;
@@ -222,4 +209,15 @@ body {
 
 .accordion__item:not(.accordion__item_show) .accordion__body {
     display: none;
+}
+.outer-progress {
+    margin: 0 0 10px;
+    background-color: lightgray;
+}
+
+.inner-progress {
+    font-size: 12px;
+    text-align: center;
+    background-color: red;
+    margin: 0 0 10px;
 }
