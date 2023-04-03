@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .modal {
     position: fixed;
     top: 0;
@@ -133,3 +134,11 @@
     display: none;
     overflow: hidden;
 }
+=======
+.images{
+    overflow:hidden;
+    transform: rotate(100turn);
+    transform: skew(0deg, 0deg);
+    max-height:"100px";    
+}
+>>>>>>> Stashed changes

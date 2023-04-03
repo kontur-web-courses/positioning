@@ -5,6 +5,7 @@
     element.style.color = 'red';
     element.style.width = '300px';
 */
+<<<<<<< Updated upstream
 
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -24,3 +25,30 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
+=======
+var progressbar = $('#progressbar'),
+max = progressbar.attr('max'),
+value = progressbar.val(),
+time = (1000/max)*5;
+
+var loading = function() {
+    value += 1;
+    addValue = progressbar.val(value);
+    if (value == max) {
+        clearInterval(animate);
+      }
+$('.progress-value').html(value + '%');
+
+}
+$('.progress-value').html(value + '%');
+
+setInterval(function() {
+    loading();
+  }, time);
+
+  var animate = setInterval(function() {
+    loading();
+  }, time);
+
+  
+>>>>>>> Stashed changes
