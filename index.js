@@ -1,7 +1,18 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+function load() {
+    const elem = document.getElementById("bar");
+    const btn = document.getElementById("btn");
+    let width = 0;
+    const id = setInterval(frame, 10);
+    btn.disabled = true;
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+    function frame() {
+        if (width >= 100) {
+            btn.disabled = false;
+            clearInterval(id);
+        } else {
+            width += 0.5;
+            elem.style.width = Math.round(width) + '%';
+            elem.innerHTML = ' ';
+        }
+    }
+}
