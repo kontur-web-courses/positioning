@@ -21,9 +21,9 @@
         </div>
     </div>
 
-    <div class="overlay"></div>
-        <div class="modal">
-          <button onclick="close()" class="close-btn">&times;</button>
+    <div class="overlay" id="overlay"></div>
+        <div class="modal" id="modal">
+          <button onclick="closeSt()" class="close-btn">&times;</button>
           <p>Здесь может быть любой контент</p>
           <div class="accordion">
           <input type="checkbox" id="accordion1" name="accordion" hidden>
@@ -43,6 +43,14 @@
           </div>
         </div>
         </div>
+
+    <div class="modal" id="progress">
+        <div class="progress_outer">
+            <div class="progress_text">Loading...</div>
+            <div class="progress_inner"></div>
+            <div class="progress_text white_text">Loading...</div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

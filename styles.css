@@ -149,3 +149,28 @@ input:checked + label + .accordion-content {
 	background-color: skyblue;
 }
 
+.progress_outer {
+	position: relative;
+	height: 50px;
+	background-color: lightgray;
+	margin: 0 auto 0 auto;
+}
+
+.progress_inner {
+	position: absolute;
+	height: 100%;
+	width: 30%;
+	background-color: deeppink;
+}
+
+.progress_text {
+	font-size: 45px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: absolute;
+}
+
+.white_text {
+	color: white;
+}
