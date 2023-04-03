@@ -48,3 +48,11 @@ img {
 {
     background-color: red;
 }
+
+input[type='checkbox'] + p {
+    display: none;
+}
+
+input[type="checkbox"]:checked + p {
+    display: block;
+}
