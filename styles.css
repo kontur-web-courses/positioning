@@ -64,6 +64,26 @@
     text-align: center;
 }
 
+.progress-bar-background-text {
+    height: 20px;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    z-index: -1;
+    color: black;
+    margin-left: 332px;
+}
+
+.progress-bar-background {
+    background-color: grey;
+    height: 20px;
+    position: absolute;
+    width: 600px;
+    text-align: center;
+    z-index: -1;
+    margin-left: 332px;
+}
+
 .logo5 {
     width: 100px;
     height: 100px;
