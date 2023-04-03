@@ -1,0 +1,9 @@
+.logo-block {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-block img {
+    max-width: 100%;
+    max-height: 100%;
+}
