@@ -1,0 +1,51 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: antiquewhite;
+}
+
+.blur_panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 1);
+    filter: blur(100px);
+    /*display: none;*/
+
+}
+
+.lightbox {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 640px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 2;
+    background-color: pink;
+    border-radius: 10px;
+}
+
+.lightbox > p {
+    padding: 10px 10px;
+    margin: 0px 0px;
+}
+
+.lightbox > h3 {
+    margin: 0px 0px;
+}
+
+.close_button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 10px;
+}
