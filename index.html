@@ -6,7 +6,79 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
-    <script src="index.js"></script>
+<div class="logos">
+    <div class="logo logo4">
+        <div class="outer"></div>
+        <div class="middle"></div>
+        <div class="inner"></div>
+    </div>
+    <div class="logo logo6">
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+    </div>
+</div>
+<div class="lightbox">
+    <div class="dark"></div>
+    <div class="window">
+        <input type="checkbox" id="expand-toggle1"/>
+        <input type="checkbox" id="expand-toggle2"/>
+        <input type="checkbox" id="expand-toggle3"/>
+        <button class="close">
+            <svg xmlns="http://www.w3.org/2000/svg">
+                <path stroke="black" stroke-width="2" d="m 4,4 6,6 6,-6 -6,6 6,6 -6,-6 -6,6 6,-6 z"/>
+            </svg>
+        </button>
+        <div>
+            <label for="expand-toggle1" id="expand-btn1" class="accordion">Section 1</label>
+            <div id="panel1" class="panel panel1">
+                <p>Fusce maximus quis mauris non pulvinar. Sed quis tellus turpis. Morbi tristique suscipit eros, nec
+                    auctor metus posuere eget. Cras dictum tortor lorem, vel malesuada est molestie sed. Donec lobortis
+                    molestie quam, nec faucibus magna imperdiet ac. Nunc aliquam sit amet sapien a placerat. Aliquam
+                    lacinia in velit quis sollicitudin. Sed posuere, odio eu porta viverra, dolor augue maximus augue, a
+                    vulputate elit tortor sit amet felis. Proin varius, mi sed porttitor auctor, neque ligula porta
+                    nibh, eu aliquam elit urna ac risus. Nunc aliquam lorem ac diam dapibus semper.</p>
+            </div>
+
+            <label for="expand-toggle2" id="expand-btn2" class="accordion">Section 2</label>
+            <div id="panel2" class="panel panel2">
+                <p>Morbi feugiat lacus at augue accumsan maximus. Nulla id enim mattis est dictum vehicula. Sed eu
+                    malesuada purus. Quisque ultrices ut neque nec elementum. Maecenas luctus, metus non tempor dapibus,
+                    felis turpis ultricies felis, et elementum dui ipsum sed eros. Orci varius natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus. Donec porttitor nulla massa, at elementum leo
+                    accumsan a. Vestibulum accumsan felis quis elit pellentesque, tempus ultrices libero efficitur.
+                    Maecenas lacinia posuere convallis. Vivamus a auctor risus.</p>
+            </div>
+
+            <label for="expand-toggle3" id="expand-btn3" class="accordion">Section 3</label>
+            <div id="panel3" class="panel">
+                <p>Cras laoreet odio id vulputate posuere. Nulla tincidunt lacus magna, vel tincidunt est dignissim sed.
+                    Sed tincidunt nisl velit, sodales maximus sem blandit lobortis. In sagittis dictum nibh, eu
+                    fermentum eros condimentum at. Pellentesque sapien libero, porttitor sit amet est quis, sagittis
+                    finibus nisl. Ut vel dignissim enim. Nunc sed mattis diam. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Curabitur sed faucibus orci. Sed non nibh non libero placerat luctus at in libero.
+                    Maecenas suscipit lacus et risus semper, id porttitor est ultricies. Pellentesque habitant morbi
+                    tristique senectus et netus et malesuada fames ac turpis egestas. Integer non dolor a orci molestie
+                    lacinia sit amet at est. Aenean euismod velit ut dui lobortis, sed venenatis dolor tristique.
+                    Vestibulum vitae suscipit nibh, ac blandit magna. Cras feugiat ex varius lorem convallis
+                    ultricies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="progress">
+    <div class="bar">
+        <div class="text-black">
+            <p>Loading...</p>
+        </div>
+        <div class="progress-part">
+            <div class="text-white">
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
 </body>
 </html>
