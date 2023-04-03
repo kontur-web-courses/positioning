@@ -24,7 +24,8 @@ const animateProgressBar = () => {
 
     if (progress < 100) {
         setTimeout(animateProgressBar, intervalTime);
+
     }
-};
+}
 
 setTimeout(animateProgressBar, intervalTime);
