@@ -19,7 +19,7 @@ function move() {
         } else {
             width += 0.5;
             elem.style.width = Math.round(width) + '%';
-            elem.innerHTML = 'Loading...';
+            elem.innerHTML = '12314'
         }
     }
 }
