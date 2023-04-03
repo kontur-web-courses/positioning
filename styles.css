@@ -1,0 +1,29 @@
+.logo1 img {
+    width: 100px;
+}
+
+.logo2 img {
+    width: 100px;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #E1E1E1;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background: seagreen;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
