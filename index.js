@@ -7,7 +7,6 @@ function move() {
         clearInterval(id);
       } else {   width++;
         elem.style.width = width + '%';
-        elem.innerHTML = width * 1 + '%';
       }
     }
   }

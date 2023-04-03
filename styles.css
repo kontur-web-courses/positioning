@@ -218,3 +218,18 @@ input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
+
+#greyProgress {
+    width: 100%;
+    background-color: gray;
+}
+
+#redBar {
+    width: 0%;
+    height: 30px;
+    background-color: red;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+}
