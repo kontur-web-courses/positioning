@@ -26,3 +26,13 @@ window.onclick = function(event) {
     overlay.style.display = "none";
   }
 }
+const progressBar = document.querySelector('.progress');
+let progress = 0;
+
+const interval = setInterval(() => {
+  progress += 10;
+  progressBar.style.width = `${progress}%`;
+  if (progress >= 100) {
+    clearInterval(interval);
+  }
+}, 1000);
