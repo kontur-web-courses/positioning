@@ -182,3 +182,44 @@ input:checked ~ .tab-content {
   max-height: 100vh;
   padding: 1em;
 }
+
+.progress {
+  position: relative;
+  display: flex;
+  height: 100px;
+  border: 3px solid #566573;
+  border-radius: 8px;
+  font-size: 50px;
+  font-family: Courier, monospace;
+  overflow: hidden;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #5D6D7E;
+  color: white;
+}
+
+.front {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: white;
+  color: black;
+  clip-path: inset(0 0 0 50%);
+  transition: clip-path 1s linear;
+}
+
+.KEKButton {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}

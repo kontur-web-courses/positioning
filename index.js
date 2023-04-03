@@ -10,3 +10,10 @@ document.addEventListener("DOMContentLoaded", function(){
     document.querySelector('#openModal').style.marginLeft = '0px';
   });
 });
+
+let progress = 50;
+function kekProgress() {
+  progress = (progress + 25) % 100;
+  document.querySelector(".front").style.clipPath = `inset(0 0 0 ${progress}%)`;
+}
+document.getElementById("kek").addEventListener("click", kekProgress);
