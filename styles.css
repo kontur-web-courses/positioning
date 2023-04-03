@@ -64,9 +64,10 @@ img {
 
 .progress-bar-text {
     color: #000; /* черный цвет для букв, находящихся на сером фоне */
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    align-self: center;
     transform: translate(-50%, -50%);
     font-size: 16px;
     font-weight: bold;

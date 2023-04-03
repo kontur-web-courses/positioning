@@ -25,12 +25,16 @@ modal.addEventListener('click', function(event) {
 });
 
 const progressBarFill = document.querySelector('.progress-bar-fill');
-const progressBarText = document.querySelector('.progress-bar-text');
 
 function updateProgressBar(percent) {
     progressBarFill.style.width = percent + '%';
-    progressBarText.innerText = percent + '%';
 }
 
-// Пример использования:
-updateProgressBar(50); // заполнить прогресс-бар на 50%
+let percent = 0;
+let intervalId = setInterval(function() {
+    percent += 1;
+    updateProgressBar(percent);
+    if (percent >= 100) {
+        clearInterval(intervalId);
+    }
+}, 30); // 100% за 3000 миллисекунд (30 * 100 = 3000)
