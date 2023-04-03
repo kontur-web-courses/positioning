@@ -48,9 +48,10 @@ width: 640px;
 }
 
 .progress-bar {
-    margin: 15% auto;
-    padding: 10px;
-    border: 2px solid #888;
+    padding: 1px;
+    border: 2px solid black;
+    background-color: lightgrey;
+
 }
 
 .progress-bar p {
