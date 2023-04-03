@@ -1,0 +1,21 @@
+.logo{
+    height: 100px;
+}
+
+.logo_div{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.lightbox{
+    position: fixed;
+    width: 64px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: royalblue;
+}
