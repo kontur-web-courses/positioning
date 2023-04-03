@@ -30,9 +30,9 @@ const progressBar = document.querySelector('.progress');
 let progress = 0;
 
 const interval = setInterval(() => {
-  progress += 10;
+  progress += 100/6;
   progressBar.style.width = `${progress}%`;
   if (progress >= 100) {
     clearInterval(interval);
   }
-}, 1000);
+}, 500);
