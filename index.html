@@ -6,7 +6,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
-    <script src="index.js"></script>
+    <div class="container">
+        <div style="text-align: center;">
+            <a href="#openModal">Открыть модальное окно</a>
+        </div>
+        <div id="openModal" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Модальное окно</h3>
+                        <a href="#close" title="Close" class="close">×</a>
+                    </div>
+                    <div class="modal-body">
+                        Содержимое модального окна
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
