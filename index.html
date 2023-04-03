@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Практика позиционирования</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <script src="index.js"></script>
     <div class="big circle-red">
         <div class="medium circle-white">
-            <div class="little circle-red">
-
-            </div>
+            <div class="little circle-red"></div>
         </div>
     </div>
-        <div class="windows">
+
+    <div class="windows">
         <div class="square red"></div>
         <div class="square green"></div>
         <div class="square blue"></div>
@@ -22,17 +23,18 @@
     </div>
 
 
-    <div id="modalWindow" class="modal">
+    <div class="modal">
         <div class="modal-content">
-            <div id="closeModalWindow" class="close">&times;</div>
+            <button class="close" onclick="Close()">&times;</button>
             <p>May the Force be with you</p>
             <div class="progress">
                 <div class="progressBar"></div>
                 <p class="Loading">Loading...</p>
+                <div class="Loading2">Loading...</div>
             </div>
-
         </div>
     </div>
-    
+
 </body>
+
 </html>

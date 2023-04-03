@@ -1,14 +1,8 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
-const modalWindow = document.getElementById('modalWindow');
-const closeModalWindow = document.querySelector('.closeModalWindow');
-
-closeModalWindow.addEventListener('click', function () {
+function Close() {
     console.log('hide pls')
-    modalWindow.hidden = true;
-})
+    const modalElements = document.getElementsByClassName("modal");
+    for (let i = 0; i < modalElements.length; i++) {
+        modalElements[i].style.display = "none";
+    }
+}
