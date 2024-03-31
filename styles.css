@@ -38,3 +38,31 @@
     border-radius: 5px;
 }
 
+.bar {
+    background-color: gray;
+    width: 600px;
+    height: 30px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.bar::before, .progress::before {
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    left: 300px;
+    top: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.bar::before {
+    color: black;
+}
+
+.progress {
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    overflow: hidden;
+}
+
