@@ -20,9 +20,12 @@
     top: calc(50% - 80px);
     left: calc(50% - 360px);
     width: 720px;
-    height: 160px;
-    padding: 30px;
+    height: 180px;
     position: relative;
+}
+
+.lightbox .content {
+    padding: 30px;
 }
 
 .closeButton {
@@ -35,4 +38,32 @@
     line-height: 30px;
     background-color: #504a4e;
     color: #ffffff;
+}
+
+.bar {
+    background-color: gray;
+    width: 720px;
+    height: 30px;
+    position: relative;
+}
+
+.bar::before, .progress::before {
+    content: "loading...";
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    left: 350px;
+    top: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.bar::before {
+    color: black;
+}
+
+.progress {
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    overflow: hidden;
 }
