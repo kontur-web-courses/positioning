@@ -1,0 +1,19 @@
+.progress-bar {
+    background:#ccc;
+    padding:10px 0;
+    width:100%;
+    text-align:center;
+    position:relative;
+}
+
+.progress-fill {
+    width: 100%;
+    background:red;
+    color: white;
+    padding:10px 0;
+    position:absolute;
+    left:0;
+    top:0;
+    overflow:hidden;
+    clip-path: inset(0 10% 0 0);
+}
