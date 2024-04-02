@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden; /* Предотвращает прокрутку страницы под модальным окном */
+    overflow: hidden;
 }
 
 .overlay {
@@ -18,7 +18,7 @@ left: 0;
 right: 0;
 bottom: 0;
 background: rgba(0, 0, 0, 0.5);
-z-index: 10; /* Убедитесь, что оверлей находится над другим содержимым, но под модальным окном */
+z-index: 10;
 }
 
 .modal {
@@ -29,7 +29,7 @@ transform: translate(-50%, -50%);
 width: 640px;
 background-color: white;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-z-index: 20; /* Убедитесь, что модальное окно находится над оверлеем */
+z-index: 20;
 }
 
 .modal-header {
@@ -46,4 +46,31 @@ cursor: pointer;
 
 .modal-body {
 padding: 20px;
+}
+
+.progress-bar {
+position: relative;
+width: 100%;
+height: 30px;
+background-color: grey;
+color: black;
+text-align: center;
+line-height: 30px; 
+overflow: hidden; 
+}
+
+.progress {
+position: absolute;
+left: 0;
+top: 0;
+width: 0%; 
+height: 100%;
+background-color: red;
+transition: width 0.5s; 
+z-index: 1;
+}
+
+.progress-text {
+position: relative;
+z-index: 2;
 }
