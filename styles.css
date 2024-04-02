@@ -1,0 +1,121 @@
+.container1 {
+    width: 100px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.square1 {
+    height: 48px;
+    width: 48px;
+    background-color: rgb(223, 92, 49);
+    flex: 0 0 48px;
+}
+
+.square2 {
+    height: 48px;
+    width: 48px;
+    background-color: #9C3;
+    flex: 0 0 48px;
+}
+
+.square3 {
+    height: 48px;
+    width: 48px;
+    background-color: #39F;
+    flex: 0 0 48px;
+}
+
+.square4 {
+    height: 48px;
+    width: 48px;
+    background-color: #FC3;
+    flex: 0 0 48px;
+}
+
+.container2 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #ac2333;
+    border-radius: 50%;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    width: 640px;
+    max-width: 500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    overlay: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.white-text {
+    width: 400px;
+    color: white;
+    position: absolute;
+}
+
+.progress-bar {
+    text-align: center;
+    width: 400px;
+    margin: 25px auto;
+    position: relative;
+    height: 25px;
+}
+
+.progress-text {
+    background-color: rgb(175, 174, 174);
+    height: 20px;
+    position: absolute;
+    width: 400px;
+}
+
+.progress {
+    position: absolute;
+    overflow: hidden;
+    background-color: red;
+    height: 20px;
+    max-width: 400px;
+}
+
+
+.progress-fill {
+    position: absolute;
+    height: 100%;
+}
