@@ -8,24 +8,6 @@
 <body>
     <!--Верстать тут-->
     <div id="overlay"></div>
-    <div class="container">
-        <div class="about">
-            <button id="progress_bar_btn" onclick="move()">
-            Появление прогресс-бара
-            </button>
-        </div>
-        <div class="popup__content_progress_bar">
-            <div class="progressBar">
-                Loading...
-            </div>
-            <div class="fillBar">
-                Loading...
-            </div>
-            </div>
-            <button id="return-btn" class="popup__button">
-                Назад
-            </button>
-        </div>
 
 
     </div>
@@ -40,7 +22,22 @@
                     <h3 class="modal-title">Заголовок</h3>
                     <a href="#close" title="Close" class="close">X</a>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body">             
+                    <div class="container">
+                        <div class="about">
+                            <button id="progress_bar_btn" onclick="move()">
+                            Load bar
+                            </button>
+                        </div>
+                        <div class="popup__content_progress_bar">
+                            <div class="progressBar">
+                                Loading...
+                            </div>
+                            <div class="fillBar">
+                                Loading...
+                            </div>
+                        </div>
+                    </div>
                     <div class="accordionBody">
                         <input type="checkbox" id="toggle1" class="toggle-checkbox">
                         <label for="toggle1" class="accordionBlock1">Почвообразовательный процесс как фрактал</label>
