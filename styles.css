@@ -1,0 +1,46 @@
+
+.logo1-container {
+    width: 100px;
+    height: 100px;
+    background: white;
+    padding: 25px 25px 25px 25px;
+    box-sizing: border-box;
+}
+
+.logo1-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #BC002D;
+}
+
+.logo2-container {
+    width: 100px;
+    height: 100px;
+    background: white;
+    padding: 25px 25px 25px 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4px 4px;
+}
+
+.logo2-square {
+    flex: 0 0 22px;
+}
+
+.logo2-square-1 {
+    background: #F1511B;
+}
+
+.logo2-square-2 {
+    background: #80CC28;
+}
+
+.logo2-square-3 {
+    background: #00ADEF;
+}
+
+.logo2-square-4 {
+    background: #FBBC09;
+}
