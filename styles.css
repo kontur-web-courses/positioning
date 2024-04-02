@@ -114,3 +114,18 @@
     font-size: 20px;
     cursor: pointer;
 }
+
+.accordion_content {
+    display: none;
+}
+
+.accordion_check:checked + .accordion_title + .accordion_content {
+    display: block;
+}
+
+.accordion_title {
+    cursor: pointer;
+    display: block;
+    margin-bottom: 5px;
+}
+
