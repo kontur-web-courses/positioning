@@ -79,7 +79,7 @@ input[type="checkbox"]:checked + label + .content {
   0% {
     --percent: 0%;
 }
-  100% {
+  50% {
     --percent: 100%;
 }
 }
