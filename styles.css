@@ -1,6 +1,6 @@
 #modal {
     width: 320px;
-    position: relative;
+    position: fixed;
 }
 
 #modal::backdrop {
