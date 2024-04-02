@@ -21,15 +21,18 @@
     height: 100%;
 }
 
+
 .lightbox {
     box-sizing: border-box;
     background-color: white;
-    top: calc(50% - 70px);
-    left: calc(50% - 340px);
-    width: 640px;
-    height: 200px;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    max-width: 80%; 
+    max-height: 80%; 
+    overflow: auto; 
     padding: 20px;
-    position: relative;
 }
 
 .closeButton {
@@ -74,4 +77,30 @@
     background-color: red;
     height: 100%;
     overflow: hidden;
+}
+
+.accordion {
+    max-width: 400px;
+}
+
+.accordion-checkbox {
+    display: none;
+}
+
+.accordion-label {
+    display: block;
+    background-color: lightblue;
+    color: black;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+.accordion-checkbox:checked + .accordion-label + .accordion-content {
+    display: block;
 }
