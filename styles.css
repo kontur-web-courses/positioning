@@ -49,6 +49,40 @@
     background-color: #FBBC09;
 }
 
+.progress_bar {
+    display: flex;
+    position: relative;
+    width: 250px;
+    height: 25px;
+    margin: 15px;
+}
+
+.background {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.progress_line {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: red;
+    clip-path: inset(0 55% 0 0);
+}
+
 .overlay {
     position: fixed;
     top: 0;

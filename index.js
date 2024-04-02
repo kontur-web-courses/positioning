@@ -1,7 +1,10 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+let progress = 0;
+let progressBar = document.querySelector('.progress_line');
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+setInterval(() => {
+    progress++;
+    if (progress > 100) {
+        progress = 0;
+    }
+    progressBar.style.clipPath = `inset(0 ${100 - progress}% 0 0)`;
+}, 20);
