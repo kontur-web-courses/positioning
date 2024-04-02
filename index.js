@@ -14,3 +14,11 @@ modalElement.showModal();
 
 const closeButton = document.getElementById('close');
 closeButton.addEventListener('click', () => modalElement.close());
+
+let progress = 0;
+const bar = document.querySelector('.progress');
+let timerId = setInterval(() => { 
+    progress += 1;
+    bar.style.width = `${progress}%`;
+}, 30);
+setTimeout(() => { clearInterval(timerId); }, 3000);
