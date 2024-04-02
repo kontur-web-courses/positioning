@@ -1,0 +1,65 @@
+.square1 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.sub-square {
+    width: 47px;
+    height: 47px;
+    position: absolute;
+}
+
+.red {
+    background-color: #f1511b;
+    top: 0;
+    left: 0;
+}
+
+.green {
+    background-color: #80cc28;
+    top: 0;
+    right: 0;
+}
+
+.blue {
+    background-color: #00adef;
+    bottom: 0;
+    left: 0;
+}
+
+.yellow {
+    background-color: #fbbc09;
+    bottom: 0;
+    right: 0;
+}
+
+.square2 {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    width: 100px;
+    height: 60px;
+    background-color: white;
+    position: relative;
+    border: 1px solid black;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
