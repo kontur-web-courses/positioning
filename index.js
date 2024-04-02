@@ -8,3 +8,9 @@
 for (const logo of document.querySelectorAll('.logo')) {
     logo.style.width < logo.style.height ? logo.style.height = '100px' : logo.style.width = '100px';
 }
+
+const modalElement = document.getElementById('modal');
+modalElement.showModal();
+
+const closeButton = document.getElementById('close');
+closeButton.addEventListener('click', () => modalElement.close());
