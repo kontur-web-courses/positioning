@@ -24,6 +24,7 @@
     position: absolute;
     justify-self: center;
     align-self: center;
+    mix-blend-mode: luminosity;
 }
 
 /* Реакт */
