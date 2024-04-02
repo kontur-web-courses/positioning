@@ -1,3 +1,17 @@
+
+.modal_window {
+    width: 640px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.modal_window::before {
+    background-color: black;
+    /*opacity: 30%;*/
+}
 .imgHolder{
     width: 100px;
     height: 100px;
