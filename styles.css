@@ -87,3 +87,32 @@
     cursor: pointer;
 }
 
+
+.progress-bar {
+    background-color: gray;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px auto;
+    position: relative;
+    height: 20px;
+}
+
+.progress {
+    width: 20%;
+    height: 10px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.loading-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
