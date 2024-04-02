@@ -1,3 +1,19 @@
+.text-white {
+    color: white;
+}
+
+.text-black {
+    color: black;
+}
+
+.pos-abs {
+    position: absolute;
+}
+
+.inline {
+    display: inline-block;
+}
+
 .b-react {
     border-color: #61dafb;
 }
