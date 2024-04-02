@@ -1,6 +1,6 @@
 function fillProgressBar() {
     const progressBar = document.querySelector('.progress');
-    progressBar.style.background = 'red';
+    progressBar.style.background = '#a10f0f';
     let start = null;
 
     window.requestAnimationFrame(step);

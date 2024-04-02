@@ -50,7 +50,7 @@
 .bar::before, .progress::before {
     content: "loading...";
     font-size: 25px;
-    color: white;
+    color: #ffffff;
     position: absolute;
     left: 350px;
     top: 15px;
