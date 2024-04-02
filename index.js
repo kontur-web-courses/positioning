@@ -16,12 +16,13 @@ const closeButton = document.getElementById('close');
 closeButton.addEventListener('click', () => modalElement.close());
 
 
-const bars = document.querySelectorAll('.progress .bar');
-for (const bar of bars){
-    let progress = 0;
-    let timerId = setInterval(() => { 
+const bar = document.querySelector('.progress .bar');
+let progress = 0;
+let iter = () => {
+    if (progress !== 100) {
         progress += 1;
         bar.style.width = `${progress}%`;
-    }, 30);
-    setTimeout(() => { clearInterval(timerId); }, 3000);
+        let timerId = setTimeout(iter, 30);
+    } 
 }
+setTimeout(iter, 30)
