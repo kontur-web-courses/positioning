@@ -80,3 +80,35 @@ header img {
 .progress-bar .loading-text span {
     color: white;
 }
+
+.accordeon {
+    background: gray;
+    padding: 10px;
+    width: 600px;
+}
+
+.accordeon h3 {
+    margin: 0;
+}
+
+.accordeon p {
+    margin-bottom: 10px;
+}
+#expand-toggle {
+    display: none;
+}
+
+.expandable {
+    visibility: collapse;
+    position: absolute;
+    background: #ddd;
+}
+
+#expand-toggle:checked ~ * .expandable {
+    visibility: visible;
+    position: relative;
+}
+
+#expand-toggle:checked ~ #expand-btn {
+    background-color: #ccc;
+}
