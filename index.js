@@ -7,7 +7,7 @@
 */
 
 function move() {
-    let elem = document.querySelector(".progress-bar");
+    let elem = document.querySelector(".progress-bar1");
     let width = 0;
     let id = setInterval(frame, 33);
     function frame() {
@@ -18,6 +18,7 @@ function move() {
             width++;
             elem.style.width = width + "%";
         }
+        elem.style['clipPath'] = `inset(0 ${100-width}% 0 0`
     }
 }
 
