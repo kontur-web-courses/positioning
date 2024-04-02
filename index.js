@@ -10,12 +10,20 @@ function animateBar() {
     const progressBar = document.querySelector('.bar');
 
     let progress = 0;
-    const id = setTimeout(() => {
+    const interval = setInterval(() => {
         if (progress < 100) {
             progress++;
-            progressBar.firstElementChild.style.width = `${progress}%`
+            progressBar.firstElementChild.style.width = `${progress}%`;
+        } else {
+            clearInterval(interval);
         }
-    })
+    }, 30);
+
+    progressBar.firstElementChild.style.width = '100%';
+
+    setTimeout(() => {
+        clearInterval(interval);
+    }, 3000);
 }
 
 animateBar();
