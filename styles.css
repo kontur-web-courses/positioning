@@ -16,12 +16,12 @@
 
 .lightbox {
     box-sizing: border-box;
-    background-color: white;
+    background-color: #ffffff;
     top: calc(50% - 80px);
-    left: calc(50% - 320px);
-    width: 640px;
+    left: calc(50% - 360px);
+    width: 720px;
     height: 160px;
-    padding: 20px;
+    padding: 30px;
     position: relative;
 }
 
