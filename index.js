@@ -8,31 +8,19 @@ const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.modal-overlay');
 const closeButton = document.querySelector('.close-btn');
 
-// const openModalButton = document.getElementById('openModal');
-const progressModal = document.getElementById('progressModal');
+const openModalButton = document.getElementById('openModal');
+// const progressModal = document.getElementById('modal');
 
-const progressBar = document.getElementById('progress-bar')
+// const progressBar = document.getElementById('progress-bar')
 
 // const progressBar = document.querySelector('.progress-bar')
 
+closeButton.addEventListener('click', () => {
+    modal.style.display = 'none';
+    overlay.style.display = 'none';
+});
+
 openModalButton.addEventListener('click', () => {
-    progressModal.style.display = 'block';
-/*
-    progressBar.style.width = '0px';
-
-    closeButton.addEventListener('click', () => {
-        modal.style.display = 'none';
-        overlay.style.display = 'none';
-    });
-
-    let width = 0;
-    const interval = setInterval(() => {
-        if (width >= 200) {
-            clearInterval(interval);
-            // progressModal.style.display = 'none';
-        } else {
-            width += 20;
-            progressBar.style.width = `${width}px`;
-        }
-    }, 300);*/
+    modal.style.display = 'block';
+    overlay.style.display = 'block';
 });
