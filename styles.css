@@ -20,3 +20,25 @@
     right: 2%;
     background-color: red;
 }
+
+.progress{
+    height:30px;
+    width:500px;
+    background-color:lightgray;
+    position:relative;
+    z-index: -2;
+    text-align: center;
+    text-justify: inter-cluster;
+    font-size: 150%;
+}
+  
+.progress::before{
+    position:absolute;
+    z-index: -1;
+    height: 100%;
+    background:red;
+    content:'';
+    width: 10%;
+    display:flex;
+    justify-content:flex-end;
+}
