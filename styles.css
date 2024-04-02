@@ -117,3 +117,36 @@
     padding: 15px;
     overflow: auto;
 }
+
+.toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.select-toggle{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.select-toggle:checked ~ .toggle-content {
+    max-height: 1000px;
+}
+
+.select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.select-label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.toggle-content {
+    padding: 0 10px;
+}
