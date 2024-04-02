@@ -37,3 +37,35 @@
     color: black;
     border-radius: 5px;
 }
+
+
+/* Task3 */
+
+.bar {
+    background-color: gray;
+    width: 600px;
+    height: 30px;
+    position: relative;
+    margin: 20px auto;
+}
+
+.bar::before, .progress::before {
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    
+    top: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.bar::before {
+    color: black;
+}
+
+.progress::before {
+    position: absolute;
+    background-color: red;
+    height: 100%;
+    width: 50%;
+    
+}
