@@ -1,3 +1,80 @@
+.react_logo {
+    width: 100px;
+    height: 100px;
+}
+
+.upperTriangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom:  25px solid black;
+}
+
+.mitsubishi_logo {
+    width: 100px;
+    height: 100px;
+}
+
+.bottomTriangle {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top:  25px solid black;
+}
+
+.upperRhombus {
+    position: absolute;
+    left: 50px;
+}
+
+.rightRhombus {
+    position: absolute;
+    top: 48px;
+    left: 72px;
+    transform: rotate(125deg);
+}
+
+.leftRhombus {
+    position: absolute;
+    top: 48px;
+    left: 28px;
+    transform: rotate(-125deg);
+}
+
+.progress_bar {
+    display: flex;
+    position: relative;
+    background-color: gray;
+    width: 300px;
+    height: 25px;
+}
+
+.progress_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: red;
+    width: 100%;
+    height: 100%;
+}
+
+.progress_front {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: gray;
+    clip-path: inset(0 0 0 25%);
+}
+
 .logo {
     width: 100px;
     height: 100px;
@@ -63,6 +140,9 @@
     position: relative;
     width: auto;
     margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-content {
