@@ -100,3 +100,15 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+#progress {
+    display: block;
+    margin: 10px auto;
+}
+
+
+#progress::-webkit-progress-value,
+#progress::-moz-progress-bar
+{
+    background-color: red;
+}
