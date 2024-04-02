@@ -1,0 +1,68 @@
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.overlay {
+    box-sizing: content-box;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.lightbox {
+    box-sizing: border-box;
+    background-color: #ffffff;
+    top: calc(50% - 80px);
+    left: calc(50% - 360px);
+    width: 720px;
+    height: 180px;
+    position: relative;
+}
+
+.lightbox .content {
+    padding: 30px;
+}
+
+.closeButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    text-align: center;
+    line-height: 30px;
+    background-color: #504a4e;
+    color: #ffffff;
+}
+
+.bar {
+    background-color: gray;
+    width: 720px;
+    height: 30px;
+    position: relative;
+}
+
+.bar::before, .progress::before {
+    content: "loading...";
+    font-size: 25px;
+    color: #ffffff;
+    position: absolute;
+    left: 350px;
+    top: 15px;
+    transform: translate(-50%, -50%);
+}
+
+.bar::before {
+    color: black;
+}
+
+.progress {
+    position: absolute;
+    height: 100%;
+    overflow: hidden;
+}
