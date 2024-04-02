@@ -102,7 +102,7 @@ body {
     margin: 10px auto;
 }
 
-.accordion .acor-body {
+.accordion .acorBody {
     width: 100%;
     margin: 0;
     height: 0;
@@ -114,13 +114,13 @@ body {
     overflow: hidden;
 }
 
-.accordion .acor-body p {
+.accordion .acorBody p {
     margin: 0 0 10px;
 }
 
 .accordion label {
     cursor: pointer;
-    background-color: navajowhite;
+    background-color: lightpink;
     display: block;
     padding: 15px 20px;
     width: 100%;
@@ -137,7 +137,7 @@ body {
 }
 
 
-.accordion input:checked + label + .acor-body {
+.accordion input:checked + label + .acorBody {
     height: auto;
     margin-top: -5px;
     color: #000;
