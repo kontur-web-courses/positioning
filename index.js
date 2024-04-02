@@ -10,11 +10,14 @@ const progressBar = document.querySelector(".progress-bar");
 
 function fillProgressBar(pb) {
     pb.style.animation = '3s ease 0s 1 normal forwards running fillPb';
+    pb.getElementsByClassName('progress-bar__text')[0].style.animation = '3s ease 0s 1 normal forwards running fillPb';
+
     setTimeout(() => clearProgressBar(pb), 3000)
 }
 
 function clearProgressBar(pb) {
     pb.style.animation = null;
+    pb.getElementsByClassName('progress-bar__text')[0].style.animation = null;
 }
 
 setInterval(() => fillProgressBar(progressBar), 3500)
