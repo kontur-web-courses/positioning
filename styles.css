@@ -1,4 +1,5 @@
 /* свойства модального окна по умолчанию */
+
 .modal {
     position: fixed; /* фиксированное положение */
     top: 0;
@@ -30,6 +31,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 640px;
+    max-height: 60%;
+    overflow-y: scroll;
 }
 
 /* свойства для блока, содержащего контент модального окна */ 
@@ -76,17 +79,58 @@
     text-decoration: none;
 }
 
-
-/*.close:focus, .close:hover {*/
-/*    color: #000;*/
-/*    text-decoration: none;*/
-/*    cursor: pointer;*/
-/*    opacity: .75;*/
-/*}*/
-
 /* свойства для блока, содержащего основное содержимое окна */
 .modal-body {
-  position: relative;
+    position: relative;
+    display: block;
     flex: 1 1 auto;
     padding: 15px;
 }
+
+
+.accordionBody {
+
+}
+
+.accordionBlock1,
+.accordionBlock2,
+.accordionBlock3 {
+    cursor: pointer;
+    background-color: lightgray;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.accordionContent1,
+.accordionContent2,
+.accordionContent3 {
+    display: none;
+}
+
+#toggle1:checked ~ .accordionContent1,
+#toggle2:checked ~ .accordionContent2,
+#toggle3:checked ~ .accordionContent3 {
+    display: block;
+    padding: 30px;
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+}
+
+#toggle1:checked ~ .accordionBlock1,
+#toggle2:checked ~ .accordionBlock2,
+#toggle3:checked ~ .accordionBlock3 {
+    background-color: white;
+    border: 1px solid lightgray;
+}
+
+
