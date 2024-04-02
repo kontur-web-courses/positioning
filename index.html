@@ -2,165 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Практика позиционирования</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модальное окно</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
-    <script src="index.js"></script>
-    <div class="block1">
-        <img src="designs/logo1.png", alt="МикаМаус", width="100px", height="100px">
-    </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Модальное окно</title>
-<style>
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.4);
-  }
 
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 640px;
-  }
-
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-</style>
-</head>
-<body>
+<div class="logo-container">
+    <img src="designs/logo1.png" alt="Logo 1" class="logo">
+</div>
+<div class="logo-container">
+    <img src="designs/logo2.png" alt="Logo 2" class="logo">
+</div>
 
 <button id="openModal">Открыть модальное окно</button>
 
 <div id="myModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Текст в модальном окне...</p>
-    <p>ДОБРЫЙ ДЕНЬ ЮХУУУУУУУУУУУУУУУУУУ</p>
-    <p>АААААААААААААААААААААААААААААА</p>
-    <p>АААААААААААААААААААААААААААААА</p>
-    <p>АААААААААААААААААААААААААААААА</p>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Аккордеон</title>
-<style>
-  .accordion {
-    max-width: 600px;
-    margin: 50px auto;
-  }
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Текст в модальном окне...</p>
+        <p>ДОБРЫЙ ДЕНЬ ЮХУУУУУУУУУУУУУУУУУУ</p>
+        <p>АААААААААААААААААААААААААААААА</p>
+        <p>АААААААААААААААААААААААААААААА</p>
+        <p>АААААААААААААААААААААААААААААА</p>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Аккордеон</title>
+        </head>
+        <body>
 
-  .accordion-item {
-    overflow: hidden;
-    transition: max-height 0.5s;
-    margin-bottom: 10px;
-  }
+        <div class="accordion">
+            <div class="accordion-item">
+                <input type="checkbox" id="item1">
+                <label for="item1">Заголовок 1</label>
+                <div class="content">
+                    <p>Текст для блока 1.</p>
+                </div>
+            </div>
 
-  .accordion-item label {
-    display: block;
-    padding: 10px;
-    background: #f2f2f2;
-    cursor: pointer;
-  }
+            <div class="accordion-item">
+                <input type="checkbox" id="item2">
+                <label for="item2">Заголовок 2</label>
+                <div class="content">
+                    <p>Текст для блока 2.</p>
+                </div>
+            </div>
 
-  .accordion-item input[type="checkbox"] {
-    display: none;
-  }
+            <div class="accordion-item">
+                <input type="checkbox" id="item3">
+                <label for="item3">Заголовок 3</label>
+                <div class="content">
+                    <p>Текст для блока 3.</p>
+                </div>
+            </div>
+        </div>
 
-  .accordion-item .content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s;
-    padding: 0 10px;
-    background: #fff;
-  }
+        </body>
+        </html>
 
-  .accordion-item input[type="checkbox"]:checked ~ .content {
-    max-height: 500px; /* Вы можете установить максимальную высоту в зависимости от ваших нужд */
-  }
-</style>
-</head>
-<body>
-
-<div class="accordion">
-  <div class="accordion-item">
-    <input type="checkbox" id="item1">
-    <label for="item1">Заголовок 1</label>
-    <div class="content">
-      <p>Текст для блока 1.</p>
     </div>
-  </div>
-
-  <div class="accordion-item">
-    <input type="checkbox" id="item2">
-    <label for="item2">Заголовок 2</label>
-    <div class="content">
-      <p>Текст для блока 2.</p>
-    </div>
-  </div>
-
-  <div class="accordion-item">
-    <input type="checkbox" id="item3">
-    <label for="item3">Заголовок 3</label>
-    <div class="content">
-      <p>Текст для блока 3.</p>
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
-
-  </div>
 </div>
 
 <script>
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("openModal");
-var span = document.getElementsByClassName("close")[0];
+    const modal = document.getElementById("myModal");
+    const btn = document.getElementById("openModal");
+    const span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
 
-span.onclick = function() {
-  modal.style.display = "none";
-}
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
 
 </body>

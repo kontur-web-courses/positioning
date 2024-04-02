@@ -1,0 +1,89 @@
+/*стили для изображений*/
+.logo-container {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*стили для модального окна*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 640px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*стили для аккордеона*/
+.accordion {
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.accordion-item {
+    overflow: hidden;
+    transition: max-height 0.5s;
+    margin-bottom: 10px;
+}
+
+.accordion-item label {
+    display: block;
+    padding: 10px;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+.accordion-item input[type="checkbox"] {
+    display: none;
+}
+
+.accordion-item .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    padding: 0 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+.accordion-item input[type="checkbox"]:checked ~ .content {
+    max-height: 500px;
+    border: 1px solid #ccc;
+}
