@@ -91,6 +91,7 @@
     z-index: 21;
     padding: 10px 20px;
     align-items: center;
+    box-shadow: 4px 4px 4px 4px rgba(15, 15, 15, 0.5);
 }
 
 .lightbox .window .close {
@@ -101,8 +102,8 @@
     background: rgb(203, 203, 255);
     border-width: 0;
     border-radius: 20px;
-    right: 3px;
-    top: 3px;
+    right: 5px;
+    top: 5px;
     position: absolute;
 }
 
