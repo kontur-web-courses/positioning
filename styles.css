@@ -1,6 +1,7 @@
 .logo {
     width: 100px;
     height: 100px;
+    border: 1px dotted lightgrey;
 }
 
 .logos {
@@ -62,8 +63,6 @@
     width: 40%;
     height: 40%;
 }
-
-
 
 .lightbox {
     position: fixed;
