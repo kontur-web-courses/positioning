@@ -27,9 +27,6 @@ const openLightbox = document.querySelector('.openButton');
 openLightbox.addEventListener('click', openWindow);
 openLightbox.addEventListener('click', startProgressBar)
 
-
-
-
 const progressBar = document.querySelector('.progressValue')
 
 function startProgressBar() {
