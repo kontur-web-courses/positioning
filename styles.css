@@ -39,3 +39,18 @@
     height: auto;
     position: absolute;
 }
+
+.progress-container {
+    width: 100%;
+    background-color: #f1f1f1;
+}
+
+.progress-bar {
+    width: 0;
+    height: 30px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    transition: width 0.3s ease;
+}
