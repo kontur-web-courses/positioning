@@ -110,31 +110,41 @@
     background-image: radial-gradient(circle at center, red 20%, white 20%);
     border-radius: 50%;
 }
+
+.progress-bar-border {
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    width: 25%;
+    height: 40px;
+    border: 2px dashed black;
+}
+
 .progress-bar {
-    width: 300px;
+    position: absolute;
+    top: 0;
+
     height: 40px;
     background-color: #ccc;
-    position: relative;
 }
 
-.progress-bar::before {
-    content: attr(data-label);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-}
-
-.progress-bar::after {
+.progress-bar-border::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 50%;
-    background-color: red;
+    width: 100%;
+    background-color: #ccc;
     color: white;
     z-index: -1;
     transition: width 2s;
+}
+
+.progress-bar-border::after {
+    content: "Loading...";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
