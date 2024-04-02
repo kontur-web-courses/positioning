@@ -87,3 +87,22 @@
     max-height: 500px;
     border: 1px solid #ccc;
 }
+
+
+.progressBar {
+    position: relative;
+}
+
+.progressBar .emptyProgress {
+    background-color: gray;
+    text-align: center;
+    width: 200px;
+}
+
+.progressBar .fullProgress {
+    background-color: red;
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+}
