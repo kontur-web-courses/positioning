@@ -1,0 +1,60 @@
+.circle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.c-2 {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+}
+
+.c-3 {
+    width: 50%;
+    height: 50%;
+    background-color: red;
+}
+
+.ms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background: white;
+}
+
+.ms-square {
+    width: 45px;
+    height: 45px;
+}
+
+.ms-top-left {
+    background-color: #f1511b;
+}
+
+.ms-top-right {
+    background-color: #80cc28;
+}
+
+.ms-bottom-left {
+    background-color: #00adef;
+}
+
+.ms-bottom-right {
+    background-color: #fbbc09;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-between;
+}
