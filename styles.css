@@ -1,13 +1,17 @@
 .logo3{
-    width: 100px;
-    height: 100px;
-    transform: translate(50px, 50px);
+    overflow: hidden;
+    transform: rotate(100turn);
+    transform: skew(0deg, 0deg);
+    max-height: 100px;
+    max-width: 100px;
     border: 1px solid black;
 }
 .logo5{
-    width: 100px;
-    height: 100px;
-    transform: translate(100px, 50px);
+    overflow: hidden;
+    transform: rotate(100turn);
+    transform: skew(0deg, 0deg);
+    max-height: 100px;
+    max-width: 100px;
     border: 1px solid black;
 }.modal {
     position: fixed;
@@ -37,4 +41,22 @@
     background: transparent;
     border: none;
     outline: none;
+}
+
+.light-grey{
+    background-color: lightgray;
+    text-align: center;
+    font-size: 40px;
+}
+
+.red{
+    height: 50px;
+    width: 100%;
+    clip-path: polygon(0 0, 0, 0, 0, 100%, 0% 100%);
+    background-color: red;
+    color: white;
+    margin-top: -48px;
+    overflow: hidden;
+    place-content: center;
+    font-size: 40px;
 }
