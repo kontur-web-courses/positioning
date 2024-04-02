@@ -6,8 +6,8 @@
 .logo {
     width: 100px;
     height: 100px;
-    object-fit: cover; /* обрезали изображение, чтобы вписалось в квадрат */
-    overflow: hidden; /* скрыли части, выходящие за границы */
+    object-fit: cover;
+    overflow: hidden;
     margin: 0 10px;
 }
 
@@ -55,4 +55,62 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.progress-bar {
+    position: relative;
+    width: 640px;
+    height: 20px;
+    justify-content: center;
+    background-color: #6e6a6a;
+}
+
+.progress-bar .progress {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+.progress-bar .stena {
+    position: relative;
+    height: 100%;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+}
+
+.progress-bar .text-white {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.progress-bar .text-black {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.progress-bar .text-white {
+    position: absolute;
+    left: 285px;
+    color: white;
+}
+
+.progress-bar .text-black {
+    text-align: center;
+    color: black;
 }

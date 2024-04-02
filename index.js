@@ -1,11 +1,3 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
-
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
-
 document.addEventListener('DOMContentLoaded', function() {
     let modal = document.getElementById('modal');
     let btn = document.getElementById("openModal");
@@ -13,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     btn.onclick = function() {
         modal.style.display = "block";
+        startProgressBar();
     }
 
     span.onclick = function() {
@@ -25,3 +18,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
+
+function startProgressBar() {
+    const pbar = document.querySelector('.progress-bar .stena');
+    pbar.style.width = '100%';
+    const iterations = 100;
+    const interval = 3000 / iterations;
+    let i = 0;
+
+    const progressBarInterval = setInterval(() => {
+        pbar.style.width = `${++i}%`;
+        if (i === iterations) {
+            clearInterval(progressBarInterval);
+        }
+    }, interval);
+}
