@@ -51,7 +51,7 @@
 
 input[type="checkbox"]:checked + .accordion-label + .accordion-content {
     display: block;
-    max-height: 100px; /* Выберите желаемую высоту */
+    max-height: 100px;
 }
 
 .accordion-label {
@@ -109,16 +109,25 @@ input[type="checkbox"]:checked + .accordion-label + .accordion-content {
     }
 }
 
-.modal .progress-bg {
-    background-color: red;
-    animation: loading 3s linear ;
+.modal .progress-bg-bg {
+    background-color: lightgray;
 }
 
-.modal .progress-text-2 {
+.modal .progress-bg {
+    background-color: red;
+    animation: loading 3s linear;
+}
+
+.modal .progress-bg-black {
+    display: none;
+    background-color: black;
+    animation: loading 3s linear;
+}
+
+
+.modal .progress-text {
     color: black;
     width: 620px;
-    background-color: lightgray;
-    /* border: 1px solid red; */
     text-align: center;
 
     &:after {
@@ -131,6 +140,7 @@ input[type="checkbox"]:checked + .accordion-label + .accordion-content {
 }
 
 .modal .progress-text:after {
-    color: black;
-    /* mix-blend-mode: color-dodge; */
+    color: white;
+    mix-blend-mode: difference;
+    
 }
