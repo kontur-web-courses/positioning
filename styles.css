@@ -1,0 +1,27 @@
+.popup__content_progress_bar{
+    text-align: center;
+    font-size: 20px;
+    width: 75%;
+    margin: 10px auto;
+    display: block;
+    position: relative;
+}
+.progressBar{
+    background-color: grey;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    height: 20px;
+    clip-path: inset(0, 0, 0, 0%);
+}
+.fillBar{
+    background-color: red;
+    color: white;
+    overflow: hidden;
+    height: 20px;
+    position: absolute;
+    z-index: -2;
+    left: 0;
+    right: 0;
+}
