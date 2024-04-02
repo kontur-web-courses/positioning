@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    overflow: hidden; /* Предотвращает прокрутку страницы под модальным окном */
+    overflow: hidden;
 }
 
 .overlay {
@@ -18,32 +18,32 @@ body {
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
-    z-index: 10; /* Убедитесь, что оверлей находится над другим содержимым, но под модальным окном */
+    z-index: 10;
 }
 
 .modal {
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 640px;
-background-color: white;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-z-index: 20; /* Убедитесь, что модальное окно находится над оверлеем */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 20;
 }
 
 .modal-header {
-padding: 10px;
-text-align: right;
+    padding: 10px;
+    text-align: right;
 }
 
 .close-button {
-background: none;
-border: none;
-font-size: 1.5rem;
-cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .modal-body {
-padding: 20px;
+    padding: 20px;
 }
