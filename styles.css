@@ -108,7 +108,7 @@ body, html {
 .progress-bar-empty {
     width: 300px;
     height: 40px;
-    background: wheat;
+    background: grey;
     border-radius: 20px;
     padding: 0;
     overflow: hidden;
@@ -117,7 +117,7 @@ body, html {
 }
 
 .progress-bar-full {
-    width: 170px;
+    width: 120px;
     height: 40px;
     background: red;
     overflow: hidden;
