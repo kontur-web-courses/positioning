@@ -1,0 +1,22 @@
+#modal {
+    width: 320px;
+    position: relative;
+}
+
+#modal::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+}
+
+#close {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    background-color: red;
+}
