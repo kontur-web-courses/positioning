@@ -7,6 +7,23 @@
 </head>
 <body>
     <!--Верстать тут-->
+    <div class = "block">
+        <!-- openModal - id модального окна (элемента div) -->
+        <a href="#openModal">Открыть модальное окно</a>
+    </div>
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title">Заголовок</h3>
+              <a href="#close" title="Close" class="close">X</a>
+            </div>
+            <div class="modal-body">    
+              <p>Текст</p>
+            </div>
+          </div>
+        </div>
+      </div>
     <script src="index.js"></script>
 </body>
 </html>
