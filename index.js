@@ -22,3 +22,12 @@ function animateProgressBar(duration) {
 }
 
 animateProgressBar(3000);
+
+document.addEventListener('DOMContentLoaded', function() {
+    var exitButton = document.querySelector('.exit');
+    var lightbox = document.querySelector('.lightbox');
+
+    exitButton.addEventListener('click', function() {
+        lightbox.style.display = 'none';
+    });
+});
