@@ -1,3 +1,68 @@
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.target {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.target .outer {
+    position: absolute;
+    border-radius: 100%;
+    background: red;
+    width: 100%;
+    height: 100%;
+}
+
+.target .mid {
+    position: absolute;
+    border-radius: 100%;
+    background: white;
+    width: 66%;
+    height: 66%;
+}
+
+.target .inner {
+    position: absolute;
+    border-radius: 100%;
+    background: red;
+    width: 33%;
+    height: 33%;
+}
+
+.japan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.japan .outer {
+    position: absolute;
+    border: 1px solid black;
+    background: white;
+    width: 100%;
+    height: 66%;
+}
+
+.japan .center {
+    position: absolute;
+    border-radius: 100%;
+    background: crimson;
+    width: 40%;
+    height: 40%;
+}
+
 
 
 .lightbox {
