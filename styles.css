@@ -1,0 +1,146 @@
+.logo-container {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+}
+
+.progress-container {
+    display: flex;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    width: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.progress-container .progress-bar {
+    position: relative;
+    width: 0;
+    height: 20px;
+    background-color: red;
+}
+
+.progress-container .progress-text {
+    position: absolute;
+    text-align: center;
+}
+
+
+.accordion-content {
+    display: none;
+}
+
+.accordion-content + input {
+    display: none;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+input[type="checkbox"]:checked + .accordion-label + .accordion-content {
+    display: block;
+    max-height: 100px;
+}
+
+.accordion-label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.accordion-label:hover {
+    text-decoration: underline;
+}
+
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+    padding-top: 22px;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal-content {
+    padding: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.modal .progress-bg-bg {
+    background-color: lightgray;
+}
+
+.modal .progress-bg {
+    background-color: red;
+    animation: loading 3s linear;
+}
+
+.modal .progress-bg-black {
+    display: none;
+    background-color: black;
+    animation: loading 3s linear;
+}
+
+
+.modal .progress-text {
+    color: black;
+    width: 620px;
+    text-align: center;
+
+    &:after {
+        padding-left: 20px;
+        content: "Loading...";
+        display: block;
+        text-align: center;
+        animation: percentage 3s linear ;
+    }
+}
+
+.modal .progress-text:after {
+    color: white;
+    mix-blend-mode: difference;
+    
+}
