@@ -1,16 +1,32 @@
-.border-react {
+.b-react {
     border-color: #61dafb;
+}
+
+.b-darkgrey {
+    border-color: darkgrey;
 }
 
 .bg-react {
     background-color: #61dafb;
 }
 
-.border-4px {
+.bg-gray {
+    background-color: gray;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.b-1px {
+    border-width: 1px;
+}
+
+.b-4px {
     border-width: 4px;
 }
 
-.border-solid {
+.b-solid {
     border-style: solid;
 }
 
@@ -18,11 +34,19 @@
     display: contents;
 }
 
-.width-100px {
+.w-50p {
+    width: 50%;
+}
+
+.w-400px {
+    width: 400px;
+}
+
+.w-100px {
     width: 100px;
 }
 
-.height-100px {
+.h-100px {
     height: 100px;
 }
 

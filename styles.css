@@ -1,3 +1,31 @@
+/* Прогресс */
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 3px;
+    position: relative;
+}
+
+.progress {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ff0000;
+    width: 50%;
+    height: 20px;
+}
+
+.progress-bar p {
+    color: white;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+}
+
 /* Реакт */
 .ball {
     position: absolute;
