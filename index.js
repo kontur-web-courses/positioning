@@ -24,3 +24,24 @@ closeLightbox.addEventListener('click', closeWindow)
 
 const openLightbox = document.querySelector('.openButton');
 openLightbox.addEventListener('click', openWindow);
+
+function startProgressBar() {
+    const maxValue = 100;
+    let value = 0;
+    const time = 3000/maxValue;
+    const loading = function () {
+        value += 1;
+        progressBar.style.width = ${value}%;
+        if (value >= maxValue) {
+            clearInterval(animate);
+        }
+    }
+    const animate = setInterval(loading, time);
+}
+
+function resetProgressBar() {
+    progressBar.style.width = "0";
+}
+
+const progressBar = document.querySelector('.progressValue')
+startProgressBar();

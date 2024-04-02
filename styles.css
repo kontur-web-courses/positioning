@@ -61,3 +61,30 @@ body {
     border-radius: 10px;
     overflow: auto;
 }
+
+progress {
+    position: relative;
+    margin-bottom: 10px;
+    height: 20px;
+}
+
+.progressValue {
+    overflow: hidden;
+    position: absolute;
+    height: 20px;
+    background-color: red;
+}
+
+.progressInnerLabel {
+    position: absolute;
+    text-align: center;
+    color: white;
+    height: 20px;
+}
+
+.progressLabel {
+    background-color: #eee;
+    text-align: center;
+    color: black;
+    height: 20px;
+}
