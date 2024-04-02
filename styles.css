@@ -52,3 +52,52 @@
     border: none;
     outline: none;
 }
+
+/*.wrapper {*/
+/*    width: 100%;*/
+/*    height: 100px;*/
+/*    background-color: lightgray;*/
+/*    padding: 45px 0 0 0;*/
+/*}*/
+
+/*.progress-bar-default {*/
+/*    background-color: darkgray;*/
+/*    text-align: center;*/
+/*}*/
+
+/*.progress-bar-active {*/
+/*    width: 100px;*/
+/*    height: 20px;*/
+/*    position: relative;*/
+/*    background-color: red;*/
+/*    color: white;*/
+/*    bottom: 35%;*/
+/*}*/
+
+/*.progress-bar-active p {*/
+/*    position: absolute;*/
+/*}*/
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper p {
+    margin: 0;
+    text-align: center;
+}
+
+.wrapper .progress-bar-default {
+    background-color: lightgray;
+    color: black;
+}
+
+.wrapper .progress-bar-active {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    background-color: red;
+    top: 0;
+    clip-path: inset(0 70% 0 0);
+}

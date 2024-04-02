@@ -21,6 +21,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     closeButton.addEventListener('click', closeModal);
-
-    openModal();
 });
