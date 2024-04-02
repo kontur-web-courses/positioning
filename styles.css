@@ -1,0 +1,213 @@
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo5 {
+    position: relative;
+}
+
+.logo5 .border {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 60%;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+}
+
+.logo5 .circle {
+    position: absolute;
+    border-radius: 100%;
+    background: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    height: 35%;
+    z-index: 2;
+}
+
+.logo4 {
+    position: relative;
+}
+
+.logo4 .outer {
+    position: absolute;
+    border-radius: 100%;
+    background: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+.logo4 .middle {
+    position: absolute;
+    border-radius: 100%;
+    background: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66%;
+    height: 66%;
+}
+
+.logo4 .inner {
+    position: absolute;
+    border-radius: 100%;
+    background: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 33%;
+    height: 33%;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.lightbox .overlay {
+    background: #06580040;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.lightbox .window {
+    background: rgb(167, 225, 178);
+    position: fixed;
+    width: 640px;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 21;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox .window .close {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    background: transparent;
+    border-radius: 10%;
+    border-width: 0;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+}
+
+.progress {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: -5;
+}
+
+.progress .bar {
+    position: relative;
+    background: lightgray;
+    width: 640px;
+    height: 30px;
+    padding: 0;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress .bar .progress-part {
+    position: relative;
+    background: red;
+    border-radius: 2px;
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.progress .bar .text-black {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translate(-45%, 0);
+    padding: 5px;
+}
+
+.progress .bar .progress-part .text-white {
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 320px;
+    height: 100%;
+    transform: translate(-45%, 0);
+    padding: 5px;
+    overflow: hidden;
+}
+
+p {
+    margin: 0;
+}
+
+.accordeon {
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    width: 90%;
+    background: rgb(167, 225, 178);
+    border-width: 0;
+    padding: 10px;
+    justify-content: center;
+}
+
+.panel {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#expand-toggle1:checked~* #panel1 {
+    max-height: 300px;
+    padding: 10px;
+}
+
+#expand-toggle2:checked~* #panel2 {
+    max-height: 300px;
+    padding: 10px;
+}
+
+#expand-toggle3:checked~* #panel3 {
+    max-height: 300px;
+    padding: 10px;
+}
+
+#expand-toggle1,
+#expand-toggle2,
+#expand-toggle3 {
+    display: none;
+}
+
+label {
+    padding: 0;
+    font-size: 20px;
+}
