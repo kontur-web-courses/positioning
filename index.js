@@ -18,7 +18,7 @@ progressBar.style["clip-path"] = `inset(0 ${100 - value}% 0 0)`;
 let i = 0;
 var interval = setInterval(function() {
     if (i < 100) {
-      i += 1;
+      i += 0.6;
       updateProgressBar(i);
     }
   }, 50);
