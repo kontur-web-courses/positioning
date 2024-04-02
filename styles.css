@@ -12,36 +12,36 @@ body {
 }
 
 .overlay {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background: rgba(0, 0, 0, 0.5);
-z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 
 .modal {
-position: fixed;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-width: 640px;
-background-color: white;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-z-index: 20;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 20;
 }
 
 .modal-header {
-padding: 10px;
-text-align: right;
+    padding: 10px;
+    text-align: right;
 }
 
 .close-button {
-background: none;
-border: none;
-font-size: 1.5rem;
-cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .modal-body {
