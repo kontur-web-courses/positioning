@@ -32,4 +32,15 @@
 .close:focus {
     color: black;
     cursor: pointer;
+}.logo {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 10px;
+    border: blue 5px solid;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
 }
