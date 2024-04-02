@@ -1,3 +1,18 @@
+.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    width: 100px;
+    height: 66.6px;
+}
+
+.circle {
+    background-color: #BC002D;
+    border-radius: 50%;
+    height: 40px;
+    width:40px;
+}
 .microsoft_logo {
     display: grid;
     grid-template-columns: 48px 48px;
