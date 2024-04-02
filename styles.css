@@ -1,0 +1,136 @@
+
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.lightbox .dark {
+    background: #00000040;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.lightbox .window {
+    background: rgb(254, 233, 253);
+    position: fixed;
+    width: 640px;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 21;
+    padding: 10px 20px;
+}
+
+.lightbox .window .close {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    background: rgb(203, 203, 255);
+    border-width: 0;
+    border-radius: 20px;
+    right: 3px;
+    top: 3px;
+    position: absolute;
+}
+
+.progress {
+    position: relative;
+    margin-top: 50px;
+    z-index: -5;
+}
+
+.progress .bar {
+    width: 400px;
+    height: 30px;
+    padding: 0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    background: gray;
+}
+
+.progress .bar .progress-part {
+    width: 190px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: red;
+    border-radius: 5px;
+}
+
+.progress .bar .text-black {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    transform: translate(-45%, 0);
+    padding: 5px;
+}
+
+.progress .bar .progress-part .text-white {
+    left: 200px;
+    height: 100%;
+    transform: translate(-45%, 0);
+    padding: 5px;
+    overflow: hidden;
+    position: absolute;
+    color: white;
+    top: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    width: 97%;
+    background: rgb(212, 205, 255);
+    border-width: 0;
+    padding: 10px;
+    border: 1px solid rgb(255, 156, 253);
+    justify-content: center;
+    text-align: center;
+}
+
+.panel {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+    transition: all 0.4s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#expand-toggle1:checked ~ * #panel1 {
+    max-height: 250px;
+    padding: 10px;
+}
+
+#expand-toggle2:checked ~ * #panel2 {
+    max-height: 250px;
+    padding: 10px;
+}
+
+#expand-toggle3:checked ~ * #panel3 {
+    max-height: 250px;
+    padding: 10px;
+}
+
+#expand-toggle1, #expand-toggle2, #expand-toggle3 {
+    display: none;
+}
+
+label {
+    padding: 0;
+    font-size: 25px;
+}
