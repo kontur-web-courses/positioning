@@ -22,3 +22,18 @@ function closeModal() {
 
 overlay.addEventListener('click', closeModal);
 closeBtn.addEventListener('click', closeModal);
+
+
+const progressBar = document.querySelector('.progress-bar-full')
+const progressZone = document.querySelector('.progress-bar-empty')
+
+let width = 0;
+
+const fillProgressBar = setInterval(() => {
+    if (width >= 100) {
+        clearInterval(fillProgressBar);
+    } else {
+        width++;
+        progressBar.style.width = `${width}%`;
+    }
+}, 30);
