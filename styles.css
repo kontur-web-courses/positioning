@@ -1,0 +1,118 @@
+.block{
+    width: 100px;
+    height: 100px;
+    display: table-cell;
+    overflow: hidden;
+}
+
+.block img {
+    vertical-align: middle;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.modalBackground {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.modalActive {
+    display: flex;
+    position: relative;
+    top: 40%;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    cursor: default;
+    padding: 40px 20px;
+}
+
+.modalClose {
+    font-family: sans-serif;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.modalClose img {
+    margin: 3px;
+    width: 24px;
+    height: 24px;
+}
+
+.modalWindow {
+    position: relative;
+}
+
+.progress-bar {
+    position: relative;
+    width: 640px;
+    height: 20px;
+    justify-content: center;
+    background-color: #6e6a6a;
+}
+
+.progress-bar .progress {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+
+.progress-bar .stena {
+    position: relative;
+    height: 100%;
+    width: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+}
+
+.progress-bar .text-white {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.progress-bar .text-black {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+.progress-bar .text-white {
+    position: absolute;
+    left: 115px;
+    color: white;
+}
+
+.progress-bar .text-black {
+    text-align: center;
+    color: black;
+}
