@@ -21,9 +21,16 @@ function openWindow(){
 
 const closeLightbox = document.querySelector('.closeButton');
 closeLightbox.addEventListener('click', closeWindow)
+closeLightbox.addEventListener('click', resetProgressBar)
 
 const openLightbox = document.querySelector('.openButton');
 openLightbox.addEventListener('click', openWindow);
+openLightbox.addEventListener('click', startProgressBar)
+
+
+
+
+const progressBar = document.querySelector('.progressValue')
 
 function startProgressBar() {
     const maxValue = 100;
@@ -31,7 +38,7 @@ function startProgressBar() {
     const time = 3000/maxValue;
     const loading = function () {
         value += 1;
-        progressBar.style.width = ${value}%;
+        progressBar.style.width = `${value}%`;
         if (value >= maxValue) {
             clearInterval(animate);
         }
@@ -42,6 +49,3 @@ function startProgressBar() {
 function resetProgressBar() {
     progressBar.style.width = "0";
 }
-
-const progressBar = document.querySelector('.progressValue')
-startProgressBar();
