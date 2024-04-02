@@ -63,6 +63,83 @@
   <div class="modal-content">
     <span class="close">&times;</span>
     <p>Текст в модальном окне...</p>
+    <p>ДОБРЫЙ ДЕНЬ ЮХУУУУУУУУУУУУУУУУУУ</p>
+    <p>АААААААААААААААААААААААААААААА</p>
+    <p>АААААААААААААААААААААААААААААА</p>
+    <p>АААААААААААААААААААААААААААААА</p>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аккордеон</title>
+<style>
+  .accordion {
+    max-width: 600px;
+    margin: 50px auto;
+  }
+
+  .accordion-item {
+    overflow: hidden;
+    transition: max-height 0.5s;
+    margin-bottom: 10px;
+  }
+
+  .accordion-item label {
+    display: block;
+    padding: 10px;
+    background: #f2f2f2;
+    cursor: pointer;
+  }
+
+  .accordion-item input[type="checkbox"] {
+    display: none;
+  }
+
+  .accordion-item .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    padding: 0 10px;
+    background: #fff;
+  }
+
+  .accordion-item input[type="checkbox"]:checked ~ .content {
+    max-height: 500px; /* Вы можете установить максимальную высоту в зависимости от ваших нужд */
+  }
+</style>
+</head>
+<body>
+
+<div class="accordion">
+  <div class="accordion-item">
+    <input type="checkbox" id="item1">
+    <label for="item1">Заголовок 1</label>
+    <div class="content">
+      <p>Текст для блока 1.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <input type="checkbox" id="item2">
+    <label for="item2">Заголовок 2</label>
+    <div class="content">
+      <p>Текст для блока 2.</p>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <input type="checkbox" id="item3">
+    <label for="item3">Заголовок 3</label>
+    <div class="content">
+      <p>Текст для блока 3.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
   </div>
 </div>
 
@@ -88,3 +165,4 @@ window.onclick = function(event) {
 
 </body>
 </html>
+
