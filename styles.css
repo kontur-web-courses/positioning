@@ -1,19 +1,57 @@
-.modal {
-    display: none;
+.logo-container {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.logo-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+.modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
 }
 
-.progress-container {
-    display: flex;
-    position: absolute;
+.modal {
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 640px;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.modal-content {
+    padding: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.progress-container {
+    display: flex;
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
     width: 200px;
     background-color: #ccc;
     border-radius: 10px;
@@ -30,4 +68,34 @@
 .progress-container .progress-text {
     position: absolute;
     text-align: center;
+}
+
+
+.accordion-content {
+    display: none;
+}
+
+.accordion-content + input {
+    display: none;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+input[type="checkbox"]:checked + .accordion-label + .accordion-content {
+    display: block;
+    max-height: 100px; /* Выберите желаемую высоту */
+}
+
+.accordion-label {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.accordion-label:hover {
+    text-decoration: underline;
 }
