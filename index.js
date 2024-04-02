@@ -15,9 +15,9 @@ const progressBar = document.getElementById('progress-bar')
 
 // const progressBar = document.querySelector('.progress-bar')
 
-document.addEventListener('DOMContentLoaded', function() {
-    // progressModal.style.display = 'block';
-
+openModalButton.addEventListener('click', () => {
+    progressModal.style.display = 'block';
+/*
     progressBar.style.width = '0px';
 
     closeButton.addEventListener('click', () => {
@@ -34,5 +34,5 @@ document.addEventListener('DOMContentLoaded', function() {
             width += 20;
             progressBar.style.width = `${width}px`;
         }
-    }, 300);
+    }, 300);*/
 });

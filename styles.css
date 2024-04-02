@@ -10,42 +10,6 @@
     height: auto;
 }
 
-
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 640px;
-    background-color: #fff;
-    z-index: 1000;
-}
-
-.modal-content {
-    padding: 10px;
-}
-
-.close-btn {
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    background: none;
-    border: none;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-
 .progress-container {
     display: flex;
     /*position: absolute;
@@ -98,4 +62,78 @@ input[type="checkbox"]:checked + .accordion-label + .accordion-content {
 
 .accordion-label:hover {
     text-decoration: underline;
+}
+
+
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+    /*padding-top: 80px;*/
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.modal-content {
+    padding: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal .progress-bg {
+    background-color: red;
+    animation: loading 3s linear infinite;
+}
+
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+.modal .text {
+    color: red;
+    width: 638px;
+    border: 1px solid red;
+    text-align: center;
+
+    &:after {
+        padding-left: 20px;
+        content: "Loading...";
+        display: block;
+        text-align: center;
+        animation: percentage 3s linear infinite;
+    }
+}
+
+.modal .text:after {
+    color: white;
+    mix-blend-mode: difference;
 }
