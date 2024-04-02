@@ -1,33 +1,38 @@
 .logoBlock {
     /*overflow: hidden;*/
-    width: 100px;
-    height: 100px;
+
+    display: inline-block;
 }
 
 .logoBlock img {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
+    display: inline-block;
 }
-/* свойства модального окна по умолчанию */
+
+
+.block {
+    display: block;
+    position: relative;
+}
 
 .modal {
-    position: fixed; /* фиксированное положение */
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.5); /* цвет фона */
+    background: rgba(0,0,0,0.5);
     z-index: 1050;
-    opacity: 0; /* по умолчанию модальное окно прозрачно */
-    transition: opacity 200ms ease-in; /* анимация перехода */
-    pointer-events: none; /* элемент невидим для событий мыши */
+    opacity: 0;
+    transition: opacity 200ms ease-in;
+    pointer-events: none;
     margin: 0;
     padding: 0;
 }
 
 
-/* при отображении модального окно */
 .modal:target {
     opacity: 1;
     pointer-events: auto;
@@ -45,13 +50,13 @@
     overflow-y: scroll;
 }
 
-/* свойства для блока, содержащего контент модального окна */ 
+/* свойства для блока, содержащего контент модального окна */
 .modal-content {
     position: relative;
     display: flex;
 
     flex-direction: column;
-    background-color: #fff;
+    background-color: white;
     background-clip: padding-box;
     border: 1px solid rgba(0,0,0,.2);
     border-radius: .3rem;
@@ -83,8 +88,8 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
+    color: black;
+    text-shadow: 0 1px 0 white;
     opacity: .5;
     text-decoration: none;
 }
