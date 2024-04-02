@@ -4,7 +4,7 @@
     align-items: center;
     background-color: #F0F0F0;
     width: 100px;
-    height: 66.6px;
+    height: 67px;
 }
 
 .circle {
@@ -37,8 +37,40 @@
     grid-row: 2 / 2;
     background-color: #00ADEF;
 }
-    #yellow {
+#yellow {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
     background-color: #FBBC09;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 640px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }
