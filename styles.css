@@ -1,4 +1,15 @@
-.modal {
+.logo3{
+    width: 100px;
+    height: 100px;
+    transform: translate(50px, 50px);
+    border: 1px solid black;
+}
+.logo5{
+    width: 100px;
+    height: 100px;
+    transform: translate(100px, 50px);
+    border: 1px solid black;
+}.modal {
     position: fixed;
     top: 50%;
     left: 50%;
