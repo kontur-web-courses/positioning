@@ -87,8 +87,8 @@
 }
 
 .circle {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #BC002D;
     border-radius: 50%;
 }
@@ -100,7 +100,7 @@
     position: relative;
 }
 
-.circle1::before {
+.circle1::after {
     content: '';
     position: absolute;
     top: 10px;
@@ -109,4 +109,32 @@
     bottom: 10px;
     background-image: radial-gradient(circle at center, red 20%, white 20%);
     border-radius: 50%;
+}
+.progress-bar {
+    width: 300px;
+    height: 40px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.progress-bar::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: red;
+    color: white;
+    z-index: -1;
+    transition: width 2s;
 }
