@@ -1,0 +1,29 @@
+.microsoft_logo {
+    display: grid;
+    grid-template-columns: 48px 48px;
+    grid-template-rows: 48px 48px;
+    width: 100px;
+    height: 100px;
+    gap: 4px;
+}
+
+#red {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    background-color: #F1511B;
+}
+#green {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    background-color: #80CC28;
+}
+#blue {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    background-color: #00ADEF;
+}
+    #yellow {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    background-color: #FBBC09;
+}
