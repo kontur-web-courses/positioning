@@ -1,0 +1,39 @@
+.logos{
+    display: flex;
+}
+
+.square {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #BC002D;
+    border-radius: 50%;
+}
+.circle1 {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle1::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-image: radial-gradient(circle at center, red 20%, white 20%);
+    border-radius: 50%;
+}
