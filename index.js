@@ -13,7 +13,7 @@ const progressBar = document.getElementById('progress-bar')
 
 openModalButton.addEventListener('click', () => {
     progressModal.style.display = 'block';
-
+/*
     progressBar.style.width = '0px';
 
     let width = 0;
@@ -25,5 +25,5 @@ openModalButton.addEventListener('click', () => {
             width += 20;
             progressBar.style.width = `${width}px`;
         }
-    }, 300);
+    }, 300);*/
 });
