@@ -1,0 +1,11 @@
+.imgHolder{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+.imgHolder img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
