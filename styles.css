@@ -4,12 +4,15 @@
     transform: translate(50px, 50px);
     border: 1px solid black;
 }
+
 .logo5{
     width: 100px;
     height: 100px;
     transform: translate(100px, 50px);
     border: 1px solid black;
-}.modal {
+}
+
+.modal {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -25,7 +28,7 @@
 }
 
 .modal-content {
-    /* Контент модального окна */
+
 }
 
 .close-btn {
@@ -38,3 +41,54 @@
     border: none;
     outline: none;
 }
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px);
+    z-index: 1000; 
+    visibility: hidden;
+}
+
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+.accordion input[type="checkbox"] {
+    display: none;
+}
+.accordion label {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    display: block;
+    border-radius: 5px;
+}
+.accordion label:hover {
+    background-color: whitesmoke;
+}
+.accordion label::after {
+    content: "∨";
+    float: right;
+}
+.accordion input[type="checkbox"]:checked ~ div {
+    display: block;
+}
+.accordion input[type="checkbox"]:checked + label::after {
+    content: "∧";
+}
+.accordion div {
+    display: none;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+}
+
