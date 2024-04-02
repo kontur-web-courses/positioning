@@ -1,7 +1,67 @@
-.logo {
+body {
+    background-color: lightcoral;
+}
+
+.logos {
+    display: flex;
+}
+
+.japanese {
+    width: 250px;
+    height: 167px;
+    margin-right: 20px;
+    background-color: white;
+}
+
+.japanese .circle {
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    position: relative;
+    top: calc(50% - 35px);
+    margin: auto;
+    border-radius: 50%;
+}
+
+.microsoft {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+    width: 259px;
+    height: 194px;
+
+}
+
+.microsoft .block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 100px;
 }
+
+.square{
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+}
+
+.microsoft .block .red {
+    background-color: red;
+}
+.microsoft .block .green {
+    background-color: green;
+}
+.microsoft .block .blue {
+    background-color: blue;
+}
+.microsoft .block .yellow {
+    background-color: yellow;
+}
+
+
 
 .overlay {
     position: absolute;
@@ -85,5 +145,5 @@
 }
 
 .accordion input[type="checkbox"]:checked + label + .content {
-    max-height: 200px;
+    max-height: none;
 }
