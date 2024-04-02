@@ -90,19 +90,32 @@
 
 
 .progressBar {
+    background: gray;
+    margin-top: 20px;
     position: relative;
+    width: 320px;
+    height: 30px;
 }
 
-.progressBar .emptyProgress {
-    background-color: gray;
-    text-align: center;
-    width: 200px;
-}
-
-.progressBar .fullProgress {
-    background-color: red;
-    color: white;
+.progressBar::before, .fullProgress::before {
+    content: 'Loading...';
     position: absolute;
-    text-align: center;
-    width: 100px;
+    left: 160px;
+    top: 15px;
+    transform: translate(-50%, -50%);
 }
+
+
+.fullProgress {
+    position: absolute;
+    background: red;
+    left: 0;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fullProgress::before {
+    color: white;
+}
+
