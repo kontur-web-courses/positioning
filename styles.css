@@ -77,3 +77,11 @@ img {
     height: 100%;
     overflow: hidden;
 }
+
+input[type='checkbox'] + p {
+    display: none;
+}
+
+input[type='checkbox']:checked + p {
+    display: block;
+}
