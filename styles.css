@@ -1,0 +1,150 @@
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: rgba(0, 0, 0, 0.25);
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.container2 .lightbox {
+    border: solid black 1px;
+    width: 640px;
+    background-color: white;
+}
+
+.container2 .lightbox .header {
+    display: flex;
+    justify-content: right;
+}
+
+.container2 .lightbox .header .closeCross {
+    width: 16px;
+    height: 16px;
+    opacity: 0.5;
+}
+
+.container2 .lightbox .header .closeCross:hover {
+    opacity: 1;
+}
+
+.container2 .lightbox .header .closeCross .border1, 
+.container2 .lightbox .header .closeCross .border2 {
+    content: ' ';
+    position: absolute;
+    min-height: 17px;
+    min-width: 2px;
+    background-color: black;
+}
+
+.container2 .lightbox .header .closeCross .border1 {
+    transform: rotate(45deg);
+}
+
+.container2 .lightbox .header .closeCross .border2 {
+    transform: rotate(-45deg);
+}
+
+.container2 .lightbox .content {
+    text-align: center;
+}
+.logo6_wrapper {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+
+
+.logo {
+    width: 45px;
+    height: 45px;
+    margin: 1px;
+}
+
+.red {
+    background-color: #F25022;
+}
+
+.green {
+    background-color: #7FBA00;
+}
+
+.blue {
+    background-color: #00A4EF;
+}
+
+.yellow {
+    background-color: #FFB900;
+}
+
+
+
+.logo4_wrapper {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 40px;
+    background-color: #ffffff;
+  }
+  
+.circle {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 70px;
+    border-radius: 50%;
+}
+
+.circle1 {
+    background-color: #c63131;
+}
+
+.circle2 {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 77.5px;
+    background-color: #ffffff;
+}
+
+.circle3 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 85px;
+    background-color: #c63131;
+}
+  
+
+.progress-bar {
+    background:#ccc;
+    padding:10px 0;
+    width:100%;
+    text-align:center;
+    position:relative;
+}
+
+.progress-fill {
+    width: 100%;
+    background:red;
+    color: white;
+    padding:10px 0;
+    position:absolute;
+    left:0;
+    top:0;
+    overflow:hidden;
+    clip-path: inset(0 10% 0 0);
+}
