@@ -1,10 +1,8 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
-
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+const progressContainer = document.querySelector('.progress-container');
+const updateProgress = (progress) => {
+    progressContainer.style.setProperty('--progress', progress);
+    document.querySelector('.progress-bar').style.width = progress + '%';
+};
 document.addEventListener('DOMContentLoaded', function() {
     const overlay = document.querySelector('.overlay');
     const openBtn = document.querySelector('.open-modal-btn');
