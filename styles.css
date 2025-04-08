@@ -58,3 +58,39 @@ button:hover {
 .rotated img {
     transform: rotate(15deg);
 }
+.progress-fill {
+    height: 100%;
+    width: 0;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: width 0.1s linear;
+}
+
+.progress-fill .progress-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.progress-bar .fallback {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.progress-bar .fallback.white {
+    color: white;
+}
