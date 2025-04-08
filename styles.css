@@ -86,3 +86,14 @@
     right: 10px;
     background-color: red;
 }
+
+.lightbox_progress_bar {
+    background-color: silver;
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    top: 75%;
+    left: 0;
+    transform: translate(0, -50%);
+    height: 20%;
+}
