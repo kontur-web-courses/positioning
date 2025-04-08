@@ -20,3 +20,14 @@ function startProgressBar(callback) {
         }
     }, frameTime);
 }
+
+function openLightbox() {
+    document.querySelector('.modal').style.display = 'flex';
+}
+
+function closeLightbox() {
+    document.querySelector('.modal').style.display = 'none';
+}
+
+document.querySelector('.open-modal-btn').addEventListener('click', openLightbox);
+document.querySelector('#close').addEventListener('click', closeLightbox);
