@@ -39,7 +39,15 @@ const animateProgress = () => {
         if (progress < 1) {
             requestAnimationFrame(step);
         } else {
-            letterSpans.forEach(span => (span.style.color = 'white'));
+            // Когда загрузка завершена
+            loadingText.innerHTML = ''; // очищаем старые буквы
+            const completeText = 'Complete!';
+            completeText.split('').forEach(char => {
+                const span = document.createElement('span');
+                span.textContent = char;
+                span.style.color = 'white'; // весь текст белый
+                loadingText.appendChild(span);
+            });
         }
     };
 
