@@ -72,3 +72,56 @@ button:hover {
 .rotated img {
     transform: rotate(15deg); /* Поворот изображения на 15 градусов */
 }
+
+.progress-bar {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background-color: #ccc; /* Серый фон */
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 2rem 0;
+}
+
+/* Заполненная часть прогресса */
+.progress-fill {
+    height: 100%;
+    width: 0%; /* Изначально 0%, будет меняться через JS */
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: width 0.1s linear;
+}
+
+/* Белый текст над красным прогрессом */
+.progress-fill .progress-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.progress-bar .fallback {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-weight: bold;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.progress-bar .fallback.white {
+    color: white;
+}
+
+
+
+
