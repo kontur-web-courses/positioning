@@ -2,18 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Модалка с прогресс-баром</title>
+    <title>Модалка с прогресс-баром и логотипами</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Модальное окно -->
 <div class="overlay" id="modalOverlay">
     <div class="modal">
         <button class="close-btn" id="closeModal">&times;</button>
         <h2>Прогресс загрузки</h2>
 
-        <!-- Прогресс-бар -->
         <div class="progress-container">
             <div class="progress-bar">
                 <div class="progress-fill"></div>
@@ -24,6 +22,15 @@
         </div>
 
         <button class="green-btn" id="closeButton">Закрыть</button>
+    </div>
+</div>
+
+<div class="logos">
+    <div class="logo-container">
+        <img src="designs/logo1.png" alt="Logo 1">
+    </div>
+    <div class="logo-container">
+        <img src="designs/logo2.png" alt="Logo 2">
     </div>
 </div>
 
