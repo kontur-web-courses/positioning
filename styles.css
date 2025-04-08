@@ -17,6 +17,10 @@ img {
     flex-direction: column;
 }
 
+.hide {
+    display: none;
+}
+
 .module-window {
     width: 640px;
     background-color: white;
@@ -72,10 +76,11 @@ img {
 .progress-bar {
     position: relative;
     background-color: gray;
-    width: 100%;
+    width: 80%;
     height: 40px;
     border-radius: 5px;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 .progress-fill {

@@ -1,15 +1,17 @@
-const openModalBtn = document.getElementById('openModalBtn');
-const closeModalBtn = document.getElementById('closeModalBtn');
 const modalOverlay = document.getElementById('modalOverlay');
 const progressFill = document.getElementById('progressFill');
+const crossBtn = document.getElementById('cross');
+const moduleScreen = document.getElementsByClassName('module-screen')[0];
+const openBtn = document.getElementById('openModuleBtn');
 
-openModalBtn.addEventListener('click', () => {
-    modalOverlay.classList.add('show');
+crossBtn.addEventListener('click', () => {
+    moduleScreen.classList.add('hide');
+})
+
+openBtn.addEventListener('click', () => {
+    moduleScreen.classList.remove('hide');
     animateProgress();
 });
 
-closeModalBtn.addEventListener('click', () => {
-    modalOverlay.classList.remove('show');
-    progressFill.style.width = '0%';
-});
+
 
