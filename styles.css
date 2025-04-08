@@ -14,7 +14,6 @@
     margin: 20px auto;
 }
 
-/* Общие стили для ушей */
 .mickie .ear {
     width: 30px;
     height: 30px;
@@ -24,12 +23,10 @@
     bottom: 70px;
 }
 
-/* Левое ухо */
 .mickie .ear.left {
     left: 10px;
 }
 
-/* Правое ухо */
 .mickie .ear.right {
     right: 10px;
 }
@@ -104,9 +101,10 @@ body {
 
 .progress-text {
     position: absolute;
-    left: 50%;
+    width: 100%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    text-align: center;
     font-size: 18px;
 }
 
