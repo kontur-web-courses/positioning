@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     const progressBar = document.querySelector('.progress-bar');
     const whiteText = document.querySelector('.progress-text.active');
+    const closeBtn = document.querySelector('.close');
+    const modal = document.querySelector('.modal');
+
+    closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
 
     const duration = 3000;
     const interval = 15;
