@@ -1,7 +1,5 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
-
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+const closeButton = document.getElementById('close-lightbox');
+closeButton.addEventListener('click', () => {
+    const otherPage = document.getElementById('other-page');
+    otherPage.style.display = "none";
+})
