@@ -1,4 +1,26 @@
-.img {
+.logo-container {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #333;
+    margin: 20px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.logo {
     width: 100px;
     height: 100px;
+    transition: all 0.3s ease;
+}
+
+.logo1 {
+    transform: rotate(15deg) skew(-10deg);
+}
+
+.logo2 {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+.logo-container:hover .logo {
+    transform: scale(1.1);
 }
