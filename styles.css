@@ -1,10 +1,8 @@
-/* Общие стили */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
-/* Логотипы */
 .logo-container {
     display: flex;
     gap: 20px;
@@ -66,8 +64,7 @@ body {
 .progress-fill {
     background: red;
     height: 100%;
-    width: 0%;
-    transition: width 0.1s linear;
+    width: 0;
 }
 
 .progress-text {
@@ -83,7 +80,6 @@ body {
     font-size: 16px;
     text-align: center;
 
-    /* Используем градиент, где CSS-переменная --progress определяет границу */
     background: linear-gradient(
             90deg,
             white 0%,
