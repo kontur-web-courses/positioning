@@ -20,3 +20,13 @@ closeLightbox.addEventListener('click', () => {
     overlay.classList.add('hidden');
     modal.classList.add('hidden');
 });
+
+const progressFill = document.querySelector('.progress-fill');
+
+let width = 0;
+const interval = setInterval(() => {
+    width += 1;
+    progressFill.style.width = `${width}%`;
+
+    if (width >= 100) clearInterval(interval);
+}, 30);
