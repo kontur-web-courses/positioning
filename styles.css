@@ -22,11 +22,18 @@ img {
     background-color: white;
     margin: auto;
     display: block;
-    
+    position: absolute;
 }
 
 #cross {
-    position: relative;
-    top: 10px;
-    left: 580px;
+    position: absolute;
+    top: 5px;
+    left: 610px;
+}
+
+#cross > img {
+    object-fit: contain;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
 }
