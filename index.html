@@ -7,11 +7,13 @@
 </head>
 <body>
 
+<!-- Модальное окно -->
 <div class="overlay" id="modalOverlay">
     <div class="modal">
         <button class="close-btn" id="closeModal">&times;</button>
         <h2>Прогресс загрузки</h2>
 
+        <!-- Прогресс-бар -->
         <div class="progress-container">
             <div class="progress-bar">
                 <div class="progress-fill"></div>
@@ -21,10 +23,38 @@
             </div>
         </div>
 
+        <!-- Аккордеон -->
+        <div class="accordion">
+            <div class="accordion-item">
+                <input type="checkbox" id="acc1">
+                <label for="acc1">Что такое frontend?</label>
+                <div class="accordion-content">
+                    <p>Frontend — это часть веб-разработки, отвечающая за отображение и взаимодействие с пользователем. HTML, CSS и JavaScript — основные технологии.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="acc2">
+                <label for="acc2">Что такое backend?</label>
+                <div class="accordion-content">
+                    <p>Backend — это логика приложения на сервере, работа с базами данных, авторизация, обработка запросов. Используются языки как PHP, Python, Node.js.</p>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <input type="checkbox" id="acc3">
+                <label for="acc3">Что делает дизайнер интерфейсов?</label>
+                <div class="accordion-content">
+                    <p>UX/UI дизайнер разрабатывает визуальный стиль приложения и взаимодействие пользователя с системой. Занимается прототипами, юзабилити, визуалом.</p>
+                </div>
+            </div>
+        </div>
+
         <button class="green-btn" id="closeButton">Закрыть</button>
     </div>
 </div>
 
+<!-- 🔻 Логотипы вне модалки -->
 <div class="logos">
     <div class="logo-container">
         <img src="designs/logo1.png" alt="Logo 1">

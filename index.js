@@ -1,13 +1,12 @@
-// Получаем элементы
+// Анимация прогресс-бара
 const progressFill = document.querySelector('.progress-fill');
 const whiteText = document.querySelector('.progress-text .white');
 const blackText = document.querySelector('.progress-text .black');
 
-// Начальные значения
 let progress = 0;
 const duration = 3000; // 3 секунды
-const fps = 60; // кадров в секунду
-const step = 100 / (duration / (1000 / fps)); // сколько % добавлять за кадр
+const fps = 60;
+const step = 100 / (duration / (1000 / fps));
 
 const interval = setInterval(() => {
     progress += step;
@@ -17,14 +16,9 @@ const interval = setInterval(() => {
         clearInterval(interval);
     }
 
-    // Обновляем ширину красного заполнения
     progressFill.style.width = progress + '%';
 
-    // Пример адаптации текста: меняем длину белой части "Lo" в зависимости от ширины
-    const totalLength = "Loading...".length;
     const letters = "Loading...".split("");
-
-    // Находим, сколько символов попали на красный фон
     const progressContainer = document.querySelector('.progress-bar');
     const totalWidth = progressContainer.offsetWidth;
     const redWidth = progressFill.offsetWidth;
@@ -38,3 +32,34 @@ const interval = setInterval(() => {
     blackText.textContent = blackTextPart;
 
 }, 1000 / fps);
+
+// === Закрытие модального окна === //
+document.addEventListener("DOMContentLoaded", () => {
+    const overlay = document.getElementById('modalOverlay');
+    const closeModal = document.getElementById('closeModal');
+    const closeButton = document.getElementById('closeButton');
+
+    if (closeModal) {
+        closeModal.addEventListener('click', () => {
+            overlay.style.display = 'none';
+        });
+    }
+
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            overlay.style.display = 'none';
+        });
+    }
+
+    window.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.style.display = 'none';
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            overlay.style.display = 'none';
+        }
+    });
+});
