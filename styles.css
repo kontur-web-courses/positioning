@@ -30,19 +30,7 @@
 .mickie .ear.right {
     right: 10px;
 }
-.zaImperatora {
-    width: 100px;
-    height: 100px;
-    overflow: hidden;
-    position: relative;
-}
 
-.zaImperatora img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.5);
-}
 
 body {
     margin: 0;
@@ -131,4 +119,61 @@ body {
     cursor: pointer;
     user-select: none;
     line-height: 1;
+}
+
+/* Аккордеон */
+.accordion {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.accordion-label {
+    display: block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.accordion-label:hover {
+    background-color: #e0e0e0;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+    background-color: #fff;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion input:checked ~ .accordion-content {
+    max-height: 300px; /* Достаточно для размещения текста */
+    padding: 10px;
+}
+
+.accordion p {
+    margin: 0;
+}
+
+.flag {
+    background-color: white;
+    width: 100px;
+    height: 80px;
+    position: relative;
+}
+
+/* Красный круг, центрированный в блоке .flag */
+.red-circle {
+    background-color: darkred;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
