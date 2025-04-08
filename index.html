@@ -2,11 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Практика позиционирования</title>
+    <title>Модалка с прогресс-баром и логотипами</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
-    <script src="index.js"></script>
+
+<div class="overlay" id="modalOverlay">
+    <div class="modal">
+        <button class="close-btn" id="closeModal">&times;</button>
+        <h2>Прогресс загрузки</h2>
+
+        <!-- Прогресс-бар -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+                <div class="progress-text">
+                    <span class="white">Lo</span><span class="black">ading...</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="green-btn" id="closeButton">Закрыть</button>
+    </div>
+</div>
+
+<div class="logos">
+    <div class="logo-container">
+        <img src="designs/logo1.png" alt="Logo 1">
+    </div>
+    <div class="logo-container">
+        <img src="designs/logo2.png" alt="Logo 2">
+    </div>
+</div>
+
+<div class="accordion">
+    <div class="accordion-item">
+        <input type="checkbox" id="acc1">
+        <label for="acc1">Что такое frontend?</label>
+        <div class="accordion-content">
+            <p>Frontend — это часть веб-разработки, отвечающая за отображение и взаимодействие с пользователем. HTML, CSS и JavaScript — основные технологии.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="acc2">
+        <label for="acc2">Что такое backend?</label>
+        <div class="accordion-content">
+            <p>Backend — это логика приложения на сервере, работа с базами данных, авторизация, обработка запросов. Используются языки как PHP, Python, Node.js.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <input type="checkbox" id="acc3">
+        <label for="acc3">Что делает дизайнер интерфейсов?</label>
+        <div class="accordion-content">
+            <p>UX/UI дизайнер разрабатывает визуальный стиль приложения и взаимодействие пользователя с системой. Занимается прототипами, юзабилити, визуалом.</p>
+        </div>
+    </div>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>
