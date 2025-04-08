@@ -63,14 +63,60 @@ body {
     align-items: center;
 }
 
-.modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 5px;
-    width: 640px;
+.modal-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.close {
-    float: right;
+.content {
+    display: flex;
+    align-items: center;
+
+    background: #fff;
+    width: 300px;
+    height: 150px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    height: 20px;
+    background: #aaa;
+}
+
+.progress-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: red;
+}
+
+.progress-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.inactive {
+    color: black;
+    z-index: 2;
+}
+
+.active {
+    color: white;
+    z-index: 3;
+    clip-path: inset(0 50% 0 0);
 }
