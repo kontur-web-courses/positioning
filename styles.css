@@ -139,14 +139,9 @@ img {
     transition: background-color 0.3s ease;
 }
 
-.accordion-header:hover {
-    background-color: #e0e0e0;
-}
-
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.35s ease;
     background-color: #fafafa;
     padding: 0 15px;
 }
@@ -154,6 +149,7 @@ img {
 .accordion-content p {
     margin: 15px 0;
 }
+
 .accordion-item input:checked ~ .accordion-content {
     max-height: 200px;
     padding: 15px;
