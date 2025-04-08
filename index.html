@@ -6,8 +6,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="designs/logo1.png">
-    <img src="designs/logo3.jpg">
+    <img src="designs/logo1.png" alt="Logo 1">
+    <img src="designs/logo3.jpg" alt="Logo 2">
+
+    <button id="openModalBtn">Показать прогресс-бар</button>
+
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal-window">
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill">
+                        <span class="progress-text white-text">Loading...</span>
+                    </div>
+                    <span class="progress-text black-text">Loading...</span>
+                </div>
+            </div>
+            <button id="closeModalBtn" class="close-btn">Закрыть</button>
+        </div>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
