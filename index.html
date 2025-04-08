@@ -6,7 +6,54 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
+    <div class="container">
+        <div class="log1">
+            <div class="block1"></div>
+            <div class="block2"></div>
+            <div class="block3"></div>
+        </div>
+        <div class="japan" >
+            <div class="circle" ></div>
+        </div>
+    </div>
+
+    <div class="overlay" id="modal">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h2>Модальное окно</h2>
+            <p>Это модальное окно.</p>
+            <p>Ты можешь нажать <a href="#">меня</a> или <a href="#">меня</a>.</p>
+            <div class="progress-bar">
+                <div class="progress-text back">Loading...</div>
+                <div class="progress">
+                    <div class="progress-text front">Loading...</div>
+                </div>
+            </div>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <input type="checkbox" id="item1" hidden>
+                    <label for="item1" class="accordion-title">Или меня!</label>
+                    <div class="accordion-content">
+                        Спасибо, что нажал! мне очень приятно это <3!
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="item2" hidden>
+                    <label for="item2" class="accordion-title">Узнатешь что то новое ;)</label>
+                    <div class="accordion-content">
+                        Интернет возник как исследовательский проект ARPANET в США и стал основой глобальной информационной среды.
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <input type="checkbox" id="item3" hidden>
+                    <label for="item3" class="accordion-title">не нажимай 👀</label>
+                    <div class="accordion-content">
+                        закрой меня
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
