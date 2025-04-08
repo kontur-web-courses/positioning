@@ -6,7 +6,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
+    <div class="logo-container">
+        <img src="designs/logo7.png" alt="React logo" class="logo">
+        <img src="designs/logo6.png" alt="Microsoft logo" class="logo">
+    </div>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-window">
+            <div class="modal-header">
+                <h2>Заголовок модального окна</h2>
+                <button class="close-button" id="closeButton">&times;</button>
+            </div>
+            <div class="modal-content">
+                <p>Это текст внутри модального окна. Вы можете добавить любой контент здесь.</p>
+                <p>Модальное окно автоматически адаптируется по высоте.</p>
+            </div>
+        </div>
+    </div>
+
+    <button id="openModal">Открыть модальное окно</button>
     <script src="index.js"></script>
 </body>
 </html>
