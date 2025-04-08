@@ -5,6 +5,7 @@
     border-radius: 50%;
     position: relative;
 }
+
 .circle2 {
     width: 66px;
     height: 66px;
@@ -14,6 +15,7 @@
     top: 25px;
     left: 25px;
 }
+
 .circle3 {
     width: 33px;
     height: 33px;
@@ -23,10 +25,12 @@
     top: 42px;
     left: 42px;
 }
+
 .logo {
     width: 100px;
     box-sizing: border-box;
 }
+
 .microsoft {
     display: flex;
     flex-wrap: wrap;
@@ -92,4 +96,28 @@
     padding: 10px 20px;
     display: inline-block;
     margin-top: 10px;
+}
+
+.accordion-header {
+    margin-bottom: 40px;
+    display: block;
+    background: #80CC28;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #f9f9f9;
+    padding: 0 10px;
+    border-radius: 0 0 6px 6px;
+}
+
+#section-toggle:checked + .accordion-header + .accordion-content,
+#section-toggle2:checked + .accordion-header + .accordion-content,
+#section-toggle3:checked + .accordion-header + .accordion-content {
+    max-height: 100%;
+    padding: 10px;
 }
