@@ -6,19 +6,20 @@
     element.style.width = '300px';
 */
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.overlay').style.display = 'flex';
+    const overlay = document.querySelector('.overlay');
+    const openBtn = document.querySelector('.open-modal-btn');
+    
+    function openModal() {
+        overlay.style.display = 'flex';
+    }
     
     function closeModal() {
-        document.querySelector('.overlay').style.display = 'none';
+        overlay.style.display = 'none';
     }
+    
+    openBtn.addEventListener('click', openModal);
     
     document.querySelectorAll('.close-btn').forEach(btn => {
         btn.addEventListener('click', closeModal);
-    });
-    
-    document.querySelector('.overlay').addEventListener('click', function(e) {
-        if (e.target === this) {
-            closeModal();
-        }
     });
 });
