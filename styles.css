@@ -183,7 +183,7 @@ body {
 .progress-fill {
     background-color: red;
     height: 100%;
-    width: 70%;
+    width: 0%;
     position: absolute;
     top: 0;
     left: 0;
