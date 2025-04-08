@@ -24,6 +24,7 @@ circle {
 }
 
 .pb-container {
+    margin: 20px 0;
     width: 100%;
     height: 50px;
     background-color: silver;
@@ -31,13 +32,15 @@ circle {
 }
 
 .pb-text {
+    font-family: Arial;
+    font-weight: bold;
     text-align: center;
     position: absolute;
     width: 100%;
     line-height: 50px;
     font-size: 40px;
     mix-blend-mode: difference;
-    color: white;
+    color: #ffffff;
 }
 
 .pb-bar {
