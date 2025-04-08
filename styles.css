@@ -36,7 +36,8 @@ circle {
     width: 100%;
     line-height: 50px;
     font-size: 40px;
-    mix-blend-mode: screen;
+    mix-blend-mode: difference;
+    color: white;
 }
 
 .pb-bar {
