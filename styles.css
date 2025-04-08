@@ -62,7 +62,7 @@
 .progress-bar {
     position: relative;
     overflow: hidden;
-    width: 200px;
+    width: 225px;
     height: 40px;
     background-color: gray;
 }
@@ -70,19 +70,33 @@
 .progress-bar-progress {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100%;
     background-color: red;
+    overflow: hidden;
 }
 
 .progress-bar-text {
     position: absolute;
-    width: 100%;
+    width: 75px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    mix-blend-mode: difference;
+    left: 75px;
+    color: black;
+}
+.progress-bar-text-inverted {
+    position: absolute;
+    width: 75px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    left: 75px;
+    clip-path: inset(0 0 0 0);
+    z-index: 1;
 }
 .lightbox {
     position: fixed;
