@@ -1,0 +1,47 @@
+.logo1 {
+    width: 100px;
+    height: 100px;
+}
+
+circle {
+    cx: 50px;
+    cy: 50px;
+}
+
+.circle {
+    r: 50px;
+    fill: red;
+}
+
+.circle2 {
+    r: 33px;
+    fill: white; 
+}
+
+.circle3 {
+    r: 16.6px;
+    fill: red; 
+}
+
+.pb-container {
+    width: 100%;
+    height: 50px;
+    background-color: silver;
+    position: relative;
+}
+
+.pb-text {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    line-height: 50px;
+    font-size: 40px;
+    mix-blend-mode: screen;
+}
+
+.pb-bar {
+    background-color: red;
+    position: absolute;
+    height: 50px;
+    width: 50%;
+}
