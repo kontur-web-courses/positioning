@@ -104,6 +104,8 @@ img {
 
 .white-text {
     color: #fff;
+    position: absolute;
+    z-index: 1;
 }
 
 .black-text {
