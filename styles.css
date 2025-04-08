@@ -30,6 +30,8 @@
     border-radius: 4px;
     width: 640px;
     padding: 30px 30px;
+    max-height: 100vh;
+    overflow: scroll;
 }
 
 .close-button {
