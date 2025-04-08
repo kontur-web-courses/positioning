@@ -1,0 +1,80 @@
+.logo {
+    width: 100px;
+    height: 100px;
+
+}
+
+#logo1 {
+    position: relative
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+#out_circle {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-width: calc(33px / 2);
+    border-color: red;
+    border-style: solid;
+}
+
+#inner_circle {
+    position: absolute;
+    left: calc(66px / 2);
+    top: calc(66px / 2);
+    box-sizing: border-box;
+    border-radius: 50px;
+    border-width: calc(33px / 2);
+    border-color: red;
+    border-style: solid;
+}
+
+#logo2 {
+    position: relative;
+    --gap: 4%;
+}
+
+#microsoft_r {
+    position: absolute;
+    width: calc(50% - var(--gap) / 2);
+    height: calc(50% - var(--gap) / 2);
+    background-color: #f1511b;
+}
+
+#microsoft_g {
+    position: absolute;
+    left: calc(50% + var(--gap) / 2);
+    width: calc(50% - var(--gap) / 2);
+    height: calc(50% - var(--gap) / 2);
+    background-color: #80cc28;
+}
+
+#microsoft_b {
+    position: absolute;
+    top: calc(50% + var(--gap) / 2);
+    width: calc(50% - var(--gap) / 2);
+    height: calc(50% - var(--gap) / 2);
+    background-color: #00adef;
+}
+#microsoft_b {
+    position: absolute;
+    top: calc(50% + var(--gap) / 2);
+    width: calc(50% - var(--gap) / 2);
+    height: calc(50% - var(--gap) / 2);
+    background-color: #00adef;
+}
+#microsoft_y {
+    position: absolute;
+    top: calc(50% + var(--gap) / 2);
+    left: calc(50% + var(--gap) / 2);
+    width: calc(50% - var(--gap) / 2);
+    height: calc(50% - var(--gap) / 2);
+    background-color: #f9bb09;
+}
+
+
+
