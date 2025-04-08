@@ -1,0 +1,59 @@
+.MikiMouse {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+}
+
+.Ear1 {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.Ear2 {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.Face {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.Japan {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.WhiteBlock {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.RedCircle {
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: firebrick;
+}
