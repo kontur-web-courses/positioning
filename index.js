@@ -1,29 +1,41 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
-
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
-
+// Анимация прогресс-бара
 function animateProgressBar() {
-    const progressBar = document.querySelector('.bar');
-
+    const progressBar = document.querySelector('.progress');
     let progress = 0;
+
     const interval = setInterval(() => {
         if (progress < 100) {
             progress++;
-            progressBar.firstElementChild.style.width = `${progress}%`;
+            progressBar.style.width = `${progress}%`;
         } else {
             clearInterval(interval);
         }
     }, 30);
-
-    progressBar.firstElementChild.style.width = '100%';
 
     setTimeout(() => {
         clearInterval(interval);
     }, 3000);
 }
 
-animateProgressBar();
+// Закрытие lightbox
+function setupLightboxClose() {
+    const closeButton = document.querySelector('.closeButton');
+    const overlay = document.querySelector('.overlay');
+
+    closeButton.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    });
+
+    // Опционально: закрытие по клику вне окна
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            overlay.style.display = 'none';
+        }
+    });
+}
+
+// Инициализация всех функций
+document.addEventListener('DOMContentLoaded', () => {
+    animateProgressBar();
+    setupLightboxClose();
+});

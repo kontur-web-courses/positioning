@@ -115,3 +115,37 @@
 .bar::before {
     color: black;
 }
+
+
+.accordeon{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    background-color: gray;
+    margin-bottom: 10px;
+    padding: 20px 10px;
+    color: white;
+    font-size: 48px;
+}
+
+.acc-hidden {
+    display: none;
+}
+
+.acc-content {
+    display: none;
+}
+
+.acc-content p {
+    margin: 10px 0;
+    background-color: rgba(66, 66, 66, 0.8);
+    padding: 20px 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.acc-hidden:checked + label + .acc-content {
+    display: block;
+}
