@@ -4,6 +4,70 @@ body {
     padding: 20px;
 }
 
+
+.flag-container {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 0px solid #ddd;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+}
+
+.red-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #ff0000;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.microsoft-logo {
+    display: inline-block;
+    font-size: 0;
+}
+
+.logo-container {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    grid-template-rows: repeat(2, 50px);
+    gap: 2px;
+    overflow: hidden;
+}
+
+.square {
+    width: 49px;
+    height: 49px;
+}
+
+.red {
+    background-color: #F25022;
+}
+
+.green {
+    background-color: #7FBA00;
+}
+
+.blue {
+    background-color: #00A4EF;
+}
+
+.yellow {
+    background-color: #FFB900;
+}
+
+
+
+
+
 .overlay {
     position: fixed;
     top: 0;
@@ -30,6 +94,7 @@ body {
     display: none;
     overflow-y: auto;
 }
+
 
 .modal__content {
     padding: 20px;
