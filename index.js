@@ -1,4 +1,3 @@
-// Анимация прогресс-бара
 function animateProgressBar() {
     const progressBar = document.querySelector('.progress');
     let progress = 0;
@@ -17,7 +16,6 @@ function animateProgressBar() {
     }, 3000);
 }
 
-// Закрытие lightbox
 function setupLightboxClose() {
     const closeButton = document.querySelector('.closeButton');
     const overlay = document.querySelector('.overlay');
@@ -26,7 +24,6 @@ function setupLightboxClose() {
         overlay.style.display = 'none';
     });
 
-    // Опционально: закрытие по клику вне окна
     overlay.addEventListener('click', (e) => {
         if (e.target === overlay) {
             overlay.style.display = 'none';
@@ -34,7 +31,6 @@ function setupLightboxClose() {
     });
 }
 
-// Инициализация всех функций
 document.addEventListener('DOMContentLoaded', () => {
     animateProgressBar();
     setupLightboxClose();
