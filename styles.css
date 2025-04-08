@@ -93,18 +93,37 @@
     background-color: red;
 }
 
-.lightbox_progress_bar {
-    background-color: silver;
-    z-index: 3;
+
+.progress-bar-container {
+    width: 300px;
+    background-color: #ccc;
+    height: 30px;
+    margin: 20px auto;
+    position: relative;
+    top: 50%;
+    right: 15%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+.red-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: red;
+    width: 0;
+    mix-blend-mode: color;
+}
+
+
+.progress-text {
     position: absolute;
     width: 100%;
-    top: 75%;
+    text-align: center;
+    line-height: 30px;
+    top: 0;
     left: 0;
-    transform: translate(0, -50%);
-    height: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 20px;
+    font-weight: bold;
 }
