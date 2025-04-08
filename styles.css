@@ -52,4 +52,5 @@ img {
     width: 100%;
     text-align: center;
     z-index: 2;
+    mix-blend-mode: initial;
 }
