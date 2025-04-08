@@ -141,5 +141,5 @@ body {
     left: 0;
     width: 100%;
     text-align: center;
-    clip-path: inset(0 0 0 50%);
+    clip-path: inset(0 0 0 0);
 }

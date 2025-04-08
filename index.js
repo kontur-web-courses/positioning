@@ -10,12 +10,11 @@ const modalOverlay = document.getElementById('modalOverlay');
 const openModalButton = document.getElementById('openModal');
 const closeButton = document.getElementById('closeButton');
 const progressBar = document.querySelector('.bar');
-const loadingText = document.querySelector('.loading-text');
+const blackText = document.querySelector(".text-black");
 
 function openModal() {
     modalOverlay.style.display = 'flex';
     progressBar.style.width = '0%';
-    loadingText.style.color = '#000';
 
     animateProgressBar();
 }
@@ -40,11 +39,9 @@ function animateProgressBar() {
         if (width >= baseWidth) {
             clearInterval(intervalId);
         } else {
-            if (width >= baseWidth / 2) {
-                loadingText.style.color = '#fff';
-            }
             width += 1;
             progressBar.style.width = `${width * 100 / baseWidth}%`;
+            blackText.style.clipPath = `inset(0 0 0 ${width * 100 / baseWidth}%)`
         }
     }, 5);
 }
