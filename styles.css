@@ -1,0 +1,18 @@
+.zaImperatora {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.zaImperatora img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+body {
+    margin: 0;
+    background-color: #ccc;
+}
