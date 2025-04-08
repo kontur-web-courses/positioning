@@ -49,18 +49,17 @@
     text-align: center;
 }
 
-.white_text{
-    position: absolute;
-    left: 320px;
-    text-align: center;
-    color:white;
-}
 .red_bar {
     background-color: red;
-    width: 75%;
+    clip-path: inset(0 90% 0 0);
     height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
+    position: relative;
+    overflow: clip;
+    bottom: 30px;
     left: 0;
+}
+.white_text{
+    color: white;
+    display: flex;
+    justify-content: center;
 }
