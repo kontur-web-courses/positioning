@@ -12,3 +12,19 @@ openBtn.addEventListener('click', () => {
     moduleScreen.classList.remove('hide');
     animateProgress();
 });
+
+let percentage = 0;
+let step = 0.1;
+
+function lol() {
+    percentage += step;
+    progressFill.style.setProperty('width', percentage + '%');
+    if (percentage < 100){
+        setTimeout(() => {  
+            lol();
+         }, 10);
+    }
+}
+
+
+lol();
