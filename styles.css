@@ -35,14 +35,21 @@ img {
 .progress {
     background-color: grey;
     width: 640px;
-    text-align: center;
     height: 20px;
-    vertical-align: middle;
+    position: relative;
 }
 
 .red {
     position: absolute;
     background-color: red;
-    width: 100px;
-    height: 20px;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+
+.textt {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
 }
