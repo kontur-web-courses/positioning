@@ -1,0 +1,86 @@
+.block {
+    width: 100px;
+    aspect-ratio: 1;
+    border: 1px solid black;
+}
+
+.logo4 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo4-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: auto;
+    aspect-ratio: 1;
+    border: 7px solid red;
+    border-radius: 50%;
+}
+
+.logo4-inner {
+    width: 50%;
+    padding: auto;
+    aspect-ratio: 1;
+    border: 7px solid red;
+    border-radius: 50%;
+}
+
+.logo6 {
+    padding: 30%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+
+.logo6-block {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.logo6-block1 {
+    background-color: #f1511b;
+}
+
+.logo6-block2 {
+    background-color: #80cc28;
+}
+
+.logo6-block3 {
+    background-color: #00adef;
+}
+
+.logo6-block4 {
+    background-color: #fbbc09;
+}
+
+.progress-bar {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    height: 40px;
+    background-color: gray;
+}
+
+.progress-bar-progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: red;
+}
+
+.progress-bar-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: difference;
+}
