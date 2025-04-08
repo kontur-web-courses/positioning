@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Практика позиционирования</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <img class="square-logo" src="designs/logo1.png"/>
-    <img class="square-logo" src="designs/logo3.jpg"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img class="square-logo" src="designs/logo1.png" />
+    <img class="square-logo" src="designs/logo3.jpg" />
 
     <button id="openModalBtn" class="btn">Открыть модальное окно</button>
 
     <div class="modal" id="modal">
-        <button class="close-btn" id="closeModalBtn">&times;</button>
-        <div class="modal-content">
-           валпридкши
+      <button class="close-btn" id="closeModalBtn">&times;</button>
+      <div class="modal-content">
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <span class="progress-text" id="progressText">Loading...</span>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="overlay" id="overlay"></div>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
