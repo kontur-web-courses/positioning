@@ -98,6 +98,74 @@ body {
     max-height: 100%;
 }
 
+.accordion {
+    margin: 25px 0;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.accordion-input {
+    display: none;
+}
+
+.accordion-title {
+    display: block;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: relative;
+}
+
+.accordion-title:hover {
+    background-color: #e9ecef;
+}
+
+.accordion-title::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 20px;
+    transition: transform 0.2s;
+}
+
+.accordion-input:checked + .accordion-title::after {
+    transform: rotate(45deg);
+}
+
+.accordion-input:checked + .accordion-title {
+    background-color: #e9ecef;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 20px;
+    background-color: white;
+}
+
+.accordion-input:checked ~ .accordion-content {
+    max-height: 500px;
+    padding: 15px 20px;
+}
+
+.accordion-content p {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.accordion-content p:last-child {
+    margin-bottom: 0;
+}
+
 .progress-container {
     padding: 30px;
     width: 500px;
