@@ -1,19 +1,11 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-}
-
-
 .flag-container {
     width: 100px;
     height: 100px;
     background: white;
-    border: 0px solid #ddd;
+    border: 0 solid #ddd;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-
 }
 
 .red-circle {
@@ -65,66 +57,81 @@ body {
 }
 
 
-
-
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 100;
-    display: none;
-}
-
 .modal {
+    display: block;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 640px;
-    max-width: 90%;
-    max-height: 90vh;
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    z-index: 101;
-    display: none;
-    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    padding: 30px;
+    box-sizing: border-box;
 }
 
-
-.modal__content {
-    padding: 20px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+.overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 1;
 }
 
-.modal__close {
+.close-btn {
     position: absolute;
     top: 15px;
     right: 15px;
+    width: 30px;
+    height: 30px;
     background: none;
     border: none;
-    font-size: 24px;
     cursor: pointer;
-    padding: 15px 10px;
+    font-size: 20px;
     color: #666;
 }
 
-.modal__close:hover {
-    color: #000;
+.close-btn:hover {
+    color: black;
 }
 
-.green-meow {
-    color: #2ecc71;
+.progress-container {
+    margin: 40px 0;
+    position: relative;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 60%;
+    background-color: red;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
     font-weight: bold;
 }
 
-.page-content {
-    position: relative;
-    z-index: 1;
-    padding: 20px;
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
 }
