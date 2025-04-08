@@ -1,0 +1,25 @@
+.circle {
+    width: 100px;
+    height: 100px;
+    background: #DD1D36;
+    border-radius: 50%;
+    position: relative;
+}
+.circle2 {
+    width: 66px;
+    height: 66px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.circle3 {
+    width: 33px;
+    height: 33px;
+    background: #DD1D36;
+    border-radius: 50%;
+    position: absolute;
+    top: 42px;
+    left: 42px;
+}
