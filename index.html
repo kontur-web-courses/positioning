@@ -6,7 +6,62 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
+    <div class="logo-container">
+        <div class="logo-box">
+            <img src="designs/logo5.png" alt="Logo 5" class="logo logo-5">
+        </div>
+        <div class="logo-box">
+            <img src="designs/logo2.png" alt="Logo 2" class="logo logo-2">
+        </div>
+    </div>
+    
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close">&times;</button>
+            <div class="modal-content">
+                <h2>Модальное окно</h2>
+                <p>Это содержимое модального окна.</p>
+                
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                        <div class="progress-text">Loading...</div>
+                        <div class="progress-text-white">Loading...</div>
+                    </div>
+                </div>
+                
+                <div class="accordeon">
+                    <div class="accordeon-item">
+                        <input type="checkbox" id="accordeon1" class="accordeon-toggle">
+                        <label for="accordeon1" class="accordeon-title">Реферат по математике</label>
+                        <div class="accordeon-content">
+                            <p>Тема: «Интеграл Гамильтона как абсолютная погрешность»</p>
+                            <p>Линейное программирование, следовательно, специфицирует расходящийся ряд. Итак, ясно, что предел функции категорически раскручивает интеграл Пуассона. Детерминант, не вдаваясь в подробности, изменяет эмпирический полином.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordeon-item">
+                        <input type="checkbox" id="accordeon2" class="accordeon-toggle">
+                        <label for="accordeon2" class="accordeon-title">Точка перегиба</label>
+                        <div class="accordeon-content">
+                            <p>Точка перегиба ускоряет математический анализ. Теорема Гаусса - Остроградского однородно программирует экспериментальный скачок функции, явно демонстрируя всю чушь вышесказанного.</p>
+                            <p>Открытое множество продуцирует равновероятный двойной интеграл, дальнейшие выкладки оставим студентам в качестве несложной домашней работы.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="accordeon-item">
+                        <input type="checkbox" id="accordeon3" class="accordeon-toggle">
+                        <label for="accordeon3" class="accordeon-title">Бином Ньютона</label>
+                        <div class="accordeon-content">
+                            <p>Уравнение в частных производных масштабирует аксиоматичный критерий интегрируемости, явно демонстрируя всю чушь вышесказанного. До недавнего времени считалось, что критерий интегрируемости существенно допускает ротор векторного поля.</p>
+                            <p>Ввиду непрерывности функции f(x), расходящийся ряд проецирует ротор векторного поля. Бином Ньютона категорически поддерживает интеграл по бесконечной области. Многочлен, в первом приближении, осмысленно отображает ортогональный определитель.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="index.js"></script>
 </body>
 </html>
