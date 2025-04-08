@@ -48,3 +48,17 @@
     height: 10px;
     position: relative;
 }
+
+.progress {
+    position: relative;
+    background-color: #3d3d3d;
+    width: 550px;
+    left: 45px;
+}
+
+.strip {
+    position: relative;
+    background-color: #ff0000;
+    width: 100%;
+    text-align: center;
+}
