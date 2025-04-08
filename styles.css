@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo2 {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.logo2 .oval {
+    width: 80px;
+    height: 30px;
+    border: 5px solid #61DAFB;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.logo2 .circle {
+    width: 16px;
+    height: 16px;
+    background-color: #61DAFB;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.logo2 .rotate60 {
+    transform: rotate(60deg);
+}
+
+.logo2 .rotate120 {
+    transform: rotate(120deg);
+}
