@@ -10,3 +10,22 @@ openModal.addEventListener('click', () => {
 });
 
 
+closeModal.addEventListener('click', () => {
+    modalOverlay.style.display = 'none';
+    progressFill.style.width = '0%';
+    progressText.textContent = 'Loading...';
+});
+
+function startProgressBar() {
+    let width = 0;
+    const interval = setInterval(() => {
+        width++;
+        progressFill.style.width = `${width}%`;
+        progressText.textContent = 'Loading...';
+
+        if (width >= 100) {
+            clearInterval(interval);
+            progressText.textContent = 'Complete!';
+        }
+    }, 30);
+}
