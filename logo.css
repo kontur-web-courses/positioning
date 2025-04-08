@@ -1,0 +1,9 @@
+.imagesWrapper__img {
+  width: 100px;
+  height: 100px;
+}
+
+.imagesWrapper__img img {
+  max-width: 100%;
+  max-height: 100%;
+}
