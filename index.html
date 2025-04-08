@@ -2,22 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Практика позиционирования</title>
+    <title>Модалка с прогресс-баром</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Кнопка, чтобы показать модалку (по желанию) -->
-<!-- <button id="showModalBtn">Показать модалку</button> -->
-
-<!-- Модальное окно и оверлей -->
+<!-- Модальное окно -->
 <div class="overlay" id="modalOverlay">
     <div class="modal">
         <button class="close-btn" id="closeModal">&times;</button>
-        <h2>That's all, folks</h2>
-        <p>You can hit ESC or click outside to close the modal. Give it a go to see the reverse transition.</p>
-        <p>If you like this you would probably enjoy <a href="#">Merry</a>, <a href="#">reveal.js</a> and <a href="#">stroll.js</a>.</p>
-        <button class="green-btn" id="closeButton">Close</button>
+        <h2>Прогресс загрузки</h2>
+
+        <!-- Прогресс-бар -->
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+                <div class="progress-text">
+                    <span class="white">Lo</span><span class="black">ading...</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="green-btn" id="closeButton">Закрыть</button>
     </div>
 </div>
 
