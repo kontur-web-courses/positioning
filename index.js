@@ -1,9 +1,12 @@
-
 document.addEventListener("DOMContentLoaded", () => {
     let red = document.getElementById("red");
     let p = 0;
-    while (p < 100) {
-        setTimeout(() => red.style.width = p + "%", 100);
-        p++;
-    }
-})
+    let interval = setInterval(() => {
+        if (p > 100) {
+            clearInterval(interval);
+        } else {
+            red.style.width = p + "%";
+            p++;
+        }
+    }, 10);
+});
