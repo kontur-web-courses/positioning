@@ -109,13 +109,14 @@
     border-radius: 8px  ;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
     z-index: 101;
+    padding: 50px 10px 10px 10px;
 }
 
 .close-button {
     position: absolute;
     top: 15px;
     right: 15px;
-    font-size: 24px;
+    font-size: 20px;
     color: #777;
 }
 
