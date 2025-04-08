@@ -14,7 +14,19 @@ const closeButton = document.querySelector('.modal-close');
 closeButton.addEventListener('click', () => {
     const modal = document.querySelector('.modal');
     const overlay = document.querySelector('.modal-overlay');
-    
+
     modal.classList.add('hidden');
     overlay.classList.add('hidden');
+});
+
+
+const logos = document.querySelectorAll('.logo');
+logos.forEach(logo => {
+    logo.addEventListener('click', () => {
+        const modal = document.querySelector('.modal');
+        const overlay = document.querySelector('.modal-overlay');
+
+        modal.classList.remove('hidden');
+        overlay.classList.remove('hidden');
+    });
 });
