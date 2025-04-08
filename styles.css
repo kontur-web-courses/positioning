@@ -1,0 +1,35 @@
+.mickie {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mickie .face {
+    width: 60px;
+    height: 60px;
+    background-color: #000;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px auto;
+}
+
+/* Общие стили для ушей */
+.mickie .ear {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 70px;
+}
+
+/* Левое ухо */
+.mickie .ear.left {
+    left: 10px;
+}
+
+/* Правое ухо */
+.mickie .ear.right {
+    right: 10px;
+}
