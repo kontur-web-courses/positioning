@@ -1,3 +1,12 @@
+function closeLightbox(){
+    const lightbox = document.getElementById('lightbox');
+    const overlay = document.getElementById('overlay');
+
+    lightbox.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
+
 const progressBar = document.getElementById('progress-bar-value');
 
 let progressBarValue = 0;
