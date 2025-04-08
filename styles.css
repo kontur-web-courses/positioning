@@ -39,18 +39,21 @@ img {
     position: relative;
 }
 
-.red {
-    position: absolute;
-    background-color: red;
-    width: 50%;
-    height: 100%;
-    z-index: 1;
-}
-
-.textt {
+.grey {
     position: absolute;
     width: 100%;
     text-align: center;
+    z-index: 1;
+    color: black;
+}
+
+.red {
+    text-align: center;
+    position: absolute;
+    background-color: red;
+    clip-path: inset(0 0% 0 0);;
+    height: 100%;
     z-index: 2;
-    mix-blend-mode: initial;
+    width: 100%;
+    color: white;
 }
