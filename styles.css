@@ -44,7 +44,6 @@ circle {
     background-color: red;
     position: absolute;
     height: 50px;
-    width: 50%;
 }
 .bbc {
     display: grid;
