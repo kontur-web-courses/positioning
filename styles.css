@@ -101,24 +101,45 @@ body {
     background-color: #f82525;
 }
 
-.progress{
-    height:30px;
-    width:100%;
-    background-color:lightgray;
-    position:relative;
-    z-index: -2;
-    text-align: center;
-    text-justify: inter-cluster;
+.progress {
+    height: 30px;
+    width: 100%;
+    background-color: lightgray;
+    position: relative;
     font-size: 150%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .progress .bar {
-    position:absolute;
-    z-index: -1;
+    position: absolute;
     height: 100%;
-    background:red;
-    content:'';
-    width: 10%;
-    display:flex;
-    justify-content:flex-end;
+    background: red;
+    width: 50%;
+    left: 0;
+    top: 0;
+}
+
+.progress .text-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
+.progress .text-white {
+    color: white;
+    position: relative;
+}
+
+.progress .text-black {
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    clip-path: inset(0 0 0 50%); 
 }
