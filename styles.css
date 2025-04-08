@@ -1,17 +1,10 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Overlay background */
+/* LIGHTBOX */
 .lightbox-overlay {
-    display: none; /* Hidden by default */
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,26 +16,16 @@ body {
     z-index: 1000;
 }
 
-/* Modal box */
 .lightbox {
     background: white;
     padding: 2rem;
     border-radius: 8px;
-    max-width: 640px;
-    width: 90%;
+    width: 640px;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
     text-align: center;
-    animation: fadeIn 0.3s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: scale(0.95); }
-    to { opacity: 1; transform: scale(1); }
-}
-
-/* Optional: style button */
 button {
-    margin-top: 20px;
     padding: 10px 20px;
     background: #007BFF;
     color: white;
@@ -50,25 +33,30 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 button:hover {
     background: #0056b3;
 }
-/* Общие стили для контейнеров логотипов */
+
+#openLightbox{
+
+    margin: auto;
+}
+
+/*LOGOS*/
 .logo-container {
     width: 100px;
     height: 100px;
-    overflow: hidden; /* Обрезка элементов, выходящих за пределы */
-    margin: 10px;     /* Немного отступа вокруг для наглядности */
+    overflow: hidden;
+    margin: 10px;
 }
 
-/* Стилизация изображений, чтобы они полностью вписывались в контейнер */
 .logo-container img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Изображение масштабируется равномерно */
+    object-fit: contain;
 }
 
-/* Пример трансформации: поворот второго логотипа */
 .rotated img {
-    transform: rotate(15deg); /* Поворот изображения на 15 градусов */
+    transform: rotate(15deg);
 }
