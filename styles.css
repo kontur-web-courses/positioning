@@ -89,7 +89,7 @@
 #progress_bar_foreground {
     position: absolute;
     background-color: #fe0000;
-    width: 50%;
+    width: 0%;
     height: 100%;
     color: white;
     overflow: hidden;

@@ -1,20 +1,22 @@
 const progressBarLeftPart = document.querySelector('#progress_bar_foreground');
 
-const duration = 3000;
-const fps = 60;
-const frameTime = 1000 / fps;
-const animationStartTime = Date.now();
+function startProgressBar(callback) {
+    const duration = 3000;
+    const fps = 60;
+    const frameTime = 1000 / fps;
+    const animationStartTime = Date.now();
 
-const intervalId = setInterval(() => {
-    const currentTime = Date.now();
-    const timePassed = currentTime - animationStartTime;
-    const progress = Math.min(timePassed / duration * 100, 100);
+    const intervalId = setInterval(() => {
+        const currentTime = Date.now();
+        const timePassed = currentTime - animationStartTime;
+        const progress = Math.min(timePassed / duration * 100, 100);
 
-    progressBarLeftPart.style.width = `${progress}%`;
+        progressBarLeftPart.style.width = `${progress}%`;
 
-    if (progress >= 100) {
-        clearInterval(intervalId);
-        console.log('Готово');
-    }
-}, frameTime);
-
+        if (progress >= 100) {
+            clearInterval(intervalId);
+            console.log('Готово');
+            callback()
+        }
+    }, frameTime);
+}
