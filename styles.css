@@ -1,3 +1,7 @@
+h2{
+    margin: 0;
+}
+
 .logo-container {
     display: flex;
     width: 100%;
@@ -148,53 +152,51 @@ body {
     text-align: center;
     clip-path: inset(0 0 0 0);
 }
+
 .accordion {
     width: 100%;
     height: 100%;
-    overflow: scroll;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
+
 .accordion-item {
     width: 100%;
     box-sizing: border-box;
     height: max-content;
     border: 3px solid gray;
     border-radius: 10px;
+    padding: 0;
 }
 
-.accordion-open {
+.accordion-item > p {
+    display: none;
+}
+
+.accordion-toggle:checked + label + p {
+    display: block;
+}
+
+.accordion-toggle + label > h2 {
+    background-color: gray;
+    padding: 10px;
+}
+
+.accordion-toggle:checked + label > h2 {
     background-color: white;
 }
 
-.accordion-open > h2::before {
-    content: '-';
-    padding-right: 10px;
+.accordion-toggle {
+    display: none;
 }
 
-.accordion-close > h2::before {
+.accordion-toggle + label > h2::before {
     content: '+';
     padding-right: 10px;
 }
 
-.accordion-close {
-    background-color: gray;
-}
-
-.accordion-item > h2 {
-    border-bottom: 2px solid gray;
-    padding: 4px;
-}
-
-.accordion-item > p {
-    padding: 10px;
-}
-
-
-.accordion-open > p {
-    display: flex;
-}
-
-.accordion-close > p {
-    display: none;
+.accordion-toggle:checked + label > h2::before {
+    content: '-';
+    padding-right: 10px;
 }
