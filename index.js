@@ -1,6 +1,7 @@
 const overlay = document.getElementById('lightboxOverlay');
 const openBtn = document.getElementById('openLightbox');
 const closeBtn = document.getElementById('closeLightbox');
+overlay.style.display = 'none';
 
 openBtn.addEventListener('click', () => {
     overlay.style.display = 'flex';
