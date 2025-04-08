@@ -1,7 +1,9 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+document.addEventListener("DOMContentLoaded", () => {
+    let red = document.getElementById("red");
+    let p = 0;
+    while (p < 100) {
+        setTimeout(() => red.style.width = p + "%", 100);
+        p++;
+    }
+})
