@@ -17,7 +17,7 @@
 
 }
 
-.logo:hover{
+.logo:hover {
     filter: grayscale(50);
 }
 
@@ -53,6 +53,8 @@ body {
     border-radius: 8px;
     overflow: hidden;
     z-index: 10000;
+
+    max-height: 80vh;
 }
 
 .modal-header {
@@ -106,20 +108,21 @@ body {
     width: 100%;
     background-color: lightgray;
     position: relative;
+    z-index: -2;
+    text-align: center;
+    text-justify: inter-cluster;
     font-size: 150%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .progress .bar {
     position: absolute;
+    z-index: -1;
     height: 100%;
     background: red;
-    width: 50%;
-    left: 0;
-    top: 0;
+    content: '';
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .progress .text-container {
@@ -142,4 +145,54 @@ body {
     width: 100%;
     text-align: center;
     clip-path: inset(0 0 0 50%);
+}
+.accordion {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.accordion-item {
+    width: 100%;
+    box-sizing: border-box;
+    height: max-content;
+    border: 3px solid gray;
+    border-radius: 10px;
+}
+
+.accordion-open {
+    background-color: white;
+}
+
+.accordion-open > h2::before {
+    content: '-';
+    padding-right: 10px;
+}
+
+.accordion-close > h2::before {
+    content: '+';
+    padding-right: 10px;
+}
+
+.accordion-close {
+    background-color: gray;
+}
+
+.accordion-item > h2 {
+    border-bottom: 2px solid gray;
+    padding: 4px;
+}
+
+.accordion-item > p {
+    padding: 10px;
+}
+
+
+.accordion-open > p {
+    display: flex;
+}
+
+.accordion-close > p {
+    display: none;
 }
