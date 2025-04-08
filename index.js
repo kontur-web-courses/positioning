@@ -1,15 +1,18 @@
-/*
-    Изменить элементу цвет и ширину можно вот так:
+document.querySelector('.close-button').addEventListener('click', function() {
+    document.querySelector('.overlay').style.display = 'none';
+});
 
-    const element = document.querySelector('.myElement');
-    element.style.color = 'red';
-    element.style.width = '300px';
-*/
+function moveProgressRed() {
+    const progressRed = document.querySelector('.red-progress');
+    let i = 0;
+    function animate() {
+        if (i <= 300) {
+            progressRed.style.width = `${i}px`;
+            i++;
+            setTimeout(animate, 10);
+        }
+    }
+    animate();
+}
 
-document
-    .querySelector('.close-button')
-    .addEventListener(
-        'click',
-        function () {
-            document.querySelector('.overlay').style.display = 'none';
-        })
+moveProgressRed();
