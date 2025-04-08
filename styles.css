@@ -63,6 +63,7 @@
     position: relative;
     overflow: hidden;
     width: auto;
+    padding: auto;
     height: 40px;
     background-color: gray;
 }
@@ -83,8 +84,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 75px;
+    left: 300px;
     color: black;
+    font-weight: bold;
 }
 .progress-bar-text-inverted {
     position: absolute;
@@ -94,9 +96,10 @@
     align-items: center;
     justify-content: center;
     color: white;
-    left: 75px;
+    left: 300px;
     clip-path: inset(0 0 0 0);
     z-index: 1;
+    font-weight: bold;
 }
 .lightbox {
     position: fixed;
