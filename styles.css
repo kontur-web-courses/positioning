@@ -81,9 +81,53 @@
     cursor: pointer;
     border: none;
     background: none;
+    p: 10px;
     font-size: 20px;
 }
 
 .close-btn:hover {
     color: #666;
+}
+
+.modal .modal-body {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: #ffff;
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+}
+
+.modal label {
+    cursor: pointer;
+    background-color: #666666;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    margin: 0 0 5px;
+    transition: color .35s;
+}
+.modal input{
+    display: none;
+}
+
+.modal label:before {
+    content: '\276F';
+    float: right;
+}
+
+.modal input:checked + label + .modal-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
 }
