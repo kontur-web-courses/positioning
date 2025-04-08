@@ -3,3 +3,30 @@ img {
     width: 100px;
     height: 100px;
 }
+
+.module-screen {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.module-window {
+    width: 640px;
+    background-color: white;
+    margin: auto;
+    display: block;
+    
+}
+
+#cross {
+    position: relative;
+    top: 10px;
+    left: 580px;
+}
