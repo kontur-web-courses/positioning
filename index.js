@@ -12,6 +12,3 @@ openBtn.addEventListener('click', () => {
     moduleScreen.classList.remove('hide');
     animateProgress();
 });
-
-
-
