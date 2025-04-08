@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="mitsubishi">
-        <div class="circle"></div>
-        <div class="circle2"></div>
-        <div class="circle3"></div>
+<div class="mitsubishi">
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+</div>
 
-    </div>
 <div class="logo microsoft">
     <div class="square red">1</div>
     <div class="square green">2</div>
@@ -19,11 +19,19 @@
     <div class="square yellow">4</div>
 </div>
 
+
 <label for="modal-toggle" class="open-button">Открыть модальное окно</label>
 <input type="checkbox" id="modal-toggle" class="modal-toggle" hidden>
+
 <div class="modal">
     <div class="modal-box">
         <h2>Привет</h2>
+
+        <div class="progress-bar-container">
+            <div class="progress-text black">Loading...</div>
+            <div class="red-progress" id="progress-bar"></div>
+        </div>
+
         <label for="modal-toggle" class="close-button">Пока</label>
     </div>
 </div>

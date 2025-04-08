@@ -23,6 +23,7 @@
     top: 42px;
     left: 42px;
 }
+
 .logo {
     width: 100px;
     box-sizing: border-box;
@@ -31,7 +32,6 @@
     display: flex;
     flex-wrap: wrap;
 }
-
 .square {
     background-color: darkblue;
     color: transparent;
@@ -39,19 +39,15 @@
     height: 48px;
     margin: 1px;
 }
-
 .red {
     background-color: #F1511B;
 }
-
 .green {
     background-color: #80CC28;
 }
-
 .blue {
     background-color: #00ADEF;
 }
-
 .yellow {
     background-color: #F8BA09;
 }
@@ -71,19 +67,16 @@
     pointer-events: none;
     z-index: 1000;
 }
-
 .modal-box {
     background: white;
     padding: 20px 30px;
     width: 640px;
     text-align: center;
 }
-
 .modal-toggle:checked + .modal {
     opacity: 1;
     pointer-events: all;
 }
-
 .open-button,
 .close-button {
     cursor: pointer;
@@ -92,4 +85,44 @@
     padding: 10px 20px;
     display: inline-block;
     margin-top: 10px;
+}
+
+
+.progress-bar-container {
+    width: 300px;
+    background-color: #ccc;
+    height: 30px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+.red-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: red;
+    width: 0%;
+    mix-blend-mode: difference;
+}
+
+
+.progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+
+}
+.white {
+    color: #fff;
+}
+.black {
+    color: #000;
 }
