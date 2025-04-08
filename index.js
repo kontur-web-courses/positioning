@@ -11,19 +11,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const overlay = document.getElementById('overlay');
     const modal = document.getElementById('modal');
     const closeBtn = document.getElementById('closeBtn');
+    const openBtn = document.getElementById('openModal');
 
-    overlay.style.display = 'block';
-    modal.style.display = 'block';
+    function openModal() {
+        overlay.style.display = 'block';
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
 
-    closeBtn.addEventListener('click', function () {
+    function closeModal() {
         overlay.style.display = 'none';
         modal.style.display = 'none';
-    });
+        document.body.style.overflow = '';
+    }
 
-    overlay.addEventListener('click', function () {
-        overlay.style.display = 'none';
-        modal.style.display = 'none';
-    });
+    openBtn.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModal);
+    overlay.addEventListener('click', closeModal);
 
     modal.addEventListener('click', function (e) {
         e.stopPropagation();
