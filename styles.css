@@ -84,30 +84,21 @@ body {
 .progress-bar .progress-fill {
     background-color: red;
     height: 100%;
-    width: 50%;
-    position: relative;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.1s;
 }
 
-.progress-bar .progress-fill .text-overlay {
+.progress-bar .text-container {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    line-height: 30px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-}
-
-.progress-bar .text-base {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 30px;
-    text-align: center;
-    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
 }
