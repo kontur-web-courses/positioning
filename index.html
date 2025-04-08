@@ -6,14 +6,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="log1">
-        <div class="block1"></div>
-        <div class="block2"></div>
-        <div class="block3"></div>
+    <div class="container">
+        <div class="log1">
+            <div class="block1"></div>
+            <div class="block2"></div>
+            <div class="block3"></div>
+        </div>
+        <div class="japan" >
+            <div class="circle" ></div>
+        </div>
     </div>
-    <div class="japan" >
-        <div class="circle" ></div>
+
+    <div class="overlay" id="modal">
+        <div class="modal">
+            <button class="close-btn" onclick="closeModal()">×</button>
+            <h2>That's all, folks</h2>
+            <p>You can hit ESC or click outside to close the modal. Give it a go to see the reverse transition.</p>
+            <p>If you like this you would probably enjoy <a href="#">Meny</a>, <a href="#">reveal.js</a> and <a href="#">stroll.js</a>.</p>
+            <div class="footer-button">
+                <button onclick="closeModal()">Close</button>
+            </div>
+        </div>
     </div>
+
     <script src="index.js"></script>
 </body>
 </html>

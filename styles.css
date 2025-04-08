@@ -1,18 +1,18 @@
 body {
-    background-color: #fff;
+    margin: 10px;
+}
+
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    gap: 10px;
 }
 
 .japan {
     width: 100px;
     height: 100px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 
 .circle {
@@ -21,13 +21,12 @@ body {
     background-color: #BC002C;
     border-radius: 50%;
 }
+
 .log1 {
     position: relative;
     width: 100px;
     height: 100px;
-    top: 10px;
-    left: 10px;
-    border-radius: 50%;
+    border: 1px solid black;
 }
 
 .log1 div {
@@ -42,18 +41,91 @@ body {
 .log1 div.block1 {
     top: 0;
     left: 25%;
-    transform: translate(15%, 25%) rotate(0deg);
+    transform: translate(50%, 25%) rotate(0deg);
 }
 
 .log1 div.block2 {
     bottom: 0;
     left: 0;
-    transform: translateX(25%) rotate(60deg);
+    transform: translateX(60%) rotate(60deg);
 }
 
 .log1 div.block3 {
     bottom: 0;
     right: 0;
-    transform: translateX(-90%) rotate(300deg);
+    transform: translateX(-60%) rotate(300deg);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal {
+    background: #fff;
+    width: 640px;
+    max-width: 90%;
+    border-radius: 8px;
+    padding: 20px 30px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.modal h2 {
+    margin-top: 0;
+}
+
+.modal p {
+    line-height: 1.5;
+}
+
+.modal a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.modal a:hover {
+    text-decoration: underline;
+}
+
+.modal .footer-button {
+    margin-top: 20px;
+}
+
+.footer-button button {
+    padding: 10px 20px;
+    background: #5cae69;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-button button:hover {
+    background: #4b9c5b;
 }
 
