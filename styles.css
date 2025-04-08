@@ -159,6 +159,7 @@ body {
     width: 300px;
     left: 0;
 }
+
 .accordion {
     margin-top: 30px;
 }
@@ -194,4 +195,3 @@ input[type="checkbox"]:checked ~ .accordion-content {
     max-height: 200px;
     padding: 15px;
 }
-
