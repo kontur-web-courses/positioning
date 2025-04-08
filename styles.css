@@ -10,14 +10,15 @@ body {
 .japan {
     width: 100px;
     height: 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
 }
 
 .circle {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background-color: #BC002C;
     border-radius: 50%;
 }
@@ -95,14 +96,6 @@ body {
     color: #000;
 }
 
-.modal h2 {
-    margin-top: 0;
-}
-
-.modal p {
-    line-height: 1.5;
-}
-
 .modal a {
     color: #007bff;
     text-decoration: none;
@@ -134,7 +127,6 @@ body {
     width: 300px;
     height: 40px;
     background-color: #ccc;
-    overflow: hidden;
     margin: 20px auto;
     font-size: 18px;
     display: flex;
@@ -193,7 +185,6 @@ body {
 
 .accordion-content {
     max-height: 0;
-    overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
     padding: 0 15px;
     background: #fafafa;
