@@ -1,0 +1,5 @@
+#logo1, #logo2 {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
