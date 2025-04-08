@@ -6,7 +6,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
-    <script src="index.js"></script>
+<div class="logo-container">
+    <img src="designs/logo1.png" alt="Логотип 1">
+</div>
+
+<div class="logo-container rotated">
+    <img src="designs/logo2.png" alt="Логотип 2">
+</div>
+
+<button id="openLightbox">Open Lightbox</button>
+
+
+<div class="lightbox-overlay" id="lightboxOverlay">
+    <div class="lightbox" id="lightbox">
+        <h1>That's all, folks</h1>
+        <p>
+            You can hit ESC or click outside to close the modal. Give it a go to see the reverse transition.
+            If you like this you would probably enjoy Meny, reveal.js, and stroll.js.
+        </p>
+        <script src="index.js"></script>
+        <button id="closeLightbox">Close</button>
+    </div>
+</div>
 </body>
 </html>
