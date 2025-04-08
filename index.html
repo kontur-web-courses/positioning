@@ -6,7 +6,56 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
-    <script src="index.js"></script>
+
+<div class="circle-container">
+    <div class="circle"></div>
+</div>
+
+<div class="logo-container">
+    <img src="designs/logo1.png" class="logo" alt="Лого1">
+    <img src="designs/logo2.png" class="logo" alt="Лого2">
+</div>
+
+<div class="lightbox-overlay">
+    <div class="lightbox">
+        <h1>Ave Maria!</h1>
+        <p>Deus Vult!</p>
+
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+            <div class="progress-text-fill">Loading...</div>
+            <div class="progress-text">Loading...</div>
+        </div>
+
+
+        <div class="accordion">
+            <input type="checkbox" id="acc1">
+            <label for="acc1">Блок 1</label>
+            <div class="accordion-content">
+                <p>Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.
+                    Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.
+                    Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.
+                    Текстами рефератов можно пользоваться совершенно бесплатно, однако при транслировании и предоставлении текстов в массовое пользование ссылка на Яндекс.Рефераты обязательна.</p>
+            </div>
+
+            <input type="checkbox" id="acc2">
+            <label for="acc2">Блок 2</label>
+            <div class="accordion-content">
+                <p>В.</p>
+            </div>
+
+            <input type="checkbox" id="acc3">
+            <label for="acc3">Блок 3</label>
+            <div class="accordion-content">
+                <p>Третий блок!</p>
+            </div>
+        </div>
+
+        <button class="lightbox-button" onclick=closeModalWindow()>Закрыть</button>
+        <button class="lightbox-close" onclick=closeModalWindow()>x</button>
+    </div>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>
