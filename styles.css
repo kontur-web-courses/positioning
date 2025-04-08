@@ -1,3 +1,4 @@
+/* Базовые стили */
 body {
     display: flex;
     flex-direction: column;
@@ -10,7 +11,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
+/* Логотип Микки */
 .logo-mickey {
     position: relative;
     width: 100px;
@@ -18,47 +19,51 @@ body {
 }
 
 .logo-mickey .head {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     background: black;
     border-radius: 50%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .logo-mickey .ear {
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     background: black;
     border-radius: 50%;
     position: absolute;
-    top: 0;
+    top: -5px;
+    z-index: 2;
 }
 
 .logo-mickey .ear.left {
-    left: 5px;
+    left: 0;
 }
 
 .logo-mickey .ear.right {
-    right: 5px;
+    right: 0;
 }
 
-
+/* Логотип Microsoft */
 .logo-microsoft {
     width: 100px;
     height: 100px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
+    gap: 4px; /* Меньше зазор между квадратами */
     background: white;
+    padding: 4px; /* чтобы квадраты не упирались в края */
+    box-sizing: border-box;
 }
 
 .logo-microsoft .square {
-    width: 55px;
-    height: 55px;
+    width: 44px;
+    height: 44px;
 }
 
 .logo-microsoft .red {
@@ -77,14 +82,14 @@ body {
     background-color: #FFB900;
 }
 
-
+/* Кнопка открытия модалки */
 #openModalBtn {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
 }
 
-
+/* Оверлей */
 .overlay {
     position: fixed;
     top: 0;
@@ -106,6 +111,7 @@ body {
     opacity: 1;
 }
 
+/* Модалка */
 .modal {
     position: relative;
     background: #fff;
@@ -115,6 +121,7 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Контент модалки */
 .modal-content {
     margin-top: 10px;
 }
@@ -148,7 +155,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    transition: width 0.05s linear;
+    transition: width 0.1s linear;
 }
 
 .loading-text {
