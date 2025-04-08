@@ -59,6 +59,7 @@
   height: 20px;
   margin: 0 auto;
   text-align: center;
+  margin-top: 10px;
 }
 
 .progress__red {
@@ -82,4 +83,52 @@
   width: 100%;
   height: 100%;
   text-align: center;
+}
+
+/* Acc---------------------------------*/
+.accordeon {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.accordeon__item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordeon__item:last-child {
+  border-bottom: none;
+}
+
+.accordeon__input {
+  display: none;
+}
+
+.accordeon__title {
+  display: block;
+  padding: 15px;
+  background: #f5f5f5;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.accordeon__title:hover {
+  background: #e9e9e9;
+}
+
+.accordeon__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 15px;
+}
+
+.accordeon__input:checked ~ .accordeon__content {
+  max-height: 200px;
+  padding: 15px;
+}
+
+.accordeon__input:checked ~ .accordeon__title {
+  background: #e0e0e0;
 }
