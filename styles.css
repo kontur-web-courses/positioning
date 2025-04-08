@@ -1,4 +1,4 @@
-/* Базовые стили */
+
 body {
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Логотип Микки */
+
 .logo-mickey {
     position: relative;
     width: 100px;
@@ -55,9 +55,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 4px; /* Меньше зазор между квадратами */
+    gap: 4px;
     background: white;
-    padding: 4px; /* чтобы квадраты не упирались в края */
+    padding: 4px;
     box-sizing: border-box;
 }
 
@@ -82,7 +82,7 @@ body {
     background-color: #FFB900;
 }
 
-/* Кнопка открытия модалки */
+/* Кнопка */
 #openModalBtn {
     padding: 10px 20px;
     font-size: 16px;
@@ -121,12 +121,10 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Контент модалки */
 .modal-content {
     margin-top: 10px;
 }
 
-/* Кнопка закрытия */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -145,7 +143,7 @@ body {
     height: 30px;
     position: relative;
     overflow: hidden;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .progress {
@@ -178,4 +176,39 @@ body {
     z-index: 3;
     transition: color 0.1s;
     white-space: pre;
+}
+
+/* Аккордеон */
+.accordion {
+    margin-top: 30px;
+}
+
+.accordion input {
+    display: none;
+}
+
+.accordion-title {
+    display: block;
+    background: #eee;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #fafafa;
+    padding: 0 10px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+input:checked + .accordion-title + .accordion-content {
+    max-height: 200px;
+    padding: 10px;
 }

@@ -52,17 +52,14 @@ const overlay = document.getElementById('overlay');
 
 openModalBtn.addEventListener('click', () => {
     overlay.classList.add('active');
-
     if (!animationStarted) {
         animateProgress();
         animationStarted = true;
     }
 });
-
 closeModalBtn.addEventListener('click', () => {
     overlay.classList.remove('active');
 });
-
 overlay.addEventListener('click', (e) => {
     if (e.target === overlay) {
         overlay.classList.remove('active');
