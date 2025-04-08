@@ -80,7 +80,19 @@ body {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #eeeeee;
+    font-size: 16px;
+    text-align: center;
+
+    /* Используем градиент, где CSS-переменная --progress определяет границу */
+    background: linear-gradient(
+            90deg,
+            white 0%,
+            white var(--progress, 0%),
+            black var(--progress, 0%),
+            black 100%
+    );
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 /* Аккордеон */

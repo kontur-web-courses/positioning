@@ -21,6 +21,9 @@ function startProgressBar() {
     const interval = setInterval(() => {
         width++;
         progressFill.style.width = `${width}%`;
+
+        progressText.style.setProperty('--progress', `${width}%`);
+
         progressText.textContent = 'Loading...';
 
         if (width >= 100) {
