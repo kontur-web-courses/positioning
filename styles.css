@@ -52,13 +52,35 @@
 .progress {
     position: relative;
     background-color: #3d3d3d;
-    width: 550px;
+    width: calc(100% - 45px);
     left: 45px;
+    text-align: center;
+    
+}
+
+.progress p {
+    position: relative;
+    color: black;
 }
 
 .strip {
-    position: relative;
+    position: absolute;
+    top: 0px;
     background-color: #ff0000;
-    width: 100%;
+    width: 50%;
+    height: 19px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.strip p{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 213px;
+    color: rgb(255, 255, 255);
+    width: 50%;
+    height: 19px;
     text-align: center;
 }
