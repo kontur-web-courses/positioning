@@ -24,7 +24,7 @@ const interval = setInterval(() => {
     const redWidth = progressFill.offsetWidth;
     const percentRed = redWidth / totalWidth;
 
-    const redChars = Math.round(letters.length * percentRed);
+    const redChars = Math.round(letters.length * percentRed) + 3;
     const redText = letters.slice(0, redChars).join('');
     const blackTextPart = letters.slice(redChars).join('');
 
@@ -33,7 +33,6 @@ const interval = setInterval(() => {
 
 }, 1000 / fps);
 
-// === Закрытие модального окна === //
 document.addEventListener("DOMContentLoaded", () => {
     const overlay = document.getElementById('modalOverlay');
     const closeModal = document.getElementById('closeModal');
