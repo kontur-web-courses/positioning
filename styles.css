@@ -1,140 +1,185 @@
-.microsoft-logo {
-    display: inline-block;
-    font-size: 0;
-}
+    .microsoft-logo {
+        display: inline-block;
+        font-size: 0;
+    }
 
-.logo-container {
-    display: grid;
-    grid-template-columns: repeat(2, 50px);
-    grid-template-rows: repeat(2, 50px);
-    gap: 5px;
-}
+    .logo-container {
+        display: grid;
+        grid-template-columns: repeat(2, 50px);
+        grid-template-rows: repeat(2, 50px);
+        gap: 5px;
+    }
 
-.square {
-    width: 50px;
-    height: 50px;
-}
+    .square {
+        width: 50px;
+        height: 50px;
+    }
 
-.red {
-    background-color: #F25022;
-}
+    .red {
+        background-color: #F25022;
+    }
 
-.green {
-    background-color: #7FBA00;
-}
+    .green {
+        background-color: #7FBA00;
+    }
 
-.blue {
-    background-color: #00A4EF;
-}
+    .blue {
+        background-color: #00A4EF;
+    }
 
-.yellow {
-    background-color: #FFB900;
-}
+    .yellow {
+        background-color: #FFB900;
+    }
 
-.mickey-container {
-    display: inline-block;
-    text-align: center;
-}
+    .mickey-container {
+        display: inline-block;
+        text-align: center;
+    }
 
-.mickey-logo {
-    position: relative;
-    width: 250px;
-    height: 220px;
-    top: 10px;
-    margin: 0 auto;
-}
+    .mickey-logo {
+        position: relative;
+        width: 250px;
+        height: 220px;
+        top: 10px;
+        margin: 0 auto;
+    }
 
-.mickey-head {
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    background: black;
-    border-radius: 50%;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
+    .mickey-head {
+        position: absolute;
+        width: 140px;
+        height: 140px;
+        background: black;
+        border-radius: 50%;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
 
-.mickey-ear {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background: black;
-    border-radius: 50%;
-    z-index: 2;
-}
+    .mickey-ear {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: black;
+        border-radius: 50%;
+        z-index: 2;
+    }
 
-.ear-left {
-    top: -5px;
-    left: 5px;
-}
+    .ear-left {
+        top: -5px;
+        left: 5px;
+    }
 
-.ear-right {
-    top: -5px;
-    right: 5px;
-}
+    .ear-right {
+        top: -5px;
+        right: 5px;
+    }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 100;
-}
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 100;
+    }
 
-.overlay.active {
-    opacity: 1;
-    pointer-events: auto;
-}
+    .overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
 
-.modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 640px;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 200;
-}
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 640px;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        z-index: 200;
+    }
 
-.modal.active {
-    opacity: 1;
-    pointer-events: auto;
-}
+    .modal.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
 
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: none;
-    background: none;
-    font-size: 24px;
-    cursor: pointer;
-    line-height: 1;
-    color: #333;
-}
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: none;
+        background: none;
+        font-size: 24px;
+        cursor: pointer;
+        line-height: 1;
+        color: #333;
+    }
 
-.close-btn:hover {
-    color: #000;
-}
+    .close-btn:hover {
+        color: #000;
+    }
 
-.modal h2 {
-    margin-bottom: 15px;
-}
+    .modal h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #333;
+    }
 
-.modal p {
-    font-size: 16px;
-    line-height: 1.5;
-}
+    .modal p {
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .progress-container {
+        position: relative;
+        width: 300px;
+        height: 50px;
+        background: #cccccc;
+        border-radius: 25px;
+        overflow: hidden;
+      }
+      
+      .progress-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: var(--progress, 0%);
+        height: 100%;
+        background: #ff4444;
+        transition: width 0.3s ease;
+        z-index: 2;
+      }
+      
+      .progress-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        white-space: nowrap;
+      }
+      
+      .progress-text-black {
+        color: #000000;
+        z-index: 1;
+      }
+      
+      .progress-text-white {
+        color: #ffffff;
+        z-index: 3;
+        clip-path: inset(0 calc(100% - (100 * ((var(--progress, 0%) - 38%) / 24))) 0 0);
+        transition: clip-path 0.3s ease;
+      }
