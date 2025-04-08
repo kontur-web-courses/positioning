@@ -84,3 +84,40 @@
     height: 19px;
     text-align: center;
 }
+
+.acordeon {
+    width: 600px;
+    margin-left: 20px;
+}
+
+.section {
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.section-header {
+    display: block;
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    margin: 0;
+}
+
+.section-header:hover {
+    background-color: #e1e1e1;
+}
+
+.accordion-toggle {
+    display: none;
+}
+
+.section-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.accordion-toggle:checked ~ .section-content {
+    max-height: 500px; 
+    padding: 10px;
+}
