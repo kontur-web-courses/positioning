@@ -1,0 +1,15 @@
+.bbc {
+    display: grid;
+    grid-template-columns: 30px 30px 30px;
+    gap: 5px;
+}
+
+.bbc .square {
+    font-family: Arial;
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    aspect-ratio: 1;
+    text-align: center;
+}
