@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Практика позиционирования</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!--Верстать тут-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <img class="square-logo" src="designs/logo1.png" />
+    <img class="square-logo" src="designs/logo3.jpg" />
+
+    <button id="openModalBtn" class="btn">Открыть модальное окно</button>
+
+    <div class="modal" id="modal">
+      <button class="close-btn" id="closeModalBtn">&times;</button>
+      <div class="modal-content">
+        <div class="progress-container">
+          <div class="progress-bar" id="progressBar">
+            <div class="progress-fill" id="progressFill"></div>
+            <span class="progress-text" id="progressText">Loading...</span>
+          </div>
+        </div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <input type="checkbox" id="item1" class="accordion-input" />
+            <label for="item1" class="accordion-label">Что такое HTML?</label>
+            <div class="accordion-content">
+              <p>
+                HTML (HyperText Markup Language) - это стандартный язык разметки
+                для создания веб-страниц. Он определяет структуру и содержание
+                веб-страницы, используя различные элементы и теги.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <input type="checkbox" id="item2" class="accordion-input" />
+            <label for="item2" class="accordion-label"
+              >Основные принципы CSS</label
+            >
+            <div class="accordion-content">
+              <p>
+                CSS (Cascading Style Sheets) - это язык стилей, который
+                определяет внешний вид HTML-документов. Основные принципы
+                включают каскадирование, наследование и специфичность
+                селекторов.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <input type="checkbox" id="item3" class="accordion-input" />
+            <label for="item3" class="accordion-label"
+              >Зачем нужен JavaScript?</label
+            >
+            <div class="accordion-content">
+              <p>
+                JavaScript - это язык программирования, который добавляет
+                интерактивность веб-страницам. Он позволяет создавать
+                динамически обновляемый контент, анимации, обрабатывать
+                пользовательские события и многое другое.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
