@@ -1,0 +1,129 @@
+.MikiMouse {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+}
+
+.Ear1 {
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.Ear2 {
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.Face {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.Japan {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+.WhiteBlock {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 66.6667%;
+    transform: translateY(-50%);
+}
+
+.RedCircle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    background: #bc002d;
+}
+
+.lightbox_block {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 640px;
+    height: 20%;
+    z-index: 2;
+}
+
+.lightbox_backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.lightbox_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+}
+
+
+.progress-bar-container {
+    width: 300px;
+    background-color: #ccc;
+    height: 30px;
+    margin: 20px auto;
+    position: relative;
+    top: 50%;
+    right: 15%;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+
+.red-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: red;
+    width: 0;
+    mix-blend-mode: color;
+}
+
+
+.progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+}
