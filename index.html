@@ -2,11 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Практика позиционирования</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
 </head>
 <body>
-    <!--Верстать тут-->
+    <!-- Логотипы -->
+    <div class="logo-container">
+        <img src="designs/logo3.jpg" class="logo" alt="Logo 1">
+        <img src="designs/logo4.jpeg" class="logo" alt="Logo 4">
+        <img src="designs/logo5.png" class="logo" alt="Logo 5">
+    </div>
+
+    <!-- Кнопка для открытия модального окна -->
+    <button id="openModalWindow">Открыть модальное окно</button>
+
+    <!-- Модальное окно -->
+    <div class="modal-overlay" id="setModalOverlay">
+        <div class="modal">
+            <button class="close" id="closeModalWindow">&times;</button>
+            <!-- Прогресс бар -->
+            <div class="progress-wrapper">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFilled"></div>
+                    <div class="progress-text" id="progressText">Loading...</div>
+                </div>
+            </div>
+            <!-- Аккордеон -->
+            <div class="accordion">
+                <input type="checkbox" id="acc1">
+                <label for="acc1">Раздел 1</label>
+                <div class="content">Hello world.</div>
+
+                <input type="checkbox" id="acc2">
+                <label for="acc2">Раздел 2</label>
+                <div class="content">__proto__.</div>
+
+                <input type="checkbox" id="acc3">
+                <label for="acc3">Раздел 3(Тоже лучший)</label>
+                <div class="content">«В то время как многие могут следовать за своими мечтами в одиночестве, другие мечты подобны великим бурям, которые сметают на своём пути сотни, даже тысячи мечтаний. Мечты вдыхают жизнь в людей и могут обрекать их на страдания. Люди живут и умирают ради своих мечтаний. Но даже после того, как от них отказались, они всё ещё тлеют в сердцах людей. Некоторые не видят ничего, кроме жизни и смерти. Они мертвы, потому что у них нет мечтаний».</div>
+
+                <input type="checkbox" id="acc4">
+                <label for="acc4">Раздел 4(Лучший)</label>
+                <div class="content">В Королевстве Асуры есть группа людей, известная как семь рыцарей Асуры. Эти люди поклялись в абсолютной верности Ариэль Анемой Асуре. Возглавляет группу «доверенное лицо королевы» — Люк Нотос Грейрат.</div>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
