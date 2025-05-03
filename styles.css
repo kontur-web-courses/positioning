@@ -1,0 +1,221 @@
+.logo-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.logo-box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.logo-2 {
+    transform: scale(0.9);
+}
+
+.logo-5 {
+    transform: scale(0.85);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    position: relative;
+    width: 640px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.modal.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.modal-close:hover {
+    background-color: #f0f0f0;
+}
+
+.modal-content {
+    max-width: 100%;
+}
+
+.progress-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.progress-bar {
+    position: relative;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #ff0000;
+    transition: width 3s;
+}
+
+.progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    z-index: 1;
+}
+
+.progress-text-white {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 2;
+    clip-path: inset(0 100% 0 0);
+}
+
+.accordeon {
+    margin-top: 30px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.accordeon-item {
+    border-bottom: 1px solid #eee;
+}
+
+.accordeon-item:last-child {
+    border-bottom: none;
+}
+
+.accordeon-toggle {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.accordeon-title {
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordeon-title::after {
+    content: '+';
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    transition: none;
+}
+
+.accordeon-toggle:checked ~ .accordeon-title::after {
+    content: '+';
+    animation: rotate-plus 0.3s forwards;
+}
+
+.accordeon-toggle:not(:checked) ~ .accordeon-title::after {
+    content: '+';
+    animation: rotate-minus 0.3s forwards;
+}
+
+.accordeon-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordeon-toggle:checked ~ .accordeon-content {
+    max-height: 500px;
+    padding: 15px;
+}
+
+@keyframes rotate-plus {
+    0% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-50%) rotate(135deg);
+    }
+}
+
+@keyframes rotate-minus {
+    0% {
+        transform: translateY(-50%) rotate(135deg);
+    }
+    100% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+}
