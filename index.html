@@ -6,7 +6,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
+    <image class="logo" src="designs/logo3.jpg"></image>
+    <image class="logo" src="designs/logo6.png"></image>
+    <button class="open-modal-btn">Показать окно</button>
+    <div class="overlay">
+        <div class="modal">
+            <input type="checkbox" name="acor" id="acor1"/>
+            <label for="acor1">Заголовок вкладки</label>
+            <div class="modal-body">
+                <p>Описание вкладки</p>
+            </div>
+
+            <input type="checkbox" name="acor" id="acor2" />
+            <label for="acor2">Бедбар</label>
+            <div class="modal-body">
+                <div class="progress-container" style="--progress: 40;">
+                    <div class="progress-bar"></div>
+                    <div class="progress-text">Loading...</div>
+                </div>
+            </div>
+
+            <input type="checkbox" name="acor" id="acor3" />
+            <label for="acor3">2</label>
+            <div class="modal-body">
+                <h2>Гойда</h2>
+            </div>
+            <button class="close-btn">×</button>
+            <button class="close-btn">
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
