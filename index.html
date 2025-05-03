@@ -6,7 +6,50 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Верстать тут-->
+    <div id="overlay" class="overlay">
+        <div class="lightbox">
+            <div id="cross-icon-container" class="icon-container">
+                <img src="x.svg">
+            </div>
+            <div id="logo-container">
+                <div class="logo100"><img id="logo1" src="designs/logo1.png" class="logo100"></div>
+                <div class="logo100"><img id="logo3" src="designs/logo3.jpg" class="logo100"></div>
+            </div>
+            <div class="progress-bar-background">
+                <div id="bar" class="progress-bar-container">
+                    <div class="progress-bar">
+                        <p class="progress-bar-top-text">Loading...</p>
+                    </div>
+                </div>
+                <p class="progress-bar-text">Loading...</p>
+            </div>
+            <div class="accordion-group">
+                <div class="accordion">
+                    <input type="checkbox" id="acc1">
+                    <label for="acc1">Аккордеон 1</label>
+                    <div class="panel">
+                        <p>После долгих зим всегда приходит лето (Е)
+                            Я знаю: где ты, с кем ты; но мне пофиг, где ты, с кем ты</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" id="acc2">
+                    <label for="acc2">Аккордеон 2</label>
+                    <div class="panel">
+                        <p>Двести двадцать третий, Трэвис давит на педаль кареты</p>
+                    </div>
+                </div>
+                <div class="accordion">
+                    <input type="checkbox" id="acc3">
+                    <label for="acc3">Аккордеон 3</label>
+                    <div class="panel">
+                        <p>Мешаю ветер с дымом с окон AMG-пакета (Воу, воу, воу, воу-воу, ушёл)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
